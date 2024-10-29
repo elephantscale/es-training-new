@@ -1,7 +1,7 @@
 # Microservices Intro 
 
 © Elephant Scale 
-October 27, 2024
+October 28, 2024
 
 * A very important part of modern software development is the new discipline of Cloud-enabled microservices, and part of this is PAAS (Platform as a Service) which allows deploying such apps into production with the minimum effort. This course will introduce the participants into microservices and to its implementation with various frameworks.
 
@@ -53,7 +53,7 @@ October 27, 2024
 * Containerization and Microservices
 * Lab: Running a Container
 
-### Microservices and Kubernetes
+### Microservices and Kubernetes - overview
 * What is container orchestration?
 * Kubernetes and Microservices
 
@@ -124,156 +124,3 @@ October 27, 2024
 * Defining and using storage volumes
 * Storage backup and restore
 * Labs
-
-## Deeper Look Kubernetes and Microservices
-
-### Kubernetes Overview
-
-* Evolution of orchestration systems
-* Kubernetes features
-* Benefits
-* Design principles
-* Case studies
-
-### Kubernetes Architecture
-
-* Kubernetes architecture
-* Controllers and workers
-* Namespaces
-* Controller, Scheduler, etcd, kubelet
-* Managing state in etcd
-* Pods and containers
-* Replicasets
-* Daemonsets
-* Labs
-
-### Kubernetes Resources
-
-* Labels and annotations
-* Node selectors
-* Pod assignments
-* Resource requirements and limits
-* Scheduling and resource allocations
-* Labs
-
-### Networking
-
-* Docker networking
-* Kubernetes networking
-* Networking of pods and containers
-* DNS service
-* Exposing services
-* Labs
-
-### Kubernetes Storage
-
-* Kubernetes volumes
-* Provisioning and using persistent volumes
-* Dynamic volume allocation
-* Labs
-
-### Deploying Scalable MicroServices
-
-* Deployments and Replica Sets
-* Services
-* Deployment strategies
-* Rolling out deployments
-* Blue/green deployments
-* Deploying services
-* Ingress
-* Labs
-
-### Kubernetes Ecosystem
-
-* Developer tools
-* Monitoring tools
-* Testing tools
-* Helm
-* Labs
-
-## Industrial-Strength Microservices Architecture 
-
-### Data Management for Microservices
-
-* Database Per Services
-* CQRS Pattern
-* CAP Theorem
-* Transactions
-* Labs
-
-### Planning and Analysis
-
-* Design Layers
-* Domains and SubDomains
-* Labs
-
-### Contexts and Interfaces
- * Context
- * Schema Registry
- * Boundaries
- * REST and Microservices
- * Labs
-
-### Microservice Decomposition
- * Intro to Decomposition
- * Strangler Pattern
- * Labs
-
-
-### Security and Microservices
- * STRIDE Attack Classification
- * Security Principles
- * Authentication and Authorization
- * Secrets Management
- * Labs
-
-### Testing
- * Testing and Microservices
- * The "V" Model
- * TDD (Test Driven Development)
- * Testing and Quality: ATTD/BDD
- * Labs
-
-### Messaging
- * Messaging Architecture
- * Point to Point
- * Pub/Sub
- * Streams
- * Message Queues
- * Apache Kafka
- * Labs
-
-### Monitoring
- * About Monitoring
- * Monitoring Tools
- * Labs
-
-
-### MicroServices Design Patterns
- * Aggregator
- * Branch
- * Proxy
- * Chain
- * Shared Resources
- * Asynchronous Messaging
- * Bulkhead Isolation
- * Labs
-
-
-### Workshops (time permitting)
-
-* Students will work on end to end scenarios using Spring Boot Docker and Kubernetes
-
-
-### References
-
-* ./es-training/microservices/rod-jason/Microservices-VMWare-2022.pptx
-* ./es-training/microservices/rod-jason/Microservices-VMWare.pptx
-* ./es-training/kubernetes/slides/Microservices.md
-* ./es-training-new/kubernetes/slides/Microservices.md
-
-
-### Labs
-* https://www.katacoda.com/innosoft/
-
-
