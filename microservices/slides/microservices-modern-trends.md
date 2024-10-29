@@ -51,6 +51,7 @@
 - **Kubernetes (K8s) as the Default Orchestration Platform**: Kubernetes has become the de facto standard for deploying, scaling, and managing containerized microservices. Features like **Helm**, **Kustomize**, and **GitOps** simplify complex deployments.
 - **Multi-Cluster and Multi-Cloud Architectures**: Adopting multi-cluster Kubernetes setups and hybrid/multi-cloud architectures for better fault tolerance and reduced vendor lock-in.
 
+![](images/pexels-cottonbro-7097455.jpg)
 
 ---
 
@@ -58,30 +59,37 @@
 ## 8. API Gateway and API Management
 - **API Gateway Patterns**: Modern API gateways like **Kong**, **Traefik**, and **AWS API Gateway** handle authentication, rate limiting, and request/response transformations.
 - **GraphQL for APIs**: Increasing adoption of **GraphQL** due to its flexibility in querying data and aggregating information from multiple microservices.
+![](images/pexels-startup-stock-photos-7367.jpg)
 ---
+
 
 
 ## 9. Resilience Engineering and Chaos Testing
 - **Resilience and Chaos Testing**: **Chaos Engineering** practices test system behavior under stress using tools like **Chaos Monkey** and **Gremlin**.
 - **Circuit Breakers and Bulkheads**: Implementing patterns like circuit breakers (**Hystrix** or **Resilience4j**) and bulkhead isolation for limiting the impact of failures.
+![](images/pexels-cottonbro-4769488.jpg)
 ---
 
 
 ## 10. Observability and Monitoring
 - **Full-Stack Observability**: Tools like **Prometheus**, **Grafana**, **Datadog**, and **New Relic** provide deeper insights into application behavior and performance metrics.
 - **Log Aggregation and Metrics**: Centralized logging and monitoring tools like the **ELK Stack (Elasticsearch, Logstash, Kibana)** or **Splunk** help visualize trends and errors.
+![](images/pexels-scottwebb-430208.jpg)
 ---
 
 
 ## 11. Security and Compliance
 - **Security Best Practices**: Following **DevSecOps** principles to integrate security into CI/CD pipelines. Tools like **HashiCorp Vault** are used to securely manage secrets and access controls.
 - **Compliance in Microservices**: Addressing regulations like **GDPR** and **CCPA** with privacy-aware APIs and secure data handling.
+![](images/pexels-brett-sayles-1119152.jpg)
 ---
 
 
 ## 12. Adoption of AI and ML in Microservices
 - **AI-Driven Automation**: AI-based solutions for anomaly detection, predictive scaling, and intelligent routing in microservices environments.
 - **Microservices for Machine Learning Pipelines**: Modular ML pipelines implemented as microservices allow independent updates, scaling, and optimization.
+
+![](images/pexels-kindelmedia-8566474.jpg)
 ---
 
 
