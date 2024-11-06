@@ -1,7 +1,7 @@
 # AI & Applications-Highmark
 
 (C) Elephant Scale  
-October 28, 2024
+October 30, 2024
 
 ## Course Description
 
@@ -45,16 +45,17 @@ October 28, 2024
   * Google Bard
   * Cohere
   * Mistral
-* AI in healthcare use cases and its potential
+* AI in healthcare use cases
   * Fraud Detection and Prevention
   * Automated Claims Processing
   * Customer Service Chatbots
   * Personalized Policy Recommendations
   * More...
-* AI security
-  * Securing AI
-  * Hacking AI
-  * Responsible use of AI
+* AI in sales use cases
+  * Enhanced Customer Engagement and Support
+    * SidekickAI acts as an intelligent virtual assistant
+  * AI-Powered Sales Assistance and Strategy Suggestions
+    * SidekickAI analyzing sales data and customer interactions
 
 ## Presenter 
 * Mark Kerzner
