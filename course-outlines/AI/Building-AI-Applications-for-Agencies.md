@@ -3,7 +3,7 @@
 
 (C) Copyright Elephant Scale
 
-October 6, 2024
+November 6, 2024
 
 ## Course Description
 
@@ -98,7 +98,7 @@ October 6, 2024
 * Evaluating and debugging Generative AI
 * Practical examples and demos
 
-### Practical use case
+### Practical use cases
 * How to make sure your data stays private and under your control
 * Preparing reports for executives
 * Employee turnover and how to capture their experience and know-how
