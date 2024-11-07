@@ -1,11 +1,11 @@
-# AI & Applications-Highmark
+# AI & Applications for an Org (Highmark)
 
 (C) Elephant Scale  
-October 30, 2024
+November 06, 2024
 
 ## Course Description
 
-* This course introduces Artificial Intelligence and its applications in the industry.
+* This course introduces Artificial Intelligence and its applications in the industry for specific use cases.
 
 ## Audience
 * Managers and Execs
@@ -15,7 +15,7 @@ October 30, 2024
 * Introductory for all
 
 ## Duration
-* One days
+* One day
 
 ## Prerequisites
 * None
@@ -34,7 +34,7 @@ October 30, 2024
 * Machine Learning
 * Deep Learning
 * AI Software ecosystem
-* How to adopt AI in enterprises
+* How to adopt AI in the enterprises
 * Wrap up and next steps
 
 ## Customizations for Highmark
@@ -52,11 +52,21 @@ October 30, 2024
     * SidekickAI analyzing sales data and customer interactions
 
 * Tentative
-  Contract Generation – we have an area under our org that handles the contracts, benefit booklets, etc. for Sales and their clients, so use cases that may assist with contract/benefit booklet generation or review, etc.  We are already pursuing the ability for AI to do translations into other languages.
-  Inventory Management - we have areas that support sales with their pre-sale quoting activities, as well as post-sale client set-up, so use cases that may assist in managing that work or automating certain aspects of their work.
-  Customer Behavior – any use cases that may predict a customer’s behavior in terms of products/services we should be recommending.
-  Sales training – any uses that may assist in the development of training or training materials/user guides for sales.
-  Analytics – we have an area that supports some analytics tools for sales providing various client specific reporting, so use cases that may help identify ways to make the code more efficient or check the quality would be helpful (one of the tools used is Encompass and they are also looking into ways to convert SAS to R or Python).
+  * Contract Generation
+    * There is an area in the Org that handles the contracts, benefit booklets, etc. for Sales and their clients
+    * Use cases may assist with contract/benefit booklet generation or review, etc.
+    * Org is already pursuing the ability for AI to do translations into other languages.
+  * Inventory Management
+    * Org has areas that support sales with their pre-sale quoting activities, as well as post-sale client set-up.
+    * Use cases may assist in managing that work or automating certain aspects of their work.
+  * Customer Behavior
+    * Use cases may predict a customer’s behavior in terms of products/services we should be recommending.
+  * Sales training
+    * Use cases may assist in the development of training or training materials/user guides for sales.
+  * Analytics
+    * Org has an area that supports some analytics tools for sales providing various client specific reporting
+    * Use cases that may help identify ways to make the code more efficient or check the quality would be helpful.
+    * One of the tools used is Encompass and Org is also looking into ways to convert SAS to R or Python.
 
 ## Presenter 
 * Mark Kerzner
