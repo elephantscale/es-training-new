@@ -1,4 +1,3 @@
-
 # Building AI Applications for Agencies
 
 (C) Copyright Elephant Scale
