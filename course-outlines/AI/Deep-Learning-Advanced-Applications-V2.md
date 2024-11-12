@@ -53,55 +53,41 @@ with a practical reasonable expense of time and resources.
 ### Introduction to Deep Learning
 - Understanding Deep Learning use cases
 - Understanding AI / Machine Learning / Deep Learning
-- Data and AI
-- AI vocabulary
-- Hardware and software ecosystem
 - Understanding types of Machine Learning (Supervised / Unsupervised / Reinforcement)
-
-### Computer Vision
-- Introducing Convolutional Neural Networks (CNN)
-- CNN architecture
-- CNN concepts
-- Lab: Image recognition using CNNs
-
-### Recurrent Neural Networks
-- Introducing RNNs
-- RNN architecture
-- RNN concepts
-- LSTM (Long Short Term Memory) networks
-- LSTM architecture
-- Lab: RNNs for text and sequence prediction
-
 
 ### HuggingFace 
 
-* Transformers
-* Encoders
-* Decoders
-* Sequence to sequence
-* Bias and limitations
-* Pipeline
-* Models
-* Tokenizers
-* Putting it all together
-
-
-### Fine tuning a pretrained model
-* Processing the data
-* Fine-tuning a model with the Trainer API or Keras
-* A full training
-
-### Sharing models and tokenizers 
+* Transformers - winner takes all
+* Fine-tuning a model 
 * The Hugging Face Hub
-* Using pretrained models
 * Sharing pretrained models
 
-### Main NLP tasks
-* Token classification
-* Fine-tuning a masked language model
-* Translation
-* Summarization
-* Training a causal language model from scratch
-* Question answering
-* Mastering NLP
+### Prompt Engineering
+* Introduction to AI
+* Iterative development
+  * How to iteratively analyze and refine your prompts to generate marketing copy from a product fact sheet.
+* Summarizing
+  * How to make an AI summarize a document with different requirements and in different formats
+* Inferring
+  * How to make an AI infer sentiment and topics from product reviews and news articles.
+* Transforming
+  * How to use Large Language Models for text transformation tasks such as language translation, spelling and grammar checking, tone adjustment, and format conversion.
+* Expanding
+  * How to generate customer service emails that are tailored to each customer's review.
+* Chatbot
+  * How to use an AI to have extended conversations with chatbots personalized or specialized for specific tasks or behaviors.
 
+
+### Semantic Search
+
+* Organize your private documents for the implementation and break them into meaningful fragments for storing in the semantic search engine
+* Semantic search
+* Retrieval Augmented Generation (RAG)
+* Recommender systems
+* Hybrid search
+
+### Practical use cases
+* How to make sure your data stays private and under your control
+* Preparing reports for executives
+* Employee turnover and how to capture their experience and know-how
+* Automating daily tasks: pull stats, post them to Slack
