@@ -2,7 +2,7 @@
 
 (C)Copyright Elephant Scale
 
-November 11, 2024
+November 12, 2024
 
 ## Course Description
 
@@ -52,12 +52,17 @@ with a practical reasonable expense of time and resources.
 
 ### Introduction to Deep Learning
 - Understanding Deep Learning use cases
-- Understanding AI / Machine Learning / Deep Learning
-- Understanding types of Machine Learning (Supervised / Unsupervised / Reinforcement)
+- Understanding AI, Machine Learning, and Deep Learning
+- Understanding types of Machine Learning (Supervised/Unsupervised/Reinforcement/Self-supervised)
 
 ### HuggingFace 
 
-* Transformers - winner takes all
+* Transformers - next step after NN, CNN, RNN.
+* Uses cases: 
+  * All NLP tasks
+  * Image processing
+  * Predictions
+* Models
 * Fine-tuning a model 
 * The Hugging Face Hub
 * Sharing pretrained models

@@ -74,3 +74,8 @@ November 06, 2024
 * He worked and taught in various verticals: Hightech (Cisco/Google), Healthcare(Optum/Kaiser/Cerner). Finance (BOA, JPMC)
 * His classes are hands-on and draw heavily on his industry experience.
 * Mark is certified in Google Cloud (GCP), Amazon (AWS), and Big Data.
+
+## References
+* Protech courses
+* https://www.protechtraining.com/ai-and-applications-pt22001
+* https://www.protechtraining.com/ai-3017-microsoft-ai-for-business-leaders-pt29723

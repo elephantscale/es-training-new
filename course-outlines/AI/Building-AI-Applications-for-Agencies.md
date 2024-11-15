@@ -2,7 +2,7 @@
 
 (C) Copyright Elephant Scale
 
-November 6, 2024
+November 15, 2024
 
 ## Course Description
 
@@ -108,3 +108,5 @@ November 6, 2024
 ### Reference (remove before sending)
 
 https://learn.deeplearning.ai/courses/serverless-agentic-workflows-with-amazon-bedrock/lesson/4/performing-calculations
+https://learn.deeplearning.ai/courses/serverless-LLM-apps-amazon-bedrock/lesson/1/introduction
+https://learn.deeplearning.ai/courses/serverless-agentic-workflows-with-amazon-bedrock/lesson/1/introduction
