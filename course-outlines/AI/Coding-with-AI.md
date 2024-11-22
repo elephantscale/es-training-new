@@ -35,7 +35,7 @@ October 9, 2024
 * Intermediate to advanced.
 
 ## Duration
-* Three to five days
+* Five days
 
 ## Prerequisites
 * General familiarity with machine learning
@@ -78,7 +78,21 @@ October 9, 2024
 * ChatGPT complete plan of architecture, approach, implementation, and test creation
 * How not to send your code to competition by using Llama use for extra privacy
 
-## Notes
+### Day 3
+* ChatGPT desktop
+
+### Day 4
+* GitHub Copilot/JetBrains AI
+
+### Day 5
+
+* Comparative review of exploratory AI tools in the market, including Claude 3.5, Sonnet, Aider, and any other relevant tools worth exploring
+* Tech Stack:
+  * PHP, GoLang, JavaScript
+* IDEs
+  * VS Code and Cursor
+
+## Notes (remove before sending)
 
 * Co-pilot
   * https://www.coursera.org/learn/introduction-to-microsoft-github-copilot/lecture/OwFQe/welcome-to-the-course
