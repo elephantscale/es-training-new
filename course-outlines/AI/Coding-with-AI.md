@@ -2,7 +2,7 @@
 
 (C) Copyright Elephant Scale
 
-October 9, 2024
+November 24, 2024
 
 ## Course Description
 
@@ -71,15 +71,77 @@ October 9, 2024
 * Evaluating and debugging Generative AI
 * Practical examples and demos
 
-### Labs
+### Labs (optional)
 
 * GitHub Copilot for code development
 * Claude 3.5 Sonnet for better coding
 * ChatGPT complete plan of architecture, approach, implementation, and test creation
 * How not to send your code to competition by using Llama use for extra privacy
 
-### Day 3
-* ChatGPT desktop
+### ChatGPT Desktop Course Outline (Day 3)
+
+#### **Session 1: Introduction to ChatGPT Desktop**
+* What is ChatGPT and its capabilities?
+* Difference between desktop, browser, and mobile versions.
+* Installing and setting up ChatGPT Desktop.
+* Overview of the ChatGPT Desktop interface.
+  * Navigation and settings.
+  * Customization options (themes, notifications, shortcuts).
+
+#### **Session 2: Leveraging ChatGPT Desktop for Personal Use**
+* Exploring key features:
+  * Using different GPT models (GPT-3.5 vs. GPT-4).
+  * Offline capabilities (if applicable).
+  * Integration with desktop workflows (copy-paste, drag-drop).
+* Productivity hacks:
+  * Writing emails, creating schedules, and managing tasks.
+  * Summarizing articles, documents, or meeting notes.
+  * Brainstorming ideas for personal projects or hobbies.
+* **Hands-On Activity:**
+  * Plan a day’s agenda or draft an email using ChatGPT.
+
+#### **Session 3: ChatGPT Desktop for Work and Innovation**
+* Professional use cases:
+  * Content creation: blogs, presentations, and reports.
+  * Analyzing data or generating code snippets.
+  * Enhancing communication with automated responses.
+* Collaboration features:
+  * Sharing outputs and collaborative workflows.
+  * Exploring plugin or API integrations (if supported).
+* Advanced tips:
+  * Crafting effective prompts for better outputs.
+  * Using multi-step prompts to handle complex workflows.
+* **Hands-On Activity:**
+  * Create a professional report using ChatGPT Desktop.
+
+#### **Session 4: Exploring Creative and Advanced Features**
+* Creative applications:
+  * Writing stories, poems, or scripts.
+  * Generating ideas for marketing campaigns or social media.
+* Technical applications:
+  * Writing and debugging code.
+  * Using ChatGPT Desktop for data exploration.
+* Plugins and tools (if applicable):
+  * DALL-E for image generation.
+  * Code interpreter and other tools.
+
+#### **Session 5: Best Practices and Limitations**
+* Ethics and responsible use:
+  * Data privacy and security considerations.
+  * Understanding AI limitations and avoiding misuse.
+* Troubleshooting common issues:
+  * Tips for resolving app crashes or slow responses.
+  * How to contact support or find solutions in the community.
+
+#### **Session 6: Final Project and Q&A**
+* **Final Project:**
+  * Solve a real-world scenario using ChatGPT Desktop.
+* **Q&A Session:**
+  * Address participant questions and challenges.
+* Wrap-up:
+  * Recap of key learnings.
+  * Resources for continued learning and exploration.
+
 
 ### Day 4
 * GitHub Copilot/JetBrains AI
