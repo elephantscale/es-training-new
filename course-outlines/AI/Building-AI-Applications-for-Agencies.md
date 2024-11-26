@@ -83,6 +83,7 @@ November 15, 2024
 * Hybrid search
 * Facial similarity search
 * Anomaly detection
+* Lab: 
 
 ### LangChain, glue to put it together
 * Models, prompts, and parsers
