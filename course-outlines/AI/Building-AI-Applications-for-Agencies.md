@@ -71,6 +71,7 @@ November 15, 2024
   * How to generate customer service emails that are tailored to each customer's review.
 * Chatbot
   * How to use an AI to have extended conversations with chatbots personalized or specialized for specific tasks or behaviors.
+* Lab: Prompt-Engineering
 
 
 ### Semantic Search 
@@ -100,13 +101,10 @@ November 15, 2024
 ### Practical use cases
 * How to make sure your data stays private and under your control
 * Preparing reports for executives
+  * Lab: Build-database-agents
 * Employee turnover and how to capture their experience and know-how
+  * Lab: Serverless-LLM-Bedrock
+  * Lab: Agentic-on-Bedrock
 * Automating daily tasks: pull stats, post them to Slack
 * Integrating Kanban into your workflow with AI
 * Integrating with APIs, using Google email and chat as examples
-
-### Reference (remove before sending)
-
-https://learn.deeplearning.ai/courses/serverless-agentic-workflows-with-amazon-bedrock/lesson/4/performing-calculations
-https://learn.deeplearning.ai/courses/serverless-LLM-apps-amazon-bedrock/lesson/1/introduction
-https://learn.deeplearning.ai/courses/serverless-agentic-workflows-with-amazon-bedrock/lesson/1/introduction

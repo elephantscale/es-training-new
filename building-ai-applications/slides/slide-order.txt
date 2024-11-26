@@ -4,35 +4,17 @@
 # outline
 
 # About
-About_Microservices_Class.md
+About_Class.md
 
+# Prompt Engineering
+# Slides here
+PromptEngineering.md
 
-## Microservices
-microservices.md
-REST-Intro.md
-$ES_HOME/es-training/microservices/rod-jason/Microservices-VMWare-2022.pptx
-$ES_HOME/es-training/microservices/ernesto/Microservices-DevOps-with-Kubernetes.pptx
+# Semantic Search
+# Slides here
 
-## Docker 
-../../docker/slides/Container_Intro.md
-../../docker/slides/Docker_Intro.md
-../../docker/slides/Docker_Containers_and_Images.md
-../../docker/slides/Docker_Development.md
-../../docker/slides/Docker_Networking_and_Storage.md
-../../docker/slides/Docker_Ops.md
-../../docker/slides/Docker_Orchestration.md
+# LangChain
+# Slides here
 
-## Kubernetes
-../../kubernetes/slides/Kubernetes-Intro.md
-../../kubernetes/slides/Kubernetes-Essentials.md
-../../kubernetes/slides/Kubernetes-Resources.md
-../../kubernetes/slides/Kubernetes-Networking.md
-../../kubernetes/slides/Kubernetes-Storage.md
-../../kubernetes/slides/Kubernetes-Deployments.md
-../../kubernetes/slides/Kubernetes-Operations.md
-../../kubernetes/slides/Kubernetes-Misc.md
-../../kubernetes/slides/Kubernetes-Best-Practices.md
-
-## Modern trends
-
-microservices-modern-trends.md
+# Practical use cases
+# Slides here
