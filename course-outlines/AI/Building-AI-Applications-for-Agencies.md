@@ -92,6 +92,7 @@ November 15, 2024
 * Q&A
 * Evaluation
 * Conversational bot
+  * Lab: langchain
 
 
 ### Architecture, testing, and continuous improvements
