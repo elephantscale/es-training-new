@@ -1,5 +1,7 @@
 # Effective Prompting Techniques for Language Models
 
+# Guidelines
+
 ---
 ## Introduction
 * Topic: Effective Prompting Techniques for Language Models
@@ -110,3 +112,89 @@
 ## Experimentation
 * Try new prompt
 ---
+
+# Iterative
+
+# Iterative Prompting for Marketing Content Creation
+
+---
+## Introduction
+* Focus:
+  * Generate effective product descriptions from technical fact sheets.
+  * Address challenges such as length, relevance, and organization.
+  * Tailor outputs for specific audiences like furniture retailers.
+
+---
+## Generate Product Descriptions
+* Input: Fact sheet for a mid-century-inspired office chair.
+* Task: Create a retail website description.
+* Example prompt:
+  ```python
+  prompt = """
+  Write a product description based on the technical specifications.
+  Specifications: ```<fact_sheet>```
+  """
+  ```
+
+---
+## Issue 1: Text is Too Long
+* Challenge:
+  * Descriptions can exceed the desired word count or character limit.
+* Solution:
+  * Specify limits such as "50 words" or "3 sentences."
+* Example:
+  ```python
+  prompt = """
+  Write a description in at most 50 words.
+  Specifications: ```<fact_sheet>```
+  """
+  ```
+
+---
+## Issue 2: Focus on Relevant Details
+* Challenge:
+  * Initial descriptions may emphasize less relevant aspects.
+* Solution:
+  * Instruct the model to focus on key materials or construction details.
+* Example:
+  ```python
+  prompt = """
+  Focus on materials and construction. Use at most 50 words.
+  Specifications: ```<fact_sheet>```
+  """
+  ```
+
+---
+## Issue 3: Include a Table of Dimensions
+* Challenge:
+  * Audience requires clear dimensions in tabular format.
+* Solution:
+  * Generate descriptions with an appended HTML table.
+* Example:
+  ```python
+  prompt = """
+  Include dimensions in a two-column table titled 'Product Dimensions.'
+  Specifications: ```<fact_sheet>```
+  """
+  ```
+
+---
+## Example HTML Output
+* HTML for product descriptions:
+  ```html
+  <div>
+    A detailed product description.
+  </div>
+  <table>
+    <tr><th>Dimension</th><th>Measurement</th></tr>
+    <tr><td>Width</td><td>20.87"</td></tr>
+    <tr><td>Height</td><td>31.50"</td></tr>
+  </table>
+  ```
+
+---
+## Experimentation
+* Test and refine prompts to align with audience needs.
+* Incorporate specific requests like IDs or formatting styles.
+* Adjust for tone, technical depth, and visual layout.
+
