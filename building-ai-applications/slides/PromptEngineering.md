@@ -1,31 +1,28 @@
 # Effective Prompting Techniques for Language Models
 
 ---
-## Slide 1
-### Introduction
+## Introduction
 * Topic: Effective Prompting Techniques for Language Models
 * Focus:
-    * Principles of clear communication with AI models
-    * Tactics to improve AI interaction
-    * Practical examples and structured outputs
+  * Principles of clear communication with AI models
+  * Tactics to improve AI interaction
+  * Practical examples and structured outputs
 
 ---
-## Slide 2
-### Principle 1: Write Clear and Specific Instructions
+## Principle 1: Write Clear and Specific Instructions
 * Avoid short or vague prompts.
 * Provide detailed and unambiguous instructions.
 * Benefits:
-    * Better context understanding.
-    * More accurate and relevant responses.
+  * Better context understanding.
+  * More accurate and relevant responses.
 
 ---
-## Slide 3
-### Principle 1 Tactic 1: Use Delimiters
+## Principle 1 Tactic 1: Use Delimiters
 * Delimiters clearly indicate distinct parts of the input.
 * Examples:
-    * Backticks: ```
-    * Quotes: """ or ""
-    * Tags: `<tag>` and `</tag>`
+  * Backticks: ```
+  * Quotes: """ or ""
+  * Tags: `<tag>` and `</tag>`
 * Code Example:
   ```python
   text = """..."""
@@ -33,8 +30,7 @@
   ```
 
 ---
-## Slide 4
-### Principle 1 Tactic 2: Ask for Structured Output
+## Principle 1 Tactic 2: Ask for Structured Output
 * Request output in formats like JSON or HTML.
 * Code Example:
   ```python
@@ -43,14 +39,13 @@
   """
   ```
 * Benefit:
-    * Makes parsing and automation easier.
+  * Makes parsing and automation easier.
 
 ---
-## Slide 5
-### Principle 1 Tactic 3: Check Conditions
+## Principle 1 Tactic 3: Check Conditions
 * Ensure AI validates requirements.
 * Example:
-    * Rewriting a recipe into structured steps.
+  * Rewriting a recipe into structured steps.
 * Code Example:
   ```python
   prompt = """
@@ -59,8 +54,7 @@
   ```
 
 ---
-## Slide 6
-### Principle 1 Tactic 4: Few-shot Prompting
+## Principle 1 Tactic 4: Few-shot Prompting
 * Provide examples in the prompt to guide the model.
 * Example:
   ```python
@@ -71,18 +65,16 @@
   ```
 
 ---
-## Slide 7
-### Principle 2: Give the Model Time to “Think”
+## Principle 2: Give the Model Time to “Think”
 * Encourage multi-step problem-solving.
 * Specify logical steps explicitly.
 * Example Tasks:
-    * Summarization.
-    * Translation.
-    * Counting items in text.
+  * Summarization.
+  * Translation.
+  * Counting items in text.
 
 ---
-## Slide 8
-### Principle 2 Tactic 1: Multi-step Instructions
+## Principle 2 Tactic 1: Multi-step Instructions
 * Example:
   ```python
   prompt = """
@@ -93,11 +85,10 @@
   """
   ```
 * Benefit:
-    * Reduces errors in complex tasks.
+  * Reduces errors in complex tasks.
 
 ---
-## Slide 9
-### Principle 2 Tactic 2: Self-Verification
+## Principle 2 Tactic 2: Self-Verification
 * Ask the model to solve the problem and compare.
 * Example:
   ```python
@@ -106,20 +97,16 @@
   """
   ```
 * Application:
-    * Validation of reasoning and results.
+  * Validation of reasoning and results.
 
 ---
-## Slide 10
-### Model Limitations: Hallucinations
+## Model Limitations: Hallucinations
 * Example:
-    * "AeroGlide UltraSlim Smart Toothbrush by Boie" - invented product.
+  * "AeroGlide UltraSlim Smart Toothbrush by Boie" - invented product.
 * Key Insight:
-    * Cross-check AI outputs for factual accuracy.
+  * Cross-check AI outputs for factual accuracy.
 
 ---
-## Slide 11
-### Experimentation
-* Try new prompts and variations.
-* Adjust based on output quality.
-* Keep refining to achieve clarity and relevance.
+## Experimentation
+* Try new prompt
 ---
