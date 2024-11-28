@@ -317,3 +317,166 @@ Lumina seems to me to be a great company that cares about their customers and pr
 * Integrate into larger workflows for text analysis.
 
 ---
+
+# Inferring
+
+---
+## Introduction
+* Sentiment and Topics in Text Data
+* Learn how to infer sentiment and topics from text.
+* Explore product reviews and news articles.
+* Utilize OpenAI’s LLM models for analysis.
+
+---
+## Setup
+* Import necessary libraries:
+  * `openai` for API interactions.
+  * `dotenv` for environment variable management.
+* Load API keys securely:
+  * Use `.env` files to manage credentials.
+* Define the model:
+  * Assign the preferred LLM model to `MODEL`.
+
+---
+## Key Functionality
+* Define the `get_completion` function:
+  * Takes a prompt and uses OpenAI's API to generate responses.
+  * Sends structured user prompts as `messages`.
+  * Customizable `temperature` for output diversity.
+
+---
+## Product Review Analysis
+* Analyze the following product review text:
+
+```text
+Needed a nice lamp for my bedroom, and this one had additional storage
+and not too high of a price point. Got it fast. The string to our lamp broke 
+during the transit and the company happily sent over a new one. 
+Came within a few days as well. It was easy to put together. 
+I had a missing part, so I contacted their support 
+and they very quickly got me the missing piece! 
+Lumina seems to me to be a great company that cares 
+about their customers and products!!
+```
+---
+* Extract sentiment and key themes.
+
+---
+## Next Steps
+* Expand analysis:
+* Apply similar techniques to news articles.
+* Broaden insights with topic extraction.
+* Explore advanced LLM capabilities:
+* Fine-tune temperature and prompt engineering.
+* Integrate into larger workflows for text analysis.
+
+---
+
+# Expanding
+
+---
+## Introduction
+* Generating Customized Customer Responses
+  * Generate tailored customer service emails.
+  * Respond effectively to customer reviews and sentiments.
+  * Leverage Large Language Models (LLMs) to automate and personalize communications.
+
+---
+## Setup
+* Import key libraries:
+  * `openai` for API interactions.
+  * `dotenv` for securely loading environment variables.
+* Secure API credentials:
+  * Use `.env` files for managing sensitive information.
+* Assign the model:
+  * Define your LLM model in the variable `MODEL`.
+
+---
+## Key Functionality
+* Define the `get_completion` function:
+  * Inputs a prompt and communicates with OpenAI's API.
+  * Processes structured `messages` for tailored responses.
+  * Adjustable `temperature` for varying creativity in outputs.
+
+---
+## Customizing Customer Replies
+* Automate responses based on inferred sentiment.
+* Example:
+  * Sentiment: **Negative**
+  * Customer Review (about a blender):
+    ```
+    So, they still had the 17 piece system on seasonal sale for around $49 in the month of November, about half off, but for some reason (call it price gouging) around the second week of December the prices all went up to about anywhere from between $70-$89 for the same system. And the 11 piece system went up around $10 or so in price also from the earlier sale price of $29. ...
+    ```
+* Generate empathetic and constructive responses addressing specific concerns.
+
+---
+## Next Steps
+* Expand use cases:
+  * Automate replies for diverse products and services.
+  * Adapt tone and content to align with customer sentiment.
+* Enhance workflows:
+  * Integrate response generation into customer support pipelines.
+  * Experiment with more creative and domain-specific responses.
+
+---
+
+# The Chat Format
+
+---
+## Introduction
+* Personalized and Specialized Chatbots
+* Explore extended conversations using the chat format.
+* Create chatbots personalized for specific tasks or behaviors.
+* Leverage Large Language Models (LLMs) for dynamic interaction.
+
+---
+## Setup
+* Import required libraries:
+  * `openai` for API communication.
+  * `dotenv` for secure management of API keys.
+* Configure environment variables:
+  * Use `.env` files to store sensitive information.
+* Assign the preferred model:
+  * Define `MODEL` for chatbot responses.
+
+---
+## Key Functions
+* Define `get_completion`:
+  * Accepts a prompt and interacts with OpenAI’s API.
+  * Generates responses based on user input.
+* Define `get_completion_from_messages`:
+  * Processes a sequence of conversation messages.
+  * Supports continuity in chatbot interactions.
+
+---
+## Example: Chatbot in Shakespearean Style
+* Conversation setup:
+  * Role: "You are an assistant that speaks like Shakespeare."
+* Example interaction:
+
+```text
+User: Tell me a joke. 
+Assistant: Why did the chicken cross the road? 
+User: I don't know. 
+Assistant: To takeeth a gander at yonder other side!
+```
+
+---
+## Customization and Use Cases
+* Create specialized assistants:
+* Define system roles for behavior control.
+* Tailor responses to specific contexts (e.g., humor, professionalism).
+* Use temperature parameter to adjust creativity:
+* Higher values for more random responses.
+* Lower values for deterministic outputs.
+
+---
+## Next Steps
+* Experiment with system roles:
+* Design bots for teaching, storytelling, or technical support.
+* Enhance conversational depth:
+* Utilize `get_completion_from_messages` for context-aware dialogues.
+* Explore integrations:
+* Embed chatbots into websites, applications, or customer service workflows.
+
+---
