@@ -1,4 +1,4 @@
-# Effective Prompting Techniques for Language Models
+# Effective Prompting 
 
 # Guidelines
 
@@ -115,8 +115,6 @@
 
 # Iterative
 
-# Iterative Prompting for Marketing Content Creation
-
 ---
 ## Introduction
 * Focus:
@@ -198,7 +196,7 @@
 * Incorporate specific requests like IDs or formatting styles.
 * Adjust for tone, technical depth, and visual layout.
 
-# Summarizing with AI: Techniques and Applications
+# Summarizing 
 
 ---
 ## Introduction
@@ -268,5 +266,40 @@
 * Tailored techniques ensure relevance and clarity.
 * Experiment with prompts to refine summaries.
 * Applications span technical, creative, and general domains.
+
+---
+
+# Inferring 
+
+---
+## Introduction
+
+* Focus:
+  * Exploring sentiment, topics, and emotions from text data
+  * Practical use cases like product reviews and news articles
+  * Leveraging language models for inference tasks
+
+---
+## Imports and Configuration
+* Import OpenAI and set up the environment using `dotenv`.
+* Key Steps:
+  * Configure API key and model parameters.
+  * Establish communication with the OpenAI API through setup code.
+
+---
+## Text Example: Product Review
+* Example Text:
+  ```python
+  lamp_review = """
+  Needed a nice lamp for my bedroom, and this one had additional storage and not too high of a price point.
+  Got it fast. The string to our lamp broke during the transit and the company happily sent over a new one.
+  Came within a few days as well. It was easy to put together.
+  I had a missing part, so I contacted their support and they very quickly got me the missing piece!
+  Lumina seems to me to be a great company that cares about their customers and products!!
+  """
+  
+---
+
+
 
 
