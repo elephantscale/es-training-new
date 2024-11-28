@@ -269,54 +269,6 @@
 
 ---
 
-# Inferring: Sentiment and Topics in Text Data
-
----
-## Introduction
-* Learn how to infer sentiment and topics from text.
-* Explore product reviews and news articles.
-* Utilize OpenAI’s LLM models for analysis.
-
----
-## Setup
-* Import necessary libraries:
-  * `openai` for API interactions.
-  * `dotenv` for environment variable management.
-* Load API keys securely:
-  * Use `.env` files to manage credentials.
-* Define the model:
-  * Assign the preferred LLM model to `MODEL`.
-
----
-## Key Functionality
-* Define the `get_completion` function:
-  * Takes a prompt and uses OpenAI's API to generate responses.
-  * Sends structured user prompts as `messages`.
-  * Customizable `temperature` for output diversity.
-
----
-## Product Review Analysis
-* Analyze the following product review text:
-```text
-Needed a nice lamp for my bedroom, and this one had additional storage
-and not too high of a price point. Got it fast. 
-The string to our lamp broke during the transit and the company happily sent over a new one. 
-Came within a few days as well. It was easy to put together. 
-I had a missing part, so I contacted their support and they very quickly got me the missing piece! 
-Lumina seems to me to be a great company that cares about their customers and products!!
-```
-* Extract sentiment and key themes.
-
----
-## Next Steps
-* Expand analysis:
-* Apply similar techniques to news articles.
-* Broaden insights with topic extraction.
-* Explore advanced LLM capabilities:
-* Fine-tune temperature and prompt engineering.
-* Integrate into larger workflows for text analysis.
-
----
 
 # Inferring
 
