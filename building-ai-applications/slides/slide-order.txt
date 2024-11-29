@@ -5,16 +5,5 @@
 
 # About
 About_Class.md
-
-# Prompt Engineering
-# Slides here
 PromptEngineering.md
-
-# Semantic Search
-# Slides here
-
-# LangChain
-# Slides here
-
-# Practical use cases
-# Slides here
+DatabaseAgent.md
