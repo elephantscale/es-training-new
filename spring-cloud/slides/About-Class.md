@@ -2,30 +2,24 @@
 
 ---
 
-## Agenda - Deep Learning & Advanced Applications
-
-| Day 1                         | Day 2                          |
-|-------------------------------|--------------------------------|
-| Introduction to Deep Learning | Fine tuning a pretrained model |
-| Computer Vision CNN           | Sharing models and tokenizers  |
-| Recurrent Neural Networks RNN | Main NLP Tasks                 |
-| Transformers                  | Asking for Help                |
+## Agenda
 
 
- <!-- {"left" : 0.56, "top" : 1.87, "height" : 1, "width" : 9.12} -->
+| **Day 1**                                    | **Day 2**                                      | **Day 3**                                    |
+|----------------------------------------------|------------------------------------------------|---------------------------------------------|
+| **Introduction to Spring Cloud**             | **Resilience and Fault Tolerance**            | **CI/CD and Deployment with Spring Cloud**  |
+| Spring Cloud Config: Centralized Config Mgmt | Circuit Breakers with Hystrix                 | Setting Up Jenkins for Microservices        |
+| Lab: Spring Cloud Config                     | Lab: Implement Circuit Breakers using Hystrix | Lab: CI Pipeline with Jenkins               |
+| Secure Secrets with Spring Cloud Vault       | Resilience4j: Patterns for Fault Tolerance    | Containerizing Microservices with Docker    |
+| Lab: Spring Cloud Vault                      | Lab: Resilience Patterns with Resilience4j    | Lab: Containerizing with Docker             |
+| **Service Discovery**                        | **Routing and Messaging**                     | **Deploying Microservices on Kubernetes**   |
+| Eureka: Service Registration and Discovery   | Spring Cloud Gateway: API Gateway             | Deploying Microservices to Kubernetes       |
+| Lab: Service Discovery with Eureka           | Lab: Build an API Gateway                     | Lab: Deployment on Kubernetes               |
+| Consul: Service Discovery with Key-Value     | Spring Cloud Bus for Distributed Messaging    | Distributed Tracing with Sleuth and Zipkin  |
+| Lab: Service Discovery with Consul           | Lab: Event-Based Messaging with Spring Cloud Bus | Lab: Distributed Tracing with Sleuth and Zipkin |
+| Zookeeper: Distributed Config and Sync       | Spring Cloud Stream: Event-Driven Architecture | Advanced Deployment with Kubernetes         |
+| Lab: Distributed Config with Zookeeper       | Lab: Implement Event-Driven Microservices     | Lab: Kubernetes Auto-Scaling                |
 
-Notes:
-
----
-
-## Agenda - 2 days of HuggingFace
-
-| Day 1                        | Day 2                  |
-|------------------------------|------------------------|
-| Introduction to Transformers | The Datasets Library   |
-| Transformer Pipelines        | The Tokenizers Library |
-| Fine-Tuning                  | Main NLP Tasks         |
-| Sharing Models               | Asking for Help        |
 
 
  <!-- {"left" : 0.56, "top" : 1.87, "height" : 1, "width" : 9.12} -->
@@ -33,25 +27,28 @@ Notes:
 Notes:
 
 ---
-## Pre-requisites and Expectations
 
+## Instructor Introduction
 
- * Basic machine learning familiarity is assumed
+* Instructor, please introduce yourself
 
- * Have a Python development environment
+* Talk about your background and your experience in the subject
 
-     - We will set this up in class
-     
-     - Or use yours
+---
+## Pre-requisites & Expectations
 
- * Curiosity!
+* Intended audience:
+    - Admins, developers, architects
 
-   - Ask a lot of questions 
+* **Basic Linux knowledge** is assumed
 
- * This is a Deep Learning & Advanced Applications based on HuggingFace class
-   - No previous knowledge is assumed (but may be helpful) 
-   - Class will be based on the pace of majority of the students
-![](../images/01.png)
+* Some software development experience (languages, databases, ...)
+
+* Curiosity!
+
+    - Ask a lot of questions
+
+* This is an **intro-intermediary** class.
    
 Notes:
 
@@ -68,8 +65,6 @@ Notes:
 
  * Hands-on (learn by doing)
 
-
-
 Notes:
 
 ---
@@ -84,55 +79,21 @@ Notes:
 
 Notes:
 
-
 ---
 
-## Analogy: Learning To Fly...
+## Class Introductions
 
-<img src="../../assets/images/about/learn-to-fly.png" style="width:80%;"/> <!-- {"left" : 0.66, "top" : 2.06, "height" : 4.89, "width" : 8.93} -->
+* Run a quick background survey if applicable, and go over the responses
 
+* Students please introduce yourselfs (time permitting)
+    - Your Name
+    - Your background (developer, admin, manager, etc.)
+    - Technologies you are familiar with
+    - Familiarity with MicroservicesD
+    (scale of 1 - 4 ;  1 - new, 2 - know some concepts,  3 -  took acourse, 4 -  using it at work)
+    - Something non-technical about you!  
+    (favorite ice cream flavor / hobby...etc)
 
-
----
-
-## Introductions
-
-<img src="../../assets/images/about/classroom-instruction.png" style="width:70%;"/> <!-- {"left" : 0.6, "top" : 2.06, "height" : 4.96, "width" : 9.04} -->
-
-
-Notes:
-
-
+<img src="../../assets/images/generic/3rd-party/hiking-3.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 1.55, "top" : 6.43, "height" : 1.76, "width" : 1.99} --><img src="../../assets/images/generic/3rd-party/ice-cream-3.png" style="width:25%;"/> &nbsp; <!-- {"left" : 3.56, "top" : 6.45, "height" : 1.7, "width" : 3.13} --><img src="../../assets/images/generic/3rd-party/biking-1.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 6.71, "top" : 6.43, "height" : 1.76, "width" : 1.99} -->
 
 ---
-
-## + Flight Time
-
-<img src="../../assets/images/about/cockpit.png" style="width:70%;"/> <!-- {"left" : 0.61, "top" : 2.06, "height" : 4.95, "width" : 9.04} -->
-
-
----
-
-## This Will Take A Lot Of Practice 
-
-
-
-<img src="../../assets/images/about/practice.png" style="width:70%;"/> <!-- {"left" : 0.69, "top" : 2.06, "height" : 5.63, "width" : 8.87} -->
-
-
-
-
----
-## About You And Me
-
-* About Instructor
- * About you
-     - Your Name
-     - Your background (developer, admin, manager, ...)
-     - Technologies you are familiar with
-     - Familiarity with ML and Spring Cloud (scale of 1 - 4 ;  1 - new,   4 - expert)
-     - Something non-technical about you!(favorite ice cream flavor / hobby...)
-
-<img src="../../assets/images/generic/3rd-party/hiking-3.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 1.08, "top" : 6.08, "height" : 1.99, "width" : 2.25} --><img src="../../assets/images/generic/3rd-party/ice-cream-3.png" style="width:25%;"/> &nbsp; <!-- {"left" : 3.36, "top" : 6.1, "height" : 1.92, "width" : 3.54} --><img src="../../assets/images/generic/3rd-party/biking-1.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 6.92, "top" : 6.08, "height" : 1.99, "width" : 2.25} -->
-
-

@@ -1,9 +1,4 @@
 About-Class.md
+Spring-Cloud-Introduction.md
 Spring-Cloud-Configuration.md
-Service-Discovery.md
-Circuit-Breakers.md
-Routing-and-Messaging.md
-API-Gateway.md
-CI-Pipelines-and-Testing.md
-Tracing.md
-Docker-and-Kubernetes.md
+
