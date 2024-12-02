@@ -2,6 +2,10 @@
 
 ---
 
+# Setup
+
+---
+
 ## Introduction
 - Learn how to build and interact with an AI agent using LangChain.
 - Key steps covered:
@@ -33,6 +37,8 @@
 ---
 
 ## Connecting to Azure OpenAI
+
+```text
 - Initialize the Azure OpenAI model:
     model = AzureChatOpenAI(
         openai_api_version=os.getenv('OPENAI_API_VERSION'),
@@ -40,6 +46,8 @@
         openai_api_key=os.getenv('AZURE_API_KEY'),
         azure_endpoint=os.getenv('AZURE_ENDPOINT')
     )
+```
+
 - **Key concept**:
   - Establishing a connection is the first step to leveraging the power of Azure OpenAI for building AI agents.
 
@@ -79,7 +87,7 @@
 
 ---
 
-# Reading and Manipulating CSV Files
+# Manipulating CSV Files
 
 ---
 
@@ -97,9 +105,13 @@
 
 ## Setup
 - Import necessary libraries:
+
+```python
     import pandas as pd
     import os
-    from dotenv import load_dotenv
+    from dotenv import load_dotenv    
+```    
+
 - **Why pandas**:
   - Pandas simplifies reading, processing, and analyzing structured data efficiently.
 
@@ -347,7 +359,7 @@
 
 ---
 
-# Enhancing SQL Interactions with Assistants API
+# Enhancing SQL Interactions
 
 ---
 
