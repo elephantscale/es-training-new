@@ -11,3 +11,4 @@ FunctionsToolAgentsLangchain.md
 Langchain.md
 LLMWithSemanticSearch.md
 ServerlessLLMBedrock.md
+AgenticOnBedrock.md
