@@ -1,4 +1,4 @@
-# Your First AI Agent
+# Your First AI Database Agent
 
 ---
 
@@ -19,27 +19,26 @@
 
 ## Setup
 - Import necessary libraries:
+```python
     import os
     from dotenv import load_dotenv
     from langchain.schema import HumanMessage
     from langchain_openai import AzureChatOpenAI
+
+    load_dotenv()
+```
+
 - **What you’ll learn**:
   - How to set up your Python environment to interact with Azure OpenAI using LangChain.
-
----
-
-## Environment
-- Load environment variables securely using dotenv:
-    load_dotenv()
-- **Why use dotenv**:
   - Securely manage sensitive data like API keys and credentials without hardcoding them in your scripts.
 
 ---
 
 ## Connecting to Azure OpenAI
 
-```text
 - Initialize the Azure OpenAI model:
+
+```python
     model = AzureChatOpenAI(
         openai_api_version=os.getenv('OPENAI_API_VERSION'),
         azure_deployment=os.getenv('AZURE_DEPLOYMENT'),
@@ -55,11 +54,13 @@
 
 ## Preparing your prompt
 - Define your input message:
+```python
     message = HumanMessage(
         content="Translate this sentence from English "
                 "to French and Spanish. I like red cars and "
                 "blue houses, but my dog is yellow."
     )
+```
 - **Why prompts matter**:
   - Clear and specific prompts help AI agents deliver accurate and contextually relevant outputs.
 
@@ -67,8 +68,10 @@
 
 ## Engaging the model to receive a response
 - Invoke the model with your prompt:
+```python
     response = model.invoke([message])
     print(response)
+```
 - **What happens here**:
   - The AI model processes your input prompt and generates responses in both French and Spanish.
 
@@ -117,23 +120,20 @@
 
 ---
 
-## Environment
-- Load environment variables securely using dotenv:
-    load_dotenv()
-- **Real-world relevance**:
-  - Environment variables ensure your scripts remain secure and portable across different systems.
-
----
-
 ## Reading a CSV File
-- Load data from a CSV file:
+
+```python
+# Load data from a CSV file:
     df = pd.read_csv("data.csv")
     print(df.head())
-- Handle missing files with error handling:
+
+# Handle missing files with error handling:
     try:
         df = pd.read_csv("data.csv")
     except FileNotFoundError:
         print("File not found. Please check the file path.")
+```
+
 - **Why this is critical**:
   - Ensures your program handles unexpected scenarios gracefully, improving reliability.
 
@@ -141,13 +141,21 @@
 
 ## Manipulating Data
 - Example: Filter rows where the "Age" column is greater than 30.
+
+```python
     filtered_df = df[df['Age'] > 30]
     print(filtered_df)
+```
 - **Additional operations**:
   - Renaming columns:
+
+ ```python
         df.rename(columns={"old_column": "new_column"}, inplace=True)
+ ```
   - Adding new columns:
+```python
         df['Age_in_months'] = df['Age'] * 12
+```
 - **Key takeaway**:
   - Data manipulation allows for creating more meaningful datasets tailored to specific use cases.
 
@@ -155,9 +163,15 @@
 
 ## Writing to a New CSV File
 - Save processed data to a new CSV file:
+ ```python
     filtered_df.to_csv("filtered_data.csv", index=False)
+ ```
+
 - Ensure UTF-8 encoding for compatibility:
+ ```python
     filtered_df.to_csv("filtered_data.csv", index=False, encoding="utf-8")
+ ```
+
 - **Why this is important**:
   - Exporting clean, processed data ensures compatibility and usability in downstream applications.
 
@@ -191,25 +205,31 @@
 
 ## Setup
 - Import necessary libraries:
+```python
     import sqlite3
     import pandas as pd
+```
 - **What this enables**:
   - Combines database interactions with data manipulation for end-to-end analytics.
 
 ---
 
 ## Connecting to the Database
-- Establish a connection to the database:
+
+```python
+# Establish a connection to the database:
     connection = sqlite3.connect("example.db")
-- Create a cursor object to execute SQL commands:
+# Create a cursor object to execute SQL commands:
     cursor = connection.cursor()
+```
 - **Key insight**:
   - Connections form the bridge between Python and your database for seamless interaction.
 
 ---
 
 ## Creating a Table
-- Example: Create a table named `users`:
+```python
+# Example: Create a table named `users`:
     cursor.execute('''
         CREATE TABLE IF NOT EXISTS users (
             id INTEGER PRIMARY KEY,
@@ -218,20 +238,23 @@
         )
     ''')
     connection.commit()
+```
 - **Why this matters**:
   - Structuring data in tables is the backbone of relational database design.
 
 ---
 
----
-
 ## Inserting Data
 - Insert rows into the `users` table:
+
+```python
     cursor.execute('''
         INSERT INTO users (name, age)
         VALUES ('Alice', 30), ('Bob', 25), ('Charlie', 35)
     ''')
     connection.commit()
+```
+
 - **Why it’s useful**:
   - Populating tables with data enables queries and analytics on real-world datasets.
 
@@ -239,8 +262,12 @@
 
 ## Querying Data
 - Retrieve data from the table:
+
+```python
     result = cursor.execute('SELECT * FROM users').fetchall()
     print(result)
+```
+
 - **Key takeaway**:
   - Querying allows extracting meaningful insights from your database efficiently.
 
@@ -248,11 +275,19 @@
 
 ## Using pandas for SQL Queries
 - Read SQL query results into a pandas DataFrame:
+
+```python
     df = pd.read_sql_query('SELECT * FROM users', connection)
     print(df)
+```
+
 - Perform pandas operations on the retrieved data:
+
+```python
     df['is_adult'] = df['age'] > 18
     print(df)
+```
+
 - **Why combine SQL and pandas**:
   - It bridges structured database storage with powerful Python-based data analytics.
 
@@ -260,10 +295,13 @@
 
 ## Closing the Connection
 - Close the database connection to free resources:
+
+```python
     connection.close()
+```
+
 - **Best practice**:
   - Always release database connections to prevent resource leaks and ensure system stability.
-
 ---
 
 ## Next Steps
@@ -277,7 +315,7 @@
 
 ---
 
-# Integrating Azure OpenAI Function Calling
+# Integrating Azure OpenAI
 
 ---
 
@@ -293,30 +331,30 @@
 ---
 
 ## Setup
+
 - Import required libraries:
+- Load environment variables securely using dotenv:
+- Set up Azure credentials:
+
+```python
     import os
     from dotenv import load_dotenv
     from azure.identity import DefaultAzureCredential
     from azure.ai.openai import OpenAIClient
-- **What this enables**:
-  - Prepares your environment for secure and scalable AI-powered integrations.
 
----
-
-## Environment
-- Load environment variables securely using dotenv:
     load_dotenv()
-- Set up Azure credentials:
+
     credential = DefaultAzureCredential()
     endpoint = os.getenv("AZURE_OPENAI_ENDPOINT")
-- **Why it’s important**:
-  - Proper configuration ensures secure and efficient communication with Azure services.
+```
 
 ---
 
 ## Connecting to Azure OpenAI
 - Initialize the OpenAI client:
+```python
     client = OpenAIClient(credential=credential, endpoint=endpoint)
+```
 - **What this does**:
   - Sets up your application to interact with Azure OpenAI services programmatically.
 
@@ -324,8 +362,10 @@
 
 ## Defining a Function
 - Define a function for specific tasks:
+```python
     def translate_text(input_text, target_language):
         return f"Translated text in {target_language}"
+```
 - **Key insight**:
   - Custom functions enable modular, reusable components in larger workflows.
 
@@ -333,7 +373,9 @@
 
 ## Registering the Function with Azure
 - Register the function:
+```python
     function_registry = {"translate": translate_text}
+```
 - **Why register functions**:
   - It provides a structured way to integrate external logic into Azure workflows.
 
@@ -341,9 +383,11 @@
 
 ## Invoking the Function
 - Call the registered function:
+```python
     input_data = {"input_text": "Hello, world!", "target_language": "Spanish"}
     result = function_registry["translate"](**input_data)
     print(result)
+```
 - **Why this matters**:
   - Function calling automates repetitive tasks, enabling efficient processing at scale.
 
@@ -376,11 +420,13 @@
 
 ## Setup
 - Import necessary libraries:
+```python
     import os
     import requests
     from dotenv import load_dotenv
-- Load environment variables:
+
     load_dotenv()
+```
 - **What this does**:
   - Ensures secure configuration for API-based SQL interactions.
 
@@ -388,9 +434,11 @@
 
 ## Authenticating the API
 - Authenticate with the Assistant API using API keys:
+```python
     api_key = os.getenv("ASSISTANT_API_KEY")
     base_url = os.getenv("ASSISTANT_API_BASE_URL")
     headers = {"Authorization": f"Bearer {api_key}"}
+```
 - **Why authentication**:
   - Secures access to the API, ensuring only authorized users can interact with your database.
 
@@ -398,10 +446,12 @@
 
 ## Sending a Query
 - Send a SQL query to the Assistant API:
+```python
     payload = {"query": "SELECT * FROM users WHERE age > 30", "database": "example_db"}
     response = requests.post(f"{base_url}/query", json=payload, headers=headers)
     result = response.json()
     print(result)
+```
 - **Key insight**:
   - The API enables seamless execution of complex SQL queries with minimal code.
 
@@ -409,9 +459,11 @@
 
 ## Automating Queries
 - Automate SQL queries with natural language inputs:
+```python
     payload = {"query": "Show me all users older than 30", "database": "example_db", "nl_query": True}
     response = requests.post(f"{base_url}/query", json=payload, headers=headers)
     print(response.json())
+```
 - **Why this is valuable**:
   - Automating query workflows reduces manual effort and accelerates data analysis.
 

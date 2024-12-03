@@ -7,3 +7,7 @@
 About_Class.md
 PromptEngineering.md
 DatabaseAgent.md
+FunctionsToolAgentsLangchain.md
+Langchain.md
+LLMWithSemanticSearch.md
+ServerlessLLMBedrock.md
