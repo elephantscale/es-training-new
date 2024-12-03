@@ -83,7 +83,7 @@ November 15, 2024
 * Hybrid search
 * Facial similarity search
 * Anomaly detection
-* Lab: 
+* Lab: LLM with Semantic Search
 
 ### LangChain, glue to put it together
 * Models, prompts, and parsers
@@ -93,6 +93,7 @@ November 15, 2024
 * Evaluation
 * Conversational bot
   * Lab: langchain
+  * Lab: Functions-Tool-Agents-Langchain
 
 
 ### Architecture, testing, and continuous improvements
