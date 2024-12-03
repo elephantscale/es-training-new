@@ -81,4 +81,4 @@ Whether you’re looking to modernize your organization’s operations, improve 
 
 ### Enroll Today
 Interested in becoming a Scaia.ai franchisee? Empower your organization and community with the power of AI. Seats are limited. [Contact us](mailto:info@scaia.ai) for franchise opportunities, group discounts, and custom training options tailored to your team.
-Don’t miss this opportunity to empower your organization with AI. Seats are limited. [Contact us](mailto:info@scaia.ai) for group discounts and custom training options tailored to your team.
+Don’t miss this opportunity to join the franchise or empower your organization with AI. Seats are limited. [Contact us](mailto:info@scaia.ai) for group discounts and custom training options tailored to your team.
