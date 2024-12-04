@@ -62,6 +62,16 @@ Notes:
 
 ---
 
+## Why is this class different
+  * Before
+    * We used to teach machine learning
+    * Students enjoyed the show but did not become magicians
+  * Now
+    * We teach AI
+    * Students become magicians
+
+---
+
 ## Introductions
 
 <img src="../../assets/images/about/classroom-instruction.png" style="width:70%;"/> <!-- {"left" : 0.6, "top" : 2.06, "height" : 4.96, "width" : 9.04} -->
