@@ -70,6 +70,9 @@ Notes:
     * We teach AI
     * Students become magicians
 
+![](images/pexels-amina-filkins-5560040.jpg)
+
+![](images/pexels-amina-filkins-5560048.jpg)
 ---
 
 ## Introductions
