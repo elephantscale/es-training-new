@@ -62,19 +62,6 @@ Notes:
 
 ---
 
-## Why is this class different
-  * Before
-    * We used to teach machine learning
-    * Students enjoyed the show but did not become magicians
-  * Now
-    * We teach AI
-    * Students become magicians
-
-![](images/pexels-amina-filkins-5560040.jpg)
-
-![](images/pexels-amina-filkins-5560048.jpg)
----
-
 ## Introductions
 
 <img src="../../assets/images/about/classroom-instruction.png" style="width:70%;"/> <!-- {"left" : 0.6, "top" : 2.06, "height" : 4.96, "width" : 9.04} -->
@@ -116,3 +103,39 @@ Notes:
 <img src="../../assets/images/generic/3rd-party/hiking-3.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 1.08, "top" : 6.08, "height" : 1.99, "width" : 2.25} --><img src="../../assets/images/generic/3rd-party/ice-cream-3.png" style="width:25%;"/> &nbsp; <!-- {"left" : 3.36, "top" : 6.1, "height" : 1.92, "width" : 3.54} --><img src="../../assets/images/generic/3rd-party/biking-1.jpg" style="width:18%;"/> &nbsp; <!-- {"left" : 6.92, "top" : 6.08, "height" : 1.99, "width" : 2.25} -->
 
 
+# AI Applications Today
+
+---
+
+## Andrew Ng on AI
+
+* There’s a lingering misconception that building with generative AI is expensive. 
+* It is indeed expensive to train cutting-edge foundation models
+* But, it’s now very inexpensive to build a wide range of AI applications.
+
+![](images/falling-token-pricing.png)
+
+Notes:
+Source: https://www.deeplearning.ai/the-batch/falling-llm-token-prices-and-what-they-mean-for-ai-companies/
+
+---
+
+## Sam Altman on AI apps
+* _"While big companies often operate on extended planning cycles—sometimes spanning years or even decades—startups can swiftly adapt to technological changes."_
+
+![](images/pexels-anhleephoto-29631862.jpg)
+
+---
+
+## Why is this class different
+* Before
+  * We used to teach machine learning
+  * Students enjoyed the show but did not become magicians
+* Now
+  * We teach AI
+  * Students become magicians
+
+![](images/pexels-amina-filkins-5560040.jpg)
+
+![](images/pexels-amina-filkins-5560048.jpg)
+---
