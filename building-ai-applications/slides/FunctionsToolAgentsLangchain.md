@@ -148,6 +148,18 @@ print(get_current_weather(**args))
 
 ---
 
+## LCEL
+- LCEL stands for LangChain Expression Language
+- a declarative framework within the LangChain ecosystem 
+- designed to simplify the creation and management of complex chains involving Large Language Models (LLMs). 
+- By allowing developers to describe desired operations rather than detailing procedural steps
+- LCEL enables more efficient and optimized execution of tasks such as 
+  - streaming
+  - batch processing
+  - and asynchronous operations
+
+---
+
 ## Setup
 - Import necessary libraries:
 ```python
