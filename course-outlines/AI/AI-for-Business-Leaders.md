@@ -2,7 +2,7 @@
 * Protech catalog https://www.protechtraining.com/ai-3017-microsoft-ai-for-business-leaders-pt29723
 
 (C) Elephant Scale  
-November 20, 2024
+December 17, 2024
 
 ## Course Description
 
@@ -42,7 +42,7 @@ November 20, 2024
 * AI Large Language Models covered
     * Open ChatGPT
     * Google Gemini
-    * Sidekick
+    * SidekickAI
     * Anthropic Claude
     * Facebook Llama
     * Cohere

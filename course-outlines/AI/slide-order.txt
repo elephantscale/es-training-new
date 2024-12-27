@@ -1,0 +1,4 @@
+# to generate slides
+#       ./gen.sh 
+
+Qubit-Presentation.md
