@@ -68,8 +68,7 @@ November 06, 2024
     * Use cases that may help identify ways to make the code more efficient or check the quality would be helpful.
     * One of the tools used is Encompass and Org is also looking into ways to convert SAS to R or Python.
 
-## Mark Kerzner 
-* Bio
+## Facilitator: Mark Kerzner
 * Mark is an experienced, hands-on software architect who practices and teaches AI, machine learning, and Big Data.
 * He worked and taught in various verticals: Hightech (Cisco/Google), Healthcare(Optum/Kaiser/Cerner). Finance (BOA, JPMC)
 * His classes are hands-on and draw heavily on his industry experience.
