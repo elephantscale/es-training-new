@@ -1,5 +1,5 @@
-# Qubit Presentation
-December 26, 2024
+# Investor Presentation
+December 29, 2024
 
 ## Mission Statement
 
@@ -16,9 +16,7 @@ of AI-driven applications; lead the AI Agentic wave.
   * AI implementation framework:
     * Popular open-source document review platform (FreeEed)
     * Accepted in Microsoft for Startup on level 4
-* Implementation team of developers (TTEC)
-  * Large offshore
-  * Developing US market
+* Implementation teams in Mexico, Europe, and elsewhere
 
 ## Financials
 * ElephantScale - $500,000 per year (training)
@@ -28,9 +26,10 @@ of AI-driven applications; lead the AI Agentic wave.
 * 1 M for 25%
 
 ## Use of funds, 2 years, break even 
-* Marketing - 500 K
+* Marketing - 250 K
 * AI Platform development - 250K
 * Cloud infrastructure - 250K
+* Operations - 250K
 
 ## Financial projects
 * 2025 - 1 M
