@@ -3,13 +3,4 @@
 
 # outline
 
-# About
-About_Class.md
-PromptEngineering.md
-DatabaseAgent.md
-Langchain.md
-ServerlessLLMBedrock.md
-AgenticOnBedrock.md
-LLMWithSemanticSearch.md
-FunctionsToolAgentsLangchain.md
-
+trailer.md

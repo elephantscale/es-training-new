@@ -24,7 +24,7 @@
 
 ---
 
-# Note the audience slider on the right
+## Note the audience slider on the right
 
 ![](../images/03.png)
 
