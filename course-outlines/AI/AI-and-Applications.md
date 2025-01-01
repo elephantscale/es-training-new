@@ -1,7 +1,7 @@
 # AI & Applications for an Org (Highmark)
 
 (C) Elephant Scale  
-November 06, 2024
+December 31, 2024
 
 ## Course Description
 
@@ -15,7 +15,7 @@ November 06, 2024
 * Introductory for all
 
 ## Duration
-* One day
+* Two days
 
 ## Prerequisites
 * None
@@ -37,7 +37,7 @@ November 06, 2024
 * How to adopt AI in the enterprises
 * Wrap up and next steps
 
-## Customizations for Highmark
+## Practical use cases - overview
 * AI Large Language Models covered
   * Open ChatGPT 
   * Anthropic Claude
@@ -45,28 +45,69 @@ November 06, 2024
   * Google Bard
   * Cohere
   * Mistral
-* AI in sales use cases
+* AI in sales use cases - overview
   * Enhanced Customer Engagement and Support
     * SidekickAI acts as an intelligent virtual assistant
   * AI-Powered Sales Assistance and Strategy Suggestions
     * SidekickAI analyzing sales data and customer interactions
 
-* Tentative
-  * Contract Generation
-    * There is an area in the Org that handles the contracts, benefit booklets, etc. for Sales and their clients
-    * Use cases may assist with contract/benefit booklet generation or review, etc.
-    * Org is already pursuing the ability for AI to do translations into other languages.
-  * Inventory Management
-    * Org has areas that support sales with their pre-sale quoting activities, as well as post-sale client set-up.
-    * Use cases may assist in managing that work or automating certain aspects of their work.
-  * Customer Behavior
-    * Use cases may predict a customer’s behavior in terms of products/services we should be recommending.
-  * Sales training
-    * Use cases may assist in the development of training or training materials/user guides for sales.
-  * Analytics
-    * Org has an area that supports some analytics tools for sales providing various client specific reporting
-    * Use cases that may help identify ways to make the code more efficient or check the quality would be helpful.
-    * One of the tools used is Encompass and Org is also looking into ways to convert SAS to R or Python.
+## Detailed Outline
+
+## 1. Introduction to AI in Health Insurance
+- Definition and Scope of AI
+- Importance of AI in Health Insurance
+- Current Trends and Innovations
+
+## 2. AI Technologies Relevant to Health Insurance
+- Machine Learning (ML) and Predictive Analytics
+- Natural Language Processing (NLP) for Claims Processing
+- Computer Vision in Document Verification
+- AI-Powered Chatbots and Virtual Assistants
+
+## 3. Applications of AI in Health Insurance
+- Fraud Detection and Prevention
+- Customer Experience and Personalization
+- Risk Assessment and Underwriting
+- Claims Management and Automation
+
+## 4. Benefits and Challenges of AI Adoption
+- Improved Efficiency and Cost Savings
+- Enhanced Decision-Making Capabilities
+- Challenges: Data Privacy, Bias, and Ethical Concerns
+
+## 5. Data-Driven Decision Making
+- Role of Big Data in Health Insurance
+- Data Integration and Quality Management
+- Building a Data-Driven Culture
+
+## 6. Regulatory and Ethical Considerations
+- Compliance with Health and Data Privacy Regulations
+- Ethical Use of AI in Decision-Making
+- Transparency and Accountability
+
+## 7. Building AI-Ready Leadership
+- Understanding AI Capabilities and Limitations
+- Fostering Innovation and Collaboration
+- Leadership Strategies for AI Implementation
+
+## 8. Case Studies and Success Stories
+- Real-World Examples of AI in Health Insurance
+- Lessons Learned from Industry Leaders
+
+## 9. Planning for AI Implementation
+- Identifying High-Impact Opportunities
+- Aligning AI Strategies with Business Goals
+- Roadmap for AI Integration
+
+## 10. Workshop and Interactive Session
+- Hands-On Experience with AI Tools
+- Q&A with AI Experts
+- Group Discussions and Brainstorming
+
+## 11. Conclusion and Next Steps
+- Recap of Key Takeaways
+- Strategic Recommendations for Executives
+- Resources for Continuous Learning
 
 ## Facilitator: Mark Kerzner
 * Mark is an experienced, hands-on software architect who practices and teaches AI, machine learning, and Big Data.

@@ -2,7 +2,7 @@
 * Protech catalog https://www.protechtraining.com/ai-3017-microsoft-ai-for-business-leaders-pt29723
 
 (C) Elephant Scale  
-December 17, 2024
+December 31, 2024
 
 ## Course Description
 
