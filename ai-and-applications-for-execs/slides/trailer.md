@@ -2,12 +2,6 @@
 
 ---
 
-## Painting
-
-![](../images/01.png)
-
----
-
 ## Steps
 
 * In Canvas
@@ -36,6 +30,12 @@
 * Ask to visualize it in DALL-E image
 
 ![](../images/04.png)
+
+---
+
+## Painting
+
+![](../images/01.png)
 
 ---
 
