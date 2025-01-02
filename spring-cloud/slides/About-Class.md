@@ -85,7 +85,7 @@ Notes:
 
 * Run a quick background survey if applicable, and go over the responses
 
-* Students please introduce yourselfs (time permitting)
+* Students please introduce yourself (time permitting)
     - Your Name
     - Your background (developer, admin, manager, etc.)
     - Technologies you are familiar with

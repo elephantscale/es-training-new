@@ -1,4 +1,4 @@
-# Introduction to COBOL
+# Advanced COBOL
 
 © Elephant Scale  
 Jan. 1, 2025
@@ -6,22 +6,24 @@ Jan. 1, 2025
 
 ## Overview
 
-* This is a comprehensive program to provide developers with a strong foundation in COBOL programming with an emphasis on how COBOL is designed and the architecture of COBOL applications.  The four divisions of a COBOL program and essential concepts like data types, variables, and control structures are introduced and participants will learn to handle basic file operations, write modular code, and implement simple input/output procedures.
-* The current COBOL context, the role COBOL based legacy applications play in enterprise environments is discussed at length since most students will be working with legacy COBOL, either in a support programming role, adapting COBOL code to new environments or migrating COBOL applications into other technologies.
-* Through hands-on exercises and a capstone project, learners will gain practical experience in writing and debugging COBOL programs. The course is designed to be very hands-on with extensive labs, exercises and challenge problems
+* This is an intensive program designed for experienced developers who want to learn about COBOL's advanced capabilities and modern applications. 
+* This course covers database integration with embedded SQL, CICS transaction processing, and web service integration using JSON and XML. 
+* Participants will delve into performance optimization, memory management, error trapping, and security best practices to develop robust, efficient, and secure COBOL programs.
+* The course include an comprehensive hands on project for students to master the concepts by applying them in a practical way
 
 ## Audience
-* Developers who already have a background in programming.
+* Developers who already have a background in programming or have completed the Intermediate COBOL course or have an equivalent level of COBOL knowledge
 
 ## Duration
 * 5 days
+* However, it can be modified to be delivered in shorter time frames depending on the needs of the customer and students. 
 
 ## Format
 * Lectures and hands-on labs. (50%, 50%)
 
 ## Prerequisites
 
- * Background in programming
+ * Background in programming or have completed the Intermediate COBOL or equivalent knowledge.
 
 ## Lab environment
 
@@ -29,73 +31,80 @@ Jan. 1, 2025
 
 ## Detailed Outline
 
-### Unit 1: COBOL Fundamentals
+### Unit 0: Refresher
 
-* Origins and evolution of COBOL
-* COBOL in enterprise systems, where it is used today
-* Maintaining, migrating and enhancing legacy COBOL applications
-* Types and versions of COBOL in use 
-* Installation of COBOL compilers, IDE and environments for the labs
-* Setting up a COBOL project, writing, compiling, and running a COBOL program
+* This unit is an overview of the topics covered in the Intermediate COBOL course that are needed as requisites. Content will depend on the needs of the students
 
-### Unit 2: COBOL Program Structure
+### Unit 1: COBOL and Databases
+* Working with Relational Databases in COBOL
+  * Overview of COBOL and database interaction
+  * Connecting to relational databases using embedded SQL
+  * Declaring host variables in COBOL for database fields
+* Embedded SQL Basics -  Executing SQL statements in COBOL programs:
+*  Handling SQLCODE and SQLSTATE for error tracking
+* CICS Integration Basics
+  * Introduction to CICS (Customer Information Control System)
+  * Writing simple CICS transaction programs in COBOL
+  * Understanding how CICS handles database interactions
 
-* The historical and practical reasons for COBOL divisions
-* Identification Division: Purpose, structure, and syntax
-* Environment Division: Configuring the runtime environment
-* Data Division: Defining data storage
-* Procedure Division: Writing executable code
-* Variations of the program structure in legacy systems
-* Migrating between COBOL dialects, systems and versions
+### Unit  2: Performance Optimization
+* Optimizing File Handling
+  * Minimizing file I/O operations
+  * Efficient use of sequential and indexed files
+* Buffering techniques for performance improvement
+* Memory Management Techniques
+  * Reducing memory overhead in COBOL programs
+  * Using the REDEFINES clause for memory reuse
+  * Optimizing table and array usage
+* Writing Efficient COBOL Code
+  * Best practices for writing clean, optimized COBOL code
+  * Avoiding common performance pitfalls
+* Performance Tuning and Benchmarking
+  * Analyzing performance bottlenecks
+  * Using runtime diagnostics to evaluate program efficiency
 
-### Unit 3: Data and Variables
+### Unit 3: Modern COBOL Applications
+* Integration with Web Services
+  * Introduction to SOAP and RESTful web services
+  * Using COBOL to call web services via APIs
+* Using JSON and XML in COBOL
+  * Parsing and generating JSON
+  * Working with XML data using COBOL syntax extensions
+* Advanced String Handling
+  * Using string functions in modern COBOL
+  * Complex parsing and transformation logic
+    
 
-* Syntax conventions: Keywords, comments, and formatting
-* Program compilation, linking  and debugging
-* COBOL Data Types and Variables
-  * Numeric, alphanumeric, and alphabetic data types
-  * Internal representations and storage considerations
-* Working with Level Numbers
-  * Hierarchy of data definitions using level numbers
-  * Differentiating group and elementary items
-* Picture Clauses and Value Clauses
-  * Defining data formats with PIC (e.g., X, 9, V, S)
-  * Initializing variables using the VALUE clause
-* Constants and Literals
-  * Numeric, string, and figurative constants (e.g., ZERO, SPACE)
-* Tables and Arrays
-  * Basics of defining single-dimensional tables with OCCURS
-  * Accessing elements using subscripts
-   
-### Unit 4: Control Structures
+### Unit 4: Migration, Refactoring, and Modernization
+* Migrating Legacy COBOL Applications
+  * Assessing legacy systems for migration
+  * Tools and strategies for migrating COBOL programs to modern environments
+  * Challenges in migration and how to address them
+* Integrating COBOL with Modern Technology
+  * COBOL in cloud environments
+  * Leveraging microservices architecture with COBOL
+  * Real-time integration with modern platforms and tools
+* Refactoring COBOL Applications
+  * Identifying inefficiencies and outdated practices in legacy code
+  * Techniques for modularizing and modernizing legacy applications
+  * Best practices for making COBOL programs more maintainable
 
-* Conditional Statements
-  * IF statements: Single and nested conditions
-  * EVALUATE: Multi-branch conditional logic
-* Iterative Statements
-  * PERFORM UNTIL
-  * PERFORM VARYING
-  * Iterating over data and implementing counters
-* Sequential File Handling Basics.
-* Introduction to file status codes
-* File terminology and structure
-* Debugging and Error Handling
-  * Common errors in COBOL programs
-  * Using DISPLAY for debugging
+### Unit 5: COBOL Dialects and Version Comparison 
+* Overview of COBOL Evolution
+  * Key milestones in COBOL’s history
+  * Major versions and revisions of the COBOL standard (e.g., COBOL-68, COBOL-74, COBOL-85, COBOL 2002, COBOL 2014)
+* Comparing Vendor-Specific Dialects
+  * IBM Enterprise COBOL vs. Micro Focus COBOL vs. GnuCOBOL
+  * Unique features, syntax variations, and performance optimizations across vendors
+  * Handling proprietary extensions and deviations from the standard
+* Portability and Compatibility
+  * Challenges in migrating code between different COBOL dialects
+  * Using tools and best practices to ensure compatibility
+* Modern Additions to COBOL Standards
+  * Object-oriented COBOL features (introduced in COBOL 2002)
+  * Support for JSON, XML, and SQL in recent versions
+  * Current trends in COBOL standardization and adoption
 
-### Unit 5: Basic File Operations
-* Overview of sequential and indexed files - Use cases and differences
-* Working with SELECT and FD Clauses
-* Defining file connections using SELECT and ASSIGN
-* Structuring file descriptions with FD
-* Creating a sequential file and writing data to it
-* Reading from a file and processing its contents
 
-### Unit 6: Program Design and Integration
-* Modular Programming with COBOL
-* Structuring programs using paragraphs and sections
-* Writing modular code with subprograms using the CALL statement
-* Accepting user input with ACCEPT
-* Displaying output using DISPLAY
-* Introduction to Integration with Other Systems
-  * COBOL’s role in larger systems (basic concepts of integration)
+### Unit 6: Capstone Project
+* Student will apply what they have learned in developing, modifying and building a complex COBOL application.
