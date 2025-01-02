@@ -1,5 +1,6 @@
 # Introduction to COBOL
-© Elephant Scale
+
+© Elephant Scale  
 Jan. 1, 2025
 
 
@@ -47,7 +48,8 @@ Jan. 1, 2025
 * Variations of the program structure in legacy systems
 * Migrating between COBOL dialects, systems and versions
 
-* ### Unit 3: Data and Variables
+### Unit 3: Data and Variables
+
 * Syntax conventions: Keywords, comments, and formatting
 * Program compilation, linking  and debugging
 * COBOL Data Types and Variables
@@ -66,31 +68,34 @@ Jan. 1, 2025
   * Accessing elements using subscripts
    
 ### Unit 4: Control Structures
-    • Conditional Statements
-        ◦ IF statements: Single and nested conditions
-        ◦ EVALUATE: Multi-branch conditional logic
-    • Iterative Statements
-        ◦ PERFORM UNTIL
-        ◦ PERFORM VARYING
-        ◦ Iterating over data and implementing counters
-    • Sequential File Handling Basics.
-    • Introduction to file status codes
-    • File terminology and structure
-    • Debugging and Error Handling
-        ◦ Common errors in COBOL programs
-        ◦ Using DISPLAY for debugging
-                   Unit 5: Basic File Operations
-    • Overview of sequential and indexed files - Use cases and differences
-    • Working with SELECT and FD Clauses
-    • Defining file connections using SELECT and ASSIGN
-    • Structuring file descriptions with FD
-    • Creating a sequential file and writing data to it
-    • Reading from a file and processing its contents
-                   Unit 6: Program Design and Integration
-    • Modular Programming with COBOL
-    • Structuring programs using paragraphs and sections
-    • Writing modular code with subprograms using the CALL statement
-    • Accepting user input with ACCEPT
-    • Displaying output using DISPLAY
-    • Introduction to Integration with Other Systems
-        ◦ COBOL’s role in larger systems (basic concepts of integration)
+
+* Conditional Statements
+  * IF statements: Single and nested conditions
+  * EVALUATE: Multi-branch conditional logic
+* Iterative Statements
+  * PERFORM UNTIL
+  * PERFORM VARYING
+  * Iterating over data and implementing counters
+* Sequential File Handling Basics.
+* Introduction to file status codes
+* File terminology and structure
+* Debugging and Error Handling
+  * Common errors in COBOL programs
+  * Using DISPLAY for debugging
+
+### Unit 5: Basic File Operations
+* Overview of sequential and indexed files - Use cases and differences
+* Working with SELECT and FD Clauses
+* Defining file connections using SELECT and ASSIGN
+* Structuring file descriptions with FD
+* Creating a sequential file and writing data to it
+* Reading from a file and processing its contents
+
+### Unit 6: Program Design and Integration
+* Modular Programming with COBOL
+* Structuring programs using paragraphs and sections
+* Writing modular code with subprograms using the CALL statement
+* Accepting user input with ACCEPT
+* Displaying output using DISPLAY
+* Introduction to Integration with Other Systems
+  * COBOL’s role in larger systems (basic concepts of integration)
