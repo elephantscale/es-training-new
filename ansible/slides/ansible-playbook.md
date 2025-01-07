@@ -230,7 +230,7 @@ In this case, the play is targeting the `servers` group of hosts,
 
 * You can use the -v option to enable verbose output, which will show you what Ansible is doing as it executes the playbook.
 
-```commandline
+```text
 $ ansible-playbook -v playbook.yml
 ```
 
@@ -899,7 +899,7 @@ Using templates in Ansible Playbook is a very powerful feature that allows you t
             dest: /tmp/my_config.conf
 ```
 
-```jinja2
+```jinja
     # my_template.j2
     This is my configuration file
     {{ my_var }}
@@ -941,7 +941,7 @@ In this example, the my_var variable is defined as a string that will be used in
 
 ## Jinja2 Template
 
-```jinja2
+```jinja
     # my_template.j2
     This is my configuration file
     {{ my_var }}
