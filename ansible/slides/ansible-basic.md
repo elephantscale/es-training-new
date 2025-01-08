@@ -23,7 +23,7 @@
 
 ---
 
-<img src="../what.jpg" style="width:25%;"/>
+<img src="../images/what.jpg" style="width:25%;"/>
 
 ## What is Ansible?
 
@@ -72,7 +72,7 @@ Ansible is idempotent, meaning that it can be run multiple times without changin
 
 ---
 
-<img src="../note.jpg" style="width:45%;"/>
+<img src="../images/note.jpg" style="width:45%;"/>
 
 
 Ansible is not a configuration management tool
