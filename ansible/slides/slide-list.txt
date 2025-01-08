@@ -1,8 +1,8 @@
 # to generate slides
 #       ./gen.sh
 
-# NOTE: Kim wants to generate one side deck
-# For that, generate slide deck according to the list, then glue them together
+# NOTE: Kim wants to generate one complete slide deck
+# For that, generate slide decks according to the list, then glue them together
 
 About-Class.md
 ansible-basic.md
