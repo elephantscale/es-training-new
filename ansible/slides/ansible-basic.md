@@ -268,6 +268,7 @@ The simplest way to not only get up and running with Ansible but to keep yoursel
 
 Install Ansible
 
+* [https://github.com/elephantscale/ansible-labs/blob/main/setup/Install-Ansible.md](https://github.com/elephantscale/ansible-labs/blob/main/setup/Install-Ansible.md)
 ---
 
 # Ansible Ad-Hoc
@@ -298,3 +299,4 @@ ansible -i hosts -m ping all
 # LAB
 
 Adhoc Lab
+* [https://github.com/elephantscale/ansible-labs/tree/main/adhoc](https://github.com/elephantscale/ansible-labs/tree/main/adhoc)
