@@ -1,29 +1,30 @@
-# Stating a problem
+# Ansible Basics
+
+--- 
+
+## Stating a problem
 <img src="../images/problem.jpg" style="width:35%;"/>
 
 ---
 
-# Automating the management and deployment of a large infrastructure
 
-
----
-
-# Answer
+## Answer
 
 <img src="../images/answer.jpg" style="width:25%; float: right; top:10px"/>
 
 
 ---
 
+## Automation
 <img src="../../assets/images/ansible/ansible.jpg" style="width:25%;"/>
+* Automating the management and deployment of a large infrastructure
 
-# Ansible
+## Ansible
 
-
-
----
 
 <img src="../images/what.jpg" style="width:25%;"/>
+---
+
 
 ## What is Ansible?
 
@@ -62,24 +63,28 @@ Tasks are executed over SSH by default, but can also be executed locally.
 
 # Why Agentless?
 
-The reasons for this choice in the Ansible design are many, not least that just about every Linux/FreeBSD/macOS host has it built in, as do many network devices such as switches and routers.
+* The reasons for this choice in the Ansible design are many,
+* not least that just about every Linux/FreeBSD/macOS host has it built in, 
+* as do many network devices such as switches and routers.
 
 ---
 
-# Idempotent
+## Idempotent
 
-Ansible is idempotent, meaning that it can be run multiple times without changing the state of the system.
+* Ansible is idempotent, meaning that it can be run multiple times without changing the state of the system.
 
 ---
+
+## Continued
 
 <img src="../images/note.jpg" style="width:45%;"/>
 
 
-Ansible is not a configuration management tool
+* Ansible is not a configuration management tool
 
-BUT
+* BUT
 
-it can be used to manage configuration files.
+* it can be used to manage configuration files.
 
 ---
 
@@ -92,7 +97,7 @@ it can be used to manage configuration files.
 
 ## Run AGAINST
 
-Means to run a specific adhoc, play or playbook on the specified host or group from the inventory
+* Means to run a specific adhoc, play or playbook on the specified host or group from the inventory
 
 
 <img src="../images/mean.jpg" width="30%">
@@ -264,14 +269,14 @@ The simplest way to not only get up and running with Ansible but to keep yoursel
 
 ---
 
-# LAB
+## LAB
 
-Install Ansible
+* Install Ansible
 
 * [https://github.com/elephantscale/ansible-labs/blob/main/setup/Install-Ansible.md](https://github.com/elephantscale/ansible-labs/blob/main/setup/Install-Ansible.md)
 ---
 
-# Ansible Ad-Hoc
+## Ansible Ad-Hoc
 
 ---
 
@@ -296,7 +301,9 @@ ansible -i hosts -m ping all
 
 ---
 
-# LAB
+## LAB
 
-Adhoc Lab
+* Adhoc Lab
 * [https://github.com/elephantscale/ansible-labs/tree/main/adhoc](https://github.com/elephantscale/ansible-labs/tree/main/adhoc)
+
+---
