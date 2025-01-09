@@ -1,35 +1,39 @@
 # About Ansible Class
+* Approximate timetable
 ---
 
 
 ## Day 1
 
-| # | Hour | Subject    |
-|---|------|------------|
-| 1 | 01   | Subject 1  |
-| 2 | 03   | Subject 1  |
-| 3 | 05   | Subject 1  |
+| # | Hours | Subject                  |
+|---|-------|--------------------------|
+| 1 | 1     | Ansible Overview         |
+| 2 | 2     | Deploying Ansible        |
+| 3 | 3     | Playbooks                |
+| 4 | 2     | Variables and Inclusions |
 
 
 ---
 
 ## Day 2
 
-| # | Hour | Subject    |
-|---|------|------------|
-| 1 | 01   | Subject 1  |
-| 2 | 03   | Subject 1  |
-| 3 | 05   | Subject 1  |
+| # | Hours | Subject            |
+|---|-------|--------------------|
+| 1 | 02    | Task Control       |
+| 2 | 03    | Jinja2 Templates   |
+| 3 | 01    | Roles              |
+| 4 | 02    | Optimizing Ansible |
 
 
 ---
 ## Day 3
 
-| # | Hour | Subject    |
-|---|------|------------|
-| 1 | 01   | Subject 1  |
-| 2 | 03   | Subject 1  |
-| 3 | 05   | Subject 1  |
+| # | Hours | Subject                  |
+|---|-------|--------------------------|
+| 1 | 02    | Ansible Vault            |
+| 2 | 01    | Troubleshooting Ansible  |
+| 3 | 03    | Ansible Tower            |
+| 4 | 02    | Ansible in a DevOps      |
 
 
 ---
