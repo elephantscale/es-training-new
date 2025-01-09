@@ -1,5 +1,5 @@
 # About Ansible Class
-* Approximate timetable
+
 ---
 
 
