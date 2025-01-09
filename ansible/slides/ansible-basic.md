@@ -1,4 +1,4 @@
-# Ansible Basics
+# Why Ansible?
 
 --- 
 
@@ -20,8 +20,6 @@
 * Automating the management and deployment of a large infrastructure
 
 ## Ansible
-
-
 <img src="../images/what.jpg" style="width:25%;"/>
 ---
 
@@ -272,8 +270,7 @@ The simplest way to not only get up and running with Ansible but to keep yoursel
 ## LAB
 
 * Install Ansible
-
-* [https://github.com/elephantscale/ansible-labs/blob/main/setup/Install-Ansible.md](https://github.com/elephantscale/ansible-labs/blob/main/setup/Install-Ansible.md)
+* https://github.com/elephantscale/ansible-labs/blob/main/setup/Install-Ansible.md
 ---
 
 ## Ansible Ad-Hoc
