@@ -236,8 +236,9 @@ $ ansible-playbook -v playbook.yml
 
 ---
 
-# LAB
+## LAB
 
+* TODO lab link
 ---
 
 ## Variables and Facts
@@ -255,7 +256,7 @@ Let's take a look at a simple playbook that uses variables and facts:
         var: my_var
 ```        
 
-Let's break down this playbook and explain each part in more detail
+* Let's break down this playbook and explain each part in more detail
 
 ---
 
@@ -291,7 +292,7 @@ Let's break down this playbook and explain each part in more detail
 ---
 
 ## LAB
-
+TODO lab link
 ---
 
 ## Prompt for input
@@ -409,7 +410,7 @@ If you have `redis` installed, you can use `cached` to store these variables for
 ---
 
 ## LAB
-
+* TODO lab link 
 ---
 
 ## Ansible Facts
@@ -463,7 +464,7 @@ Let's break down this playbook and explain each part in more detail
 ---
 
 ## LAB
-
+* TODO lab link
 ---
 
 # Conditionals
