@@ -18,18 +18,24 @@
 
 ## Key Components of a Playbook
 
-<img src="../images/post.jpg" style="float:right;" width="30%">
+<img src="../images/post.jpg" style="float:right;" width="20%">
 
 * Plays: Organize tasks for a specific group of hosts.
 * Tasks: Execute a single action using Ansible modules (e.g., package installation, file creation).
 * Variables: Define custom or dynamic values to be used in tasks.
 * Handlers: Perform actions in response to specific triggers (e.g., restarting a service).
+
+---
+
+## Key Components of a Playbook
+
+<img src="../images/post.jpg" style="float:right;" width="20%">
+
 * Templates: Dynamically generate configuration files using Jinja2 templating language.
 * Playbooks promote reusable, shareable, and maintainable code for infrastructure management.
 
-We will discuss each of these components in detail in the following slides.
 
-
+**We will discuss each of these components in detail in the following slides.**
 
 ---
 
@@ -238,7 +244,11 @@ $ ansible-playbook -v playbook.yml
 
 ## LAB
 
-* TODO lab link
+Let’s put theory into practice!
+Follow the link below to explore the lab details and start building your hands-on experience:
+
+Access the Lab Here
+
 ---
 
 ## Variables and Facts
@@ -292,7 +302,12 @@ Let's take a look at a simple playbook that uses variables and facts:
 ---
 
 ## LAB
-TODO lab link
+
+Let’s put theory into practice!
+Follow the link below to explore the lab details and start building your hands-on experience:
+
+Access the Lab Here
+
 ---
 
 ## Prompt for input
@@ -410,7 +425,12 @@ If you have `redis` installed, you can use `cached` to store these variables for
 ---
 
 ## LAB
-* TODO lab link 
+
+Let’s put theory into practice!
+Follow the link below to explore the lab details and start building your hands-on experience:
+
+Access the Lab Here
+
 ---
 
 ## Ansible Facts
@@ -464,7 +484,12 @@ Let's break down this playbook and explain each part in more detail
 ---
 
 ## LAB
-* TODO lab link
+
+Let’s put theory into practice!
+Follow the link below to explore the lab details and start building your hands-on experience:
+
+Access the Lab Here
+
 ---
 
 # Conditionals
@@ -487,7 +512,6 @@ Let's break down this playbook and explain each part in more detail
 
 Let's break down this playbook and explain each part in more detail
 
-<img src="../images/condition.jpg" width="30%">
 
 ---
 
@@ -578,6 +602,11 @@ Let's talk about the condition syntax.
 ---
 
 ## LAB
+
+Let’s put theory into practice!
+Follow the link below to explore the lab details and start building your hands-on experience:
+
+Access the Lab Here
 
 ---
 
@@ -728,6 +757,11 @@ Loops in Ansible Playbook provide an efficient way to perform repetitive tasks. 
 
 ## LAB
 
+Let’s put theory into practice!
+Follow the link below to explore the lab details and start building your hands-on experience:
+
+Access the Lab Here
+
 ---
 
 # Handlers
@@ -799,8 +833,12 @@ Important: Handlers are executed at the end of the play, after all the tasks hav
 Handlers are tasks that are triggered by notifications. They are used to restart services, reload configuration files, and perform other tasks that need to be executed after a change in the system state.
 
 ---
-
 ## LAB
+
+Let’s put theory into practice!
+Follow the link below to explore the lab details and start building your hands-on experience:
+
+Access the Lab Here
 
 ---
 
@@ -970,6 +1008,11 @@ Using templates in an Ansible playbook is a very powerful feature that allows yo
 
 ## LAB
 
+Let’s put theory into practice!
+Follow the link below to explore the lab details and start building your hands-on experience:
+
+Access the Lab Here
+
 ---
 
 # Ansible Vault
@@ -1042,6 +1085,11 @@ Important: Ansible can encrypt any variables, files and playbooks, not just stri
 ---
 
 ## LAB
+
+Let’s put theory into practice!
+Follow the link below to explore the lab details and start building your hands-on experience:
+
+Access the Lab Here
 
 ---
 
@@ -1197,3 +1245,10 @@ In order to create a role, you need to create a directory structure that contain
 ---
 
 ## LAB
+
+Let’s put theory into practice!
+Follow the link below to explore the lab details and start building your hands-on experience:
+
+Access the Lab Here
+
+---
