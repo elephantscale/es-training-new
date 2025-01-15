@@ -214,3 +214,4 @@ Adopting best practices ensures that your Spring Cloud Config setup is secure, m
 Notes:
 
 Spring Cloud Config is an indispensable tool for managing configurations in distributed systems, enabling scalability, consistency, and security.
+

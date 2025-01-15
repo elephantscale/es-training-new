@@ -106,4 +106,3 @@ Notes:
 
 Use the table to highlight the benefits of moving from monolithic to microservices architectures. Spring Cloud tools like Config Server, Eureka, and Sleuth play a significant role in these improvements.
 
----
