@@ -1,11 +1,12 @@
 # AI & Applications for an Org (Highmark)
 
 (C) Elephant Scale  
-December 31, 2024
+January 15, 2024
 
 ## Course Description
 
 * This course introduces Artificial Intelligence and its applications in the industry for specific use cases.
+* In this case, we concentrate specifically on Sales in Health insurance.
 
 ## Audience
 * Managers and Execs
@@ -28,43 +29,33 @@ December 31, 2024
 
 ## Topics
 
-* AI evolution
-* AI use cases
-* AI terminology
-* Machine Learning
-* Deep Learning
-* AI Software ecosystem
-* How to adopt AI in the enterprises
-* Wrap up and next steps
+* Day 1
+  * AI evolution and vocab
+  * AI use cases
+  * Industry use cases
+  * Industry case studies
 
-## Practical use cases - overview
-* AI Large Language Models covered
-  * Open ChatGPT 
-  * Anthropic Claude
-  * Facebook Llama
-  * Google Bard
-  * Cohere
-  * Mistral
-* AI in sales use cases - overview
-  * Enhanced Customer Engagement and Support
-    * SidekickAI acts as an intelligent virtual assistant
-  * AI-Powered Sales Assistance and Strategy Suggestions
-    * SidekickAI analyzing sales data and customer interactions
+* Day 2
+  * Use cases, overview
+  * Sales use cases and cases studies
+  * How to adopt AI in the enterprise
+  * Wrap up and next steps
 
+  
 ## Detailed Outline
 
-## 1. Introduction to AI in Health Insurance
+## 1. Introduction to AI in Sales 
 - Definition and Scope of AI
-- Importance of AI in Health Insurance
+- Importance of AI in Sales
 - Current Trends and Innovations
 
-## 2. AI Technologies Relevant to Health Insurance
+## 2. AI Technologies Relevant to Sales
 - Machine Learning (ML) and Predictive Analytics
 - Natural Language Processing (NLP) for Claims Processing
 - Computer Vision in Document Verification
 - AI-Powered Chatbots and Virtual Assistants
 
-## 3. Applications of AI in Health Insurance
+## 3. Applications of AI in Sales
 - Fraud Detection and Prevention
 - Customer Experience and Personalization
 - Risk Assessment and Underwriting
@@ -76,7 +67,7 @@ December 31, 2024
 - Challenges: Data Privacy, Bias, and Ethical Concerns
 
 ## 5. Data-Driven Decision Making
-- Role of Big Data in Health Insurance
+- Role of Big Data in Sales
 - Data Integration and Quality Management
 - Building a Data-Driven Culture
 

@@ -29,45 +29,39 @@ December 31, 2024
 
 ## Topics
 
-* AI evolution
-* AI use cases
-* AI terminology
-* Machine Learning
-* Deep Learning
-* AI Software ecosystem
-* How to adopt AI in the enterprises
-* Wrap up and next steps
+* Day 1
+  * Introduction and overview of the section covered in "AI and Applications"
+  * Enhanced Customer Engagement
+  * Sales assistance
+ * Day 2
+   * Contract generation
+   * Inventory management
+   * Customer behavior
+   * Sales training
+   * Analytics
 
-## Actionable Insights
-* AI Large Language Models covered
-    * Open ChatGPT
-    * Google Gemini
-    * SidekickAI
-    * Anthropic Claude
-    * Facebook Llama
-    * Cohere
-    * Mistral
+## Detailed Outline
 
-* Sales use cases in depth
-    * Enhanced Customer Engagement and Support
-        * SidekickAI acts as an intelligent virtual assistant
-    * AI-Powered Sales Assistance and Strategy Suggestions
-        * SidekickAI analyzing sales data and customer interactions
-    * Contract Generation
-        * There is an area in the Org that handles the contracts, benefit booklets, etc. for Sales and their clients
-        * Use cases may assist with contract/benefit booklet generation or review, etc.
-        * Org is already pursuing the ability for AI to do translations into other languages.
-    * Inventory Management
-        * Org has areas that support sales with their pre-sale quoting activities, as well as post-sale client set-up.
-        * Use cases may assist in managing that work or automating certain aspects of their work.
-    * Customer Behavior
-        * Use cases may predict a customer’s behavior in terms of products/services we should be recommending.
-    * Sales training
-        * Use cases may assist in the development of training or training materials/user guides for sales.
-    * Analytics
-        * Org has an area that supports some analytics tools for sales providing various client specific reporting
-        * Use cases that may help identify ways to make the code more efficient or check the quality would be helpful.
-        * One of the tools used is Encompass and Org is also looking into ways to convert SAS to R or Python.
+### Sales use cases in depth
+1. Enhanced Customer Engagement and Support
+  * SidekickAI acts as an intelligent virtual assistant
+2. AI-Powered Sales Assistance and Strategy Suggestions
+  * SidekickAI analyzing sales data and customer interactions
+3. Contract Generation
+  * There is an area in the Org that handles the contracts, benefit booklets, etc. for Sales and their clients
+  * Use cases may assist with contract/benefit booklet generation or review, etc.
+  * Org is already pursuing the ability for AI to do translations into other languages.
+4. Inventory Management
+  * Org has areas that support sales with their pre-sale quoting activities, as well as post-sale client set-up.
+  * Use cases may assist in managing that work or automating certain aspects of their work.
+5. Customer Behavior
+  * Use cases may predict a customer’s behavior in terms of products/services we should be recommending.
+6. Sales training
+  * Use cases may assist in the development of training or training materials/user guides for sales.
+7. Analytics
+  * Org has an area that supports some analytics tools for sales providing various client specific reporting
+  * Use cases that may help identify ways to make the code more efficient or check the quality would be helpful.
+  * One of the tools used is Encompass and Org is also looking into ways to convert SAS to R or Python.
 
 ## Facilitator: Mark Kerzner
 * Mark is an experienced, hands-on software architect who practices and teaches AI, machine learning, and Big Data.
