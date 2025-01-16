@@ -3,6 +3,8 @@
 (C) Elephant Scale
 January 15, 2024
 
+* This course is prepared by Rod for Jason
+
 ## Course Description
 
 * This course introduces Artificial Intelligence and its applications in executive decision-making and leadership strategies. It aims to provide a foundation for leveraging AI in organizational contexts.
