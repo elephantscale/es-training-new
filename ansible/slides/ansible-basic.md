@@ -283,7 +283,8 @@ ansible_user=<Username>  # (ubuntu in our environment)
 ## LAB
 
 - **Task**: Install Ansible
-- **Instructions**: [https://github.com/elephantscale/ansible-labs/blob/main/setup/Install-Ansible.md](https://github.com/elephantscale/ansible-labs/blob/main/setup/Install-Ansible.md)
+- **Instructions**:
+https://github.com/elephantscale/ansible-labs/blob/main/setup/Install-Ansible.md
 
 ---
 
