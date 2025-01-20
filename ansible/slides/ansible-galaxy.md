@@ -4,57 +4,70 @@
 
 ## What is Ansible Galaxy?
 
-Ansible Galaxy is a public community hub for sharing and finding Ansible roles, collections, and other resources.
-
-It allows Ansible users to share and reuse roles, collections, modules, plugins, and other resources.
+- **Definition**: Ansible Galaxy is a public, community-driven hub for sharing and discovering Ansible roles, collections, and other resources.  
+- **Purpose**: It streamlines reuse by allowing users to publish and download high-quality, vetted content for common automation tasks.
 
 <img src="../images/galaxy.jpg" style="height:500px">
-
 
 ---
 
 ## Registry
 
+- **Ansible Galaxy Registry**: A searchable and browsable repository of community-contributed Ansible content, such as roles, collections, modules, and plugins.  
+- **Features**:  
+  - Search, browse, and download content.  
+  - Rate and review content to foster a quality-driven ecosystem.
+- **Use Cases**:  
+  - Quickly find well-tested roles for popular software (e.g., Apache, MySQL).  
+  - Reuse code for consistent deployments across environments.
 
-The Ansible Galaxy Registry is a searchable, browseable catalog of Ansible content contributed by the community.
-
-The registry includes roles, collections, modules, plugins, and other resources.
-
-Users can search for and download content from the registry, and also rate and review content.
-
-<img src="../images/chest.jpg" style="height: 400px">
+<img src="../images/chest.jpg" style="height:400px">
 
 ---
 
-##  Collections
+## Collections
 
-Collections are a way to package and distribute Ansible content, including roles, modules, plugins, and other resources.
+- **Definition**: Collections are bundles of Ansible content (roles, modules, plugins, etc.) grouped under one namespace.  
+- **Advantages**:  
+  - Can include metadata, documentation, and dependencies for easy consumption.  
+  - Red Hat strongly promotes collections as the new standard for distributing Ansible content.
+- **Usage**: Include collections in your playbooks via the `collections` keyword.  
 
-Collections can be published to Ansible Galaxy, and can include metadata, documentation, and dependencies.
-
-Collections can be used in playbooks and roles using the collections keyword.
-
-It worth noting that Redhat is pushing for the use of collections as the default way to distribute Ansible content.
+```yaml
+# Example usage in a playbook
+- name: Use a community collection
+  hosts: all
+  collections:
+    - community.general
+  tasks:
+    - name: Example task
+      some_module:
+        ...
+```
 
 ---
 
 ## Roles
 
-Ansible Roles are a way to organize and package tasks, files, templates, and variables into reusable components.
+- **Definition**: Roles are structured, reusable units of Ansible functionality, containing tasks, files, templates, and variables.  
+- **Galaxy Integration**: You can publish or install roles directly from Galaxy.  
+- **Installation**: Use the `ansible-galaxy` CLI or reference roles in a `requirements.yml` file.
 
-Roles can be published to Ansible Galaxy, and can include metadata, documentation, and dependencies.
-
-Roles can be installed using the ansible-galaxy command-line tool or the roles keyword in a playbook.
+```text
+ansible-galaxy install username.role_name
+```
 
 ---
 
 ## Galaxy Tools
 
-Ansible Galaxy provides several tools for creating, sharing, and managing Ansible content.
+- **`ansible-galaxy` CLI**:  
+  - Manages roles, collections, and other Galaxy content.  
+  - Allows installing, removing, and listing roles or collections.
 
-The _ansible-galaxy_ command-line tool can be used to manage roles, collections, and other content.
-
-The _ansible-builder_ tool can be used to create and package custom collections.
+- **`ansible-builder`**:  
+  - Creates and packages custom Ansible collections.  
+  - Helps ensure your collections have proper structure and metadata.
 
 <img src="../images/galaxy-tools.png" style="height: 400px;">
 
@@ -62,11 +75,11 @@ The _ansible-builder_ tool can be used to create and package custom collections.
 
 ## Galaxy Organizations
 
-Ansible Galaxy Organizations are a way to group and manage content contributed by a team or organization.
-
-Organizations can have multiple members with different levels of access and permissions.
-
-Organizations can have multiple repositories, and can control access to them.
+- **Purpose**: Provide a collaborative space for teams or companies to manage Ansible content within Galaxy.  
+- **Features**:  
+  - Multiple repositories under one organizational umbrella.  
+  - Granular permission levels for members.  
+  - Unified branding and oversight.
 
 <img src="../images/org.jpg" style="float: right; height: 350px">
 
@@ -76,62 +89,51 @@ Organizations can have multiple repositories, and can control access to them.
 
 <img src="../images/galaxy_score.png" style="height: 350px; float: right">
 
-Ansible Galaxy includes a quality scoring system to help users find high-quality content.
-
-The quality score is based on several factors, including documentation, testing, and community ratings.
-
-The quality score is displayed in the registry for each content item.
-
-
-
+- **Scoring System**: Galaxy assigns quality scores based on factors like documentation, testing, and community ratings.  
+- **Goal**: Help users identify reliable and well-maintained content.  
+- **Practical Tip**: Check the score and user reviews before adopting content in production.
 
 ---
 
 ## Dependencies
 
-<img src="../images/dependency.png" style="float: right; ">
+<img src="../images/dependency.png" style="float: right;">
 
-
-Ansible Galaxy allows content creators to specify dependencies on other roles, collections, or modules.
-
-Dependencies can be specified in the metadata of a role or collection, and will be installed automatically when the role or collection is used.
-
-The following example shows how to install dependencies in a role's metadata:
-
+- **Definition**: Galaxy allows content creators to specify dependencies on other roles, collections, or modules.  
+- **Metadata**: These dependencies are listed in `meta/main.yml` (for roles) or within a collection’s metadata.  
+- **Example**:
 
 ```ini
+# In a role's meta/main.yml
 dependencies:
   - src: geerlingguy.apache
     version: 3.0.0
 ```
 
-```yaml
-```commandline
+```bash
+# Install from a requirements file
 ansible-galaxy install -r requirements.yml
 ```
-
 
 ---
 
 ## Licensing
 
-Ansible Galaxy requires that all content be licensed under an open-source license.
-
-Content creators can choose from a list of approved open-source licenses.
-
-Content with proprietary or non-approved licenses will not be accepted into the registry.
-
 <img src="../images/copyright.png">
+
+- **Open-Source Requirement**: All content on Ansible Galaxy must use an approved open-source license (e.g., MIT, Apache 2.0, GPL).  
+- **Why It Matters**: Ensures community trust, legality, and compliance with open-source standards.
 
 ---
 
 ## Contributing
 
-Anyone can contribute content to Ansible Galaxy.
-
-Content should follow the guidelines for roles, collections, or other types of content.
-
-Content should be well-documented and tested, and follow best practices for Ansible content.
+- **Open to Everyone**: Anyone can publish roles or collections to Galaxy, provided they adhere to guidelines.  
+- **Best Practices**:  
+  - Write clear documentation and examples.  
+  - Maintain thorough testing and CI pipelines.  
+  - Follow Ansible’s recommended folder structure.
+- **Getting Started**: Sign up, create or import your GitHub role/collection, then publish.
 
 <img src="../images/contr.png" height="80%">
 
@@ -141,20 +143,18 @@ Content should be well-documented and tested, and follow best practices for Ansi
 
 <img src="../images/camera.jpg" style="float:right; width: 550px">
 
-Ansible Galaxy takes security seriously and has a number of security features to protect users and content.
-
-Content is scanned for known vulnerabilities using the Snyk vulnerability database.
-
-Content contributors are required to sign a Contributor License Agreement (CLA) to ensure that their contributions are legitimate and do not infringe on any intellectual property rights.
+- **Vulnerability Scanning**: Galaxy leverages the Snyk vulnerability database to scan for known security issues.  
+- **Contributor License Agreement (CLA)**: Contributors must sign a CLA to ensure their work doesn’t infringe on intellectual property rights.  
+- **User Responsibility**: Always review and test community content in non-production environments before widespread rollout.
 
 ---
 
 ## Best Practices
 
-* When using Ansible Galaxy, it's important to follow best practices to ensure the security and reliability of your infrastructure.
-* Always review and test content before using it in production environments.
-* Use trusted sources and verify the authenticity of content.
-* Follow the principle of least privilege and limit access to sensitive systems and data.
+1. **Review & Test**: Validate content in a staging environment first.  
+2. **Trusted Sources**: Favor roles and collections from reputable authors with high-quality scores.  
+3. **Minimal Privileges**: Adhere to the principle of least privilege when running roles or collections.  
+4. **Regular Updates**: Keep your roles and collections up-to-date to benefit from security patches and improvements.
 
 <img src="../images/goto.png">
 
@@ -162,45 +162,47 @@ Content contributors are required to sign a Contributor License Agreement (CLA) 
 
 ## Alternatives
 
-While Ansible Galaxy is a popular and well-maintained hub for sharing Ansible content, there are also other options available.
-
-Some other popular Ansible content sharing platforms include GitHub, GitLab, and Bitbucket.
-
-These platforms can be used to share and collaborate on Ansible roles, collections, and other content.
+- **GitHub, GitLab, Bitbucket**:  
+  - You can host and share Ansible content in private or public repos.  
+  - Great for custom or proprietary roles/collections not meant for general publication.  
+- **Comparison**: Galaxy offers community ratings and a built-in scoring system, while Git-based repositories may rely on manual or third-party checks.
 
 <img src="../../assets/images/logos/github.png" style="float: left" width="30%">
-
 <img src="../../assets/images/logos/gitlab.png" style="float: left" width="30%">
-
 <img src="../../assets/images/logos/bitbucket.jpg" style="float: left" width="30%">
 
 ---
 
-## Note-worthy contributors
+## Noteworthy Contributors
 
-* [Jeff Geerling](https://galaxy.ansible.com/geerlingguy)
-  * Authored several popular Ansible roles on Galaxy. He also maintains an active blog and YouTube channel where he shares his knowledge and experience with Ansible.
-* [David Winterbottom](https://galaxy.ansible.com/dwinterbottom)
-  * David is the author of Ansible's official AWS modules and has contributed to several other popular modules on Galaxy. He has also given talks and workshops on Ansible at various conferences.
-* Nick Janetakis
-  * Author of "Docker for Developers", a book on Docker published by Packt.
-* Tim Gerla
-  * Author of "Mastering Ansible", a comprehensive guide to Ansible published by Packt.
+- **[Jeff Geerling](https://galaxy.ansible.com/geerlingguy)**  
+  - Maintains several widely-used roles.  
+  - Actively shares Ansible knowledge via blogging and YouTube.
+
+- **[David Winterbottom](https://galaxy.ansible.com/dwinterbottom)**  
+  - Contributed to official AWS modules.  
+  - Frequent conference speaker and workshop instructor.
+
+- **Nick Janetakis**  
+  - Author of “Docker for Developers.”  
+  - Offers tutorials and insights integrating Docker with Ansible.
+
+- **Tim Gerla**  
+  - Authored “Mastering Ansible,” a comprehensive guide published by Packt.  
+  - Shares best practices for large-scale Ansible deployments.
 
 ---
 
 ## Conclusion
 
-* Ansible Galaxy is a powerful tool for sharing and finding Ansible content.
-* It allows users to quickly and easily find and use high-quality roles, collections, modules, and other resources.
-* By following best practices and taking security seriously, Ansible Galaxy can help users manage their infrastructure more efficiently and securely.
+- **Efficient Sharing**: Ansible Galaxy enables quick discovery and reuse of quality content, saving time and effort.  
+- **Community-Driven**: Active user contributions and rating systems help maintain high standards.  
+- **Security & Reliability**: By following best practices (license compliance, scanning, testing), you can confidently leverage Galaxy content in production.
 
 <img src="../images/conclusion.jpg" style="height: 400px">
 
 ---
 
+<img src="../images/keep_calm.jpg" width="100%" height="100%"/>
 
-<img src="../images/keep_calm.jpg" width="100%" height="100%" />
-
-Good Bye!
-
+**Good Bye & Happy Automating!**
