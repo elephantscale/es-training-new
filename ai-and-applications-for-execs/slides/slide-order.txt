@@ -1,6 +1,0 @@
-# to generate slides
-#       ./gen.sh 
-
-# outline
-
-trailer.md
