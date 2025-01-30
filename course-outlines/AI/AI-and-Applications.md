@@ -1,7 +1,7 @@
 # AI & Applications for an Org (Highmark)
 
 (C) Elephant Scale  
-January 27, 2024
+January 30, 2024
 
 ## Course Description
 
