@@ -1,83 +1,69 @@
-# MongoDB 1-dau
-© Elephant Scale
+# MongoDB Essentials
+* (C) Elephant Scale
+* February 2025
 
-February 4, 2025
 ## Overview
+MongoDB is a **document-oriented NoSQL database** designed for flexibility, scalability, and high performance.
+It uses JSON-like documents with schemas, making it a popular choice among developers for modern applications.
 
-* MondgoDB
-
-## After completing this course you will learn how to
-* TBD
+This course introduces participants to the **fundamentals of MongoDB**, focusing on **core concepts, querying, data modeling, and performance considerations**.
 
 ## Audience
-* DevOps, Developers, Architects
+* Developers
+* Data Scientists
+
+## Skill Level
+* Introductory - Intermediate
 
 ## Duration
-* 1 day
+* One day
 
 ## Format
-* Lectures and hands-on labs. (50%, 50%)
+* Lectures and hands-on labs (50% - 50%)
 
 ## Prerequisites
+* Familiarity with at least one programming language
+* Basic experience using the **Linux command line**
 
-* Some background with Unix or Linux including the command line
-* Some knowledge of a programming language such as Java, C#, Python, Node.js, etc.
-
-## Lab environment
-
-* A reasonably modern laptop
-* Unrestricted connection to the Internet. Laptops with overly restrictive VPNs or firewalls may not work properly
-* Chrome browser
-    - SSH client for your platform
+## Lab Environment
+* **Zero Install:** No software installation is required on students' machines. A cloud-based lab environment will be provided.
+* Students will need:
+    - A **laptop** with an unrestricted internet connection
+    - An **SSH client** and a **modern web browser**
 
 ## Detailed Outline
 
-Module 1: Overview of MongoDB (1 Hour)
-Introduction to NoSQL and MongoDB
+### 1️ Introduction to MongoDB
+* What is MongoDB?
+* Document-oriented database model
+* Key features and advantages
+* When to use MongoDB vs. traditional relational databases
 
-What is NoSQL?
-Key differences between SQL and NoSQL
-Use cases for MongoDB
-MongoDB Architecture
+### 2️ Getting Started with MongoDB
+* Overview of MongoDB shell
+* Understanding **collections, documents, and schemas**
+* Basic CRUD operations: **Create, Read, Update, Delete**
+* Hands-on: Writing and executing queries
 
-Documents and Collections
-JSON/BSON data model
-Primary and Secondary Nodes
-Sharding and Replication
-Installation & Setup
+### 3️ Data Modeling & Indexing
+* Structuring data in MongoDB
+* Embedding vs. referencing documents
+* Creating and using indexes
+* Query performance optimization
+* Hands-on: Defining collections and indexing strategies
 
-Installing MongoDB on Windows/Linux/Mac
-Using MongoDB Atlas for cloud-based solutions
-Connecting to MongoDB using mongosh
-Module 2: CRUD Operations (1.5 Hours)
-Understanding Documents and Collections
-Create Operations (insertOne, insertMany)
-Read Operations (find, projections, filters)
-Update Operations (updateOne, updateMany, $set, $inc, $push)
-Delete Operations (deleteOne, deleteMany)
-Hands-on: Insert, Retrieve, Update, and Delete sample data
-Module 3: Indexing & Performance Optimization (1 Hour)
-Importance of Indexes
-Types of Indexes (single field, compound, text, geospatial)
-Creating and Managing Indexes (createIndex, dropIndex)
-Query Optimization using explain()
-Hands-on: Indexing strategies and performance tuning
-Module 4: Aggregation Framework (1 Hour)
-Introduction to Aggregation Pipelines
-Common Aggregation Operators ($match, $group, $sort, $lookup)
-Data transformation with $project
-Hands-on: Building an aggregation pipeline
-Module 5: MongoDB Transactions & Security (1 Hour)
-ACID Transactions in MongoDB
-Multi-document transactions
-User Roles & Authentication
-Data Encryption & Security Best Practices
-Module 6: MongoDB for Application Development (1 Hour)
-Connecting MongoDB with Python, Node.js, or Java
-Using MongoDB Drivers
-Hands-on: Writing simple applications using MongoDB
-Module 7: Scaling and Deployment (1 Hour)
-Replication and High Availability
-Sharding and Horizontal Scaling
-Backup and Restore Strategies
-Best Practices for Production Deployment
+### 4️ Aggregation Framework & Performance Considerations
+* Introduction to aggregation pipelines
+* Filtering, grouping, and sorting data
+* Best practices for query optimization
+* Hands-on: Running aggregations and optimizing queries
+
+### 5️ Scaling & Replication Basics
+* Introduction to replication in MongoDB
+* How MongoDB scales with **sharding** (overview)
+* Deployment considerations (brief discussion)
+
+### 6️ Conclusion & Comparison
+* Summary of key takeaways
+* MongoDB vs. other NoSQL databases
+* Q&A and additional resources
