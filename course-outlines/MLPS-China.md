@@ -1,69 +1,143 @@
-# MongoDB Essentials
+# MLPS-China Regulation
 * (C) Elephant Scale
-* February 2025
+* April 22, 2020
 
 ## Overview
-MongoDB is a **document-oriented NoSQL database** designed for flexibility, scalability, and high performance. 
-It uses JSON-like documents with schemas, making it a popular choice among developers for modern applications.
+The MLPS (2.0) stands for Multi-level Protection for Cybersecurity.
 
-This course introduces participants to the **fundamentals of MongoDB**, focusing on **core concepts, querying, data modeling, and performance considerations**.
+CSL Article 21 it states: 
+
+    The State has implemented a cybersecurity multi-level protection scheme. 
+    Network operators must perform the following security protection duties according
+    to the requirements of the cybersecurity multi-level protection scheme 
+    to ensure the network is free from interference, damage, or unauthorised access,
+    and to prevent network data leaks, theft, or falsification. 
+
+This course will introduce the participants to the basics of implementation and 
+maintenance of the compliance with the regulations.
 
 ## Audience
-* Developers
-* Data Scientists
+* Automation Engineers, IT engineers
 
 ## Skill Level
 * Introductory - Intermediate
 
 ## Duration
-* One day
+* Two or three days
 
 ## Format
-* Lectures and hands-on labs (50% - 50%)
+Lectures and group discussion labs. (50%   50%)
 
 ## Prerequisites
-* Familiarity with at least one programming language
-* Basic experience using the **Linux command line**
+* Recommended: Cybersecurity awareness
 
-## Lab Environment
-* **Zero Install:** No software installation is required on students' machines. A cloud-based lab environment will be provided.
-* Students will need:
-  - A **laptop** with an unrestricted internet connection
-  - An **SSH client** and a **modern web browser**
+## Lab environment
+* Zero Install: There is no need to install software on students' machines.
+The environment, where required, will be provided in the cloud. 
 
-## Detailed Outline
+### Students will need the following
+* A reasonably modern laptop with unrestricted connection to the Internet. Laptops with overly restrictive VPNs or firewalls may not work properly
+* Chrome browser 
+ 
+## Detailed outline
+    
+### What is MLPS 2.0?
 
-### 1️ Introduction to MongoDB
-* What is MongoDB?
-* Document-oriented database model
-* Key features and advantages
-* When to use MongoDB vs. traditional relational databases
+* CSL connection 
+    - As an administrative regulation based on CSL Article - 21, 
+    the Regulations on Multi-level Protection for Cybersecurity
+    is an important supporting regulation.
+* "Network" instead of system
+    - The term "network" as defined in
+    the MLPS Regulation refers to a system comprised of computers, other
+    information terminals and related equipment that follows certain rules
+    and procedures for gathering, storing, transmitting, exchanging and
+    processing information.
+* Enhanced enforcement
+    - According the MLPS Regulation, the national cyberspace administration 
+    are responsible for comprehensively planning and coordinating cybersecurity efforts, 
+    while public security organs are responsible for supervision and management of the
+    cybersecurity multi-level protection scheme.          
 
-### 2️ Getting Started with MongoDB
-* Overview of MongoDB shell
-* Understanding **collections, documents, and schemas**
-* Basic CRUD operations: **Create, Read, Update, Delete**
-* Hands-on: Writing and executing queries
+* Network Operators' Security Protection Obligations
+    - The MLPS Regulation
+    provides more detailed requirements regarding the different levels of security obligations for network
+    operators.
+    - MLPS Regulation Article 20 specifies eleven general security protection obligations that network operators
+    shall meet
+    - MLPS Regulation Article 21 specifies eight advanced security protection obligations that network operators
+     should comply with for networks graded level 3 or above
+* Implementation Guideline
+    - Specify the roles and responsibilities of relevant parties
+  - Basic processes and implementation requirements across the multi-level protection implementation efforts. The basic processes of
+    - grading and filing
+    - security planning
+    - security design and implementation
+    - security operations and maintenance
+    - emergency response and protection
+    - termination of grading objects
+    
+* Grading Guideline
+ 
+    – Specify the grading method and process for cybersecurity multi-level protection
+    - specific grading objects
+       - cloud computing platforms
+       - mobile Internet,
+       - Internet of things
+       - big data
+       - industrial control systems
+       
+* Filing Rules
+  - Processes for filing acceptance
+  - Filing review and filing management
+  - Guide and strengthen multi-level protection filings
+  
+* Baseline
 
-### 3️ Data Modeling & Indexing
-* Structuring data in MongoDB
-* Embedding vs. referencing documents
-* Creating and using indexes
-* Query performance optimization
-* Hands-on: Defining collections and indexing strategies
+   - Specify general security requirements and extended security requirements for grading objects of levels 1 – 4
+   - security control requirements, which are applicable to the security implementation and supervision of non-secret
+grading objects
 
-### 4️ Aggregation Framework & Performance Considerations
-* Introduction to aggregation pipelines
-* Filtering, grouping, and sorting data
-* Best practices for query optimization
-* Hands-on: Running aggregations and optimizing queries
-
-### 5️ Scaling & Replication Basics
-* Introduction to replication in MongoDB
-* How MongoDB scales with **sharding** (overview)
-* Deployment considerations (brief discussion)
-
-### 6️ Conclusion & Comparison
-* Summary of key takeaways
-* MongoDB vs. other NoSQL databases
-* Q&A and additional resources
+* Technical Requirements
+   - requirements for multi-level protection security design for grading objects
+of levels 1 – 4
+   - act as guidance for system operation organisations
+   - carry out the design and implementation of technical security for multi-level protection
+   - basis for information security departments to 
+     - supervise
+     - inspect
+     - instruct
+      
+* Evaluation Requirements 
+   - Specify general security evaluation requirements for grading objects of levels 1 – 4
+   - extended security evaluation requirements for grading objects related to new technologies
+       - mobile Internet
+       - big data
+       - cloud computing platforms
+       - Internet of things
+        - industrial control systems.           
+* Relationship with existing regulations
+  from Public Security Organs
+* Relationship with Critical Information
+  Infrastructure protection
+  
+* MLPS Key Enhancements
+    - Extended scope and measures
+    - Strengthened content and intensity of supervision
+    - Grading Confirmation
+    - Risk Control for New Technologies and Applications
+    - Personal Information Protection
+    - Network Products and Services (Level 3 and above)
+    - Security Management Center
+    - Trustable authentication
+    - System Go-Live Test
+    - Technical maintenance (Level 3 and above)
+    - Security Self-Assessment
+    - Detection, Early-Warning and Incident Notification (Level 3 and above)
+    
+* Compliance Path for MLPS 2.0
+    - System Identification and Grading
+    - Self-assessment and Remediation
+    - Third-party Assessment and Filing
+    - Continuous Improvement    
+      
