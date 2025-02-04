@@ -1,7 +1,7 @@
 # AI & Applications for an Org (Highmark)
 
 (C) Elephant Scale  
-January 30, 2024
+February 4, 2024
 
 ## Course Description
 
@@ -56,10 +56,10 @@ January 30, 2024
 - AI-Powered Chatbots and Virtual Assistants
 
 ## 3. Applications of AI in Sales
-- Fraud Detection and Prevention
+- Gen BI - the chat GPT of analytics
 - Customer Experience and Personalization
 - Risk Assessment and Underwriting
-- Claims Management and Automation
+- Coding of Client Contracts
 
 ## 4. Benefits and Challenges of AI Adoption
 - Improved Efficiency and Cost Savings
