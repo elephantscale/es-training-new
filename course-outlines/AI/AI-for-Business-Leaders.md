@@ -2,11 +2,20 @@
 * Protech catalog https://www.protechtraining.com/ai-3017-microsoft-ai-for-business-leaders-pt29723
 
 (C) Elephant Scale  
-December 31, 2024
+February 5, 2024
 
 ## Course Description
 
-* Unlock the transformative potential of artificial intelligence. This course empowers business leaders with the knowledge and tools to effectively integrate AI into their organizations, creating substantial business value while ensuring ethical and responsible AI practices. You'll gain familiarity with AI tools, understand essential terminology, and identify practical use cases. Learn to develop a robust AI strategy, foster an AI-ready culture, and navigate the stages of AI success. The course also covers planning AI projects, making informed investments, and leveraging no-code AI tools to empower business users. Ideal for executives and managers, this course prepares you to lead your organization into a future driven by AI innovation.
+* Unlock the transformative potential of artificial intelligence. 
+* This course empowers **business leaders** with the knowledge and tools to effectively integrate AI into their organizations, creating substantial business value while ensuring ethical and responsible AI practices. 
+* You'll gain familiarity with AI tools, understand essential terminology, and identify practical use cases. 
+* Learn to develop a robust AI strategy, foster an AI-ready culture, and navigate the stages of AI success. 
+* The course also covers planning AI projects, making informed investments, and leveraging no-code AI tools to empower business users. 
+* Ideal for **executives and managers**, this course prepares you to lead your organization into a future driven by AI innovation.
+
+## Important note
+* You are looking at a version of this course for a specific use cases of a sales organization.
+* We can also develop a course for your specific use cases applicable to your organization. 
 
 ## Audience
 * Managers and Execs
