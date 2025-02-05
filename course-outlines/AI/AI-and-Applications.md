@@ -1,4 +1,4 @@
-# AI & Applications for an Org (Highmark)
+# AI & Applications for an Org 
 
 (C) Elephant Scale  
 February 4, 2025
