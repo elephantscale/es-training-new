@@ -1,6 +1,6 @@
 # Python Language Complete
 © Elephant Scale
-August 4, 2022
+Febrary 6, 2025
 
 
 ## Overview
@@ -29,7 +29,7 @@ web and service programming and general application development.
 Developers, Architects
 
 ## Duration
-10 days
+5 days
 
 ## Format
 Lectures and hands-on labs. (50%, 50%)

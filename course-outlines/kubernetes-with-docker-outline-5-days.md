@@ -1,7 +1,7 @@
 # Kubernetes with Docker
 
 © Elephant Scale  
-January 13, 2022
+February 6, 2025
 
 ![](../assets/images/logos/docker-logo-3-small.png) &nbsp; &nbsp;
 ![](../assets/images/logos/kubernetes-logo-4-small2.png)

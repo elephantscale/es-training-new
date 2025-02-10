@@ -12,8 +12,8 @@ February 5, 2025
   * Keeping control over the data used for training
   * Controlling actions taken by AI
 * In this course, the students learn how build the AI systems. 
-  * Prepare your data and store it in the semantic search databases
-  * Rules of sending questions to AI
+  * Prepare your data and store it in the semantic search databases (RAG)
+  * Rules of sending questions to AI (Prompt Engineering)
   * Secure AI implementations using local models or networked local copy of the model
   * Best practices for cloud architecture 
 
@@ -101,13 +101,61 @@ February 5, 2025
 * Evaluating and debugging Generative AI
 * Practical examples and demos
 
-### Practical use cases
-* How to make sure your data stays private and under your control
-* Preparing reports for executives
-  * Lab: Build-database-agents
-* Employee turnover and how to capture their experience and know-how
-  * Lab: Serverless-LLM-Bedrock
-  * Lab: Agentic-on-Bedrock
-* Automating daily tasks: pull stats, post them to Slack
-* Integrating Kanban into your workflow with AI
-* Integrating with APIs, using Google email and chat as examples
+## Practical Use Cases
+### Intelligent Document Processing for Policy & Compliance
+* Overview:
+  * Government agencies deal with vast amounts of unstructured text—from policy documents to legislative texts. AI can be used to:
+    * Automatically extract key information.
+    * Summarize long documents.
+    * Verify compliance with regulations.
+* Lab 
+  * Develop a pipeline that uses NLP to extract and categorize key clauses from legislative documents, helping agencies quickly assess compliance and policy implications.
+
+### Citizen Services Chatbots & Virtual Assistants
+
+* Overview:
+  * Enhance public service delivery by developing AI-driven chatbots that provide:
+    * 24/7 citizen support.
+    * Multilingual support.
+    * Personalized guidance on government services.
+* Lab
+  * Build a prototype chatbot that integrates with a government service database, enabling citizens to inquire about service eligibility, status updates, or application processes.
+
+### Predictive Analytics for Resource Allocation
+* Overview:
+  * Government agencies can leverage AI to forecast demand and optimize resource allocation across various services:
+    * Budget planning.
+    * Emergency response management.
+    * Infrastructure maintenance.
+* Lab
+  * Create a predictive model using historical data to forecast the need for emergency services in a region, integrating geospatial data and demographic trends.
+
+### Fraud Detection and Audit Automation
+
+* Overview:
+  * Detecting and preventing fraud is a major concern in government operations. AI can:
+    * Identify anomalies in financial transactions.
+    * Flag suspicious procurement activities.
+    * Streamline internal audits.
+* Lab
+  * Develop an anomaly detection system on a sample dataset of transactions, showing how AI can flag potential fraud for human review.
+
+
+### Social Media Monitoring & Public Sentiment Analysis
+* Overview:
+  * Governments can benefit from understanding public sentiment around policies or services:
+    * Track reactions to new initiatives.
+    * Monitor misinformation.
+    * Gauge public opinion in near-real time.
+* Lab
+* Use NLP to analyze tweets or public comments about a policy change, then visualize sentiment trends over time.
+
+
+### Ethical AI and Accountability in Public Sector Applications
+* Overview:
+  * With increasing AI use in government, ethical considerations become paramount:
+    * Ensure transparency and fairness.
+    * Mitigate bias.
+    * Establish accountability frameworks.
+* Lab
+  * Engage students in a workshop to audit an AI system for fairness and transparency, followed by discussions on policy implications and governance mechanisms.

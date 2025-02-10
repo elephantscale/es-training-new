@@ -2,7 +2,7 @@
 
 © Elephant Scale
 
-February 18, 2022
+February 7, 2025
 
 Hadoop is a mature Big Data environment, with Hive is de-facto standard for the SQL interface.
 Today, the computations in Hadoop are usually done with Spark. 
@@ -11,7 +11,7 @@ Spark offers an optimized compute engine that includes batch, and real-time stre
 This course covers Hadoop 3, Hive 3, and Spark 3.
 
 ## Duration: 
-* 5 days
+* 3-5 days
 
 ## Audience: 
 
