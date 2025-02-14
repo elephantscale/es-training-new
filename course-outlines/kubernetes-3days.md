@@ -1,7 +1,7 @@
 # Introduction to Kubernetes
 
 © Elephant Scale  
-January 13, 2022
+February 12, 2025
 
 ![](../assets/images/logos/kubernetes-logo-4-small2.png)
 
