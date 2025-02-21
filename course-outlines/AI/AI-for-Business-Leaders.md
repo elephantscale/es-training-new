@@ -1,28 +1,20 @@
 # AI for Business Leaders
-* Protech catalog https://www.protechtraining.com/ai-3017-microsoft-ai-for-business-leaders-pt29723
 
 (C) Elephant Scale  
-February 20, 2025
+February 21, 2025
 
 ## Course Description
 
-* Unlock the transformative potential of artificial intelligence. 
-* This course empowers **business leaders** with the knowledge and tools to effectively integrate AI into their organizations, creating substantial business value while ensuring ethical and responsible AI practices. 
-* You'll gain familiarity with AI tools, understand essential terminology, and identify practical use cases. 
-* Learn to develop a robust AI strategy, foster an AI-ready culture, and navigate the stages of AI success. 
-* The course also covers planning AI projects, making informed investments, and leveraging no-code AI tools to empower business users. 
-* Ideal for **executives and managers**, this course prepares you to lead your organization into a future driven by AI innovation.
-
-## Important note
-* You are looking at a version of this course for a specific use cases of a sales organization.
-* We can also develop a course for your specific use cases applicable to your organization. 
+* This course/workshop will be conducted as a combination of lectures/suggestions/demos and brainstorming.
+* Each topic will be subjected to a focused discussion by a group of interested participants.
+* Therefore, participants can choose which sections of the workshop to attend.
 
 ## Audience
 * Managers and Execs
 
 ## Skill Level
 
-* Introductory for all
+* Introductory to intermediate
 
 ## Duration
 * Two days
@@ -31,50 +23,113 @@ February 20, 2025
 * None
 
 ## Format
-* Lectures and demos (50% - 50%)
+* Suggestions and brainstorming (50% - 50%)
 
 ## Lab environment
 * Browser
 
 ## Topics
 
-* Day 1
-  * Introduction and overview of the section covered in "AI and Applications"
-  * Enhanced Customer Engagement
-  * Sales assistance
- * Day 2
-   * Contract generation
-   * Inventory management
-   * Customer behavior
-   * Sales training
-   * Analytics
+### Day 1
+
+* Quick Recap of First Training (what did we learn) – 30 mins
+* Hands-on Experience w/ChatGPT (Sidekick for Highmark): Review & Play w/Prompts – 1 hour
+* Use Case 1: Competitor Information for Sales Messaging – 1 hour
+* Use Case 2: Inventory Management – 1 hour
+* Use Case 3: Coding of Contracts and Quality Review – 1 hour
+* Use Case 4: Analytics– 1 hour
+
+### Day 2
+* Use Case 5: Sales training – 1 hour
+* Use Case 6: Customer Behavior – 1 hour
+* Wrap-up / Recap of Key Takeaways – 1 hour
 
 ## Detailed Outline
 
-### Sales use cases in depth
-1. Enhanced Customer Engagement and Support
-  * SidekickAI acts as an intelligent virtual assistant
-2. AI-Powered Sales Assistance and Strategy Suggestions
-  * SidekickAI analyzing sales data and customer interactions
-3. Contract Generation
-  * There is an area in the Org that handles the contracts, benefit booklets, etc. for Sales and their clients
-  * Use cases may assist with contract/benefit booklet generation or review, etc.
-  * Org is already pursuing the ability for AI to do translations into other languages.
-4. Inventory Management
-  * Org has areas that support sales with their pre-sale quoting activities, as well as post-sale client set-up.
-  * Use cases may assist in managing that work or automating certain aspects of their work.
-5. Customer Behavior
-  * Use cases may predict a customer’s behavior in terms of products/services we should be recommending.
-6. Sales training
-  * Use cases may assist in the development of training or training materials/user guides for sales.
-7. Analytics
-  * Org has an area that supports some analytics tools for sales providing various client specific reporting
-  * Use cases that may help identify ways to make the code more efficient or check the quality would be helpful.
-  * One of the tools used is Encompass and Org is also looking into ways to convert SAS to R or Python.
+### Quick Recap of First Training (what did we learn) – 30 mins
+  * As stated
 
-## Facilitator: Mark Kerzner
-* Mark is an experienced, hands-on software architect who practices and teaches AI, machine learning, and Big Data.
-* He worked and taught in various verticals: Hightech (Cisco/Google), Healthcare(Optum/Kaiser/Cerner). Finance (BOA, JPMC)
-* His classes are hands-on and draw heavily on his industry experience.
-* Mark is certified in Google Cloud (GCP), Amazon (AWS), and Big Data.
+### Hands-on Experience w/ChatGPT (Sidekick for Highmark): Review & Play w/Prompts – 1 hour
+  * Prompt Engineering principles
+  * Latest trends
+  * Provided to participants in Word document
+  * Prompt engineering lab
+  * Use it for early prototyping
+  * Combine all prompts in a Word document
+  * https://platform.openai.com/docs/guides/reasoning#advice-on-prompting
 
+### Use Case 1: Competitor Information for Sales Messaging – 1 hour
+* (Dawn, Jaime, Joey)
+* Competitor Information for Sales Messaging (Jaime Mary’s area)
+* Analyzing competitor information in the market to assist Sales with quoting and client interactions
+* Reason together with ChatGPT: present it with competitors information and ask for suggestions
+
+### Use Case 2: Inventory Management – 1 hour
+* Tricia
+* Inventory Management (Craig Flemmens’ area – work with Cindy.Wessner@highmark.com, Denise.Cipresse@highmark.com and Tricia.Gorman@highmark.com )
+
+
+
+
+### Use Case 3: Coding of Contracts and Quality Review – 1 hour
+* Coding of Contracts and Quality Review (Joey Bonano’s area – work with Jamie.Warfield@highmark.com and Dawn.Eckert@highmark.com)
+* There is an area in the Org that handles the contracts, benefit booklets, etc. for Sales and their clients
+* Use cases specific to the coding of contracts and reviewing for quality.
+* Org already has the ability for AI to do translations into other languages.
+* review contracts for quality
+* coding the contracts
+* Customer Information System
+* QC
+* Document comparison
+* Red lines
+* Compare and summarize
+* ["Computer use?"](https://www.youtube.com/watch?v=ODaHJzOyVCQ)
+* ["Computer use for coders"](https://www.youtube.com/watch?v=vH2f7cjXjKI)
+* Vendor "Inspire"
+* Quadient
+
+### Use Case 4: Analytics– 1 hour
+* TBD
+
+### Use Case 5: Sales training – 1 hour
+* Org has areas that support sales with their pre-sale quoting activities, as well as post-sale client set-up.
+* Use cases may assist in managing that work or automating certain aspects of their work.
+* Cisco example
+* Qaisar system: listens to sales conversations, notes common errors, and helps to fix them.
+* https://profit-pro.ai/
+* SWAY demo
+* AI Tutor and Amazon/Avahi implementation
+* https://github.com/elephantscale/building-ai-applications-labs/tree/main/Agentic-on-Bedrock
+
+### Use Case 6: Customer Behavior – 1 hour
+* Customer Behavior (Craig Flemmens’ area – work with Cindy.Wessner@highmark.com)
+* Use cases may predict a customer’s behavior in terms of products/services we should be recommending.
+* Post sale
+* The benefit coder has a question
+* Should a deductible apply
+* Audit trail inventory management (Pega from Oracle)
+* Benefits
+* Can AI compare what sales are sending to what is coding
+* Proposal generation tool
+* AI to pool all the data. Is it not in tabular format?
+* Gives us a quote with the same benefits as the pre-sale
+* Report to summarize. Ai to look at pega flow, pick up comments and summarize that
+* Right information
+* Can AI with better reporting
+* Better summarization
+* What are the common
+* Helping by educating about mistakes. Sales forgetting to do this, sale support forgetting that
+* Machine learning to predict increased volume of use cases. Preparing the team for overtime
+* Loop in Easter coders
+* Anything aging
+* Benefit word document benefit grid. Other team puts it into their system.
+* Copilot part of copilot
+* Scheduling multiple meetings in sidekick
+* Customer behaviour not much visibility
+* What customer had with the previous carrier
+* What has Highmark done to offer performance network
+* How can we connect the systems
+
+
+
+### Wrap-up / Recap of Key Takeaways – 1 hour
