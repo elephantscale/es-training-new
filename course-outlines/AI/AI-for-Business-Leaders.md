@@ -1,7 +1,7 @@
 # AI for Business Leaders
 
 (C) Elephant Scale  
-February 21, 2025
+February 23, 2025
 
 ## Course Description
 
@@ -17,7 +17,7 @@ February 21, 2025
 * Introductory to intermediate
 
 ## Duration
-* Two days
+* 1.5 days
 
 ## Prerequisites
 * None
@@ -89,7 +89,7 @@ February 21, 2025
 * Quadient
 
 ### Use Case 4: Analytics– 1 hour
-* TBD
+* Amber, SAS
 
 ### Use Case 5: Sales training – 1 hour
 * Org has areas that support sales with their pre-sale quoting activities, as well as post-sale client set-up.
