@@ -13,6 +13,7 @@ March 3, 2025
   * Controlling actions taken by AI
   * Security
   * Data governance
+  * AI in Education: Use Cases & Challenges
 * In this course, the students learn how build the AI systems. 
   * Prepare your data and store it in the semantic search databases
   * Rules of sending questions to AI
@@ -36,7 +37,7 @@ March 3, 2025
 * Intermediate to advanced.
 
 ## Duration
-* Three to five days
+* Five days
 
 ## Prerequisites
 * General familiarity with machine learning
@@ -110,4 +111,35 @@ March 3, 2025
 * Customer service implementation with AI
   * Lab: Serverless-LLM-Bedrock
   * Lab: Agentic-on-Bedrock
+
+### **AI in Education: Use Cases & Challenges**
+
+* AI-powered tutoring and adaptive learning
+* Automated grading and feedback systems
+* Plagiarism detection and academic integrity
+* Student performance prediction and intervention strategies
+
+### **FERPA & Data Privacy in Education**
+
+* Ensuring AI systems comply with **FERPA (Family Educational Rights and Privacy Act)** and **GDPR (General Data Protection Regulation)**.
+* Handling student data securely when using AI tools.
+* Managing AI-generated content responsibly in academic settings.
+
+### **Ethical AI Use in Education**
+
+* Addressing AI biases in grading and assessments.
+* Avoiding misinformation in AI-generated responses.
+* Transparent AI decision-making in education.
+
+### **Security & Data Governance Enhancements**
+
+#### **Securing AI in Education**
+* Preventing unauthorized access to AI-powered systems used in schools/universities.
+* Protecting against AI-based phishing or cheating attempts.
+* Safe authentication methods for AI-based student/teacher interactions.
+
+#### **Data Governance for AI in Education**
+* **Data Storage & Encryption:** Where and how educational data should be stored.
+* **Access Controls:** Who can query AI models, and what limitations should be in place?
+* **Data Retention & Deletion Policies:** Ensuring AI-driven applications follow educational data retention rules.
 
