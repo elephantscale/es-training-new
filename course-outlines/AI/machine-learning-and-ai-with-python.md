@@ -6,10 +6,9 @@ March 3, 2025
 
 ## Overview
 
-Machine Learning (ML) is changing the world. To use ML effectively, one needs to understand the algorithms and how to utilize them. This course provides an introduction into the most popular machine learning algorithms.
+* Machine Learning (ML) is changing the world. To use ML effectively, one needs to understand the algorithms and how to utilize them. This course provides an introduction into the most popular machine learning algorithms.
 
-* AI opens ways to building smart applications as never before.
-* However, many use cases require implementing AI in a secure, responsible manner, including but not limited to:
+* AI opens ways to building smart applications as never before. However, many use cases require implementing AI in a secure, responsible manner, including but not limited to:
   * Not sending your data to third-party online AI services
   * Keeping control over the data used for training
   * Controlling actions taken by AI
@@ -88,5 +87,42 @@ Cloud based lab environment will be provided to students, no need to install any
 * Chatbot
   * How to use an AI to have extended conversations with chatbots personalized or specialized for specific tasks or behaviors.
 * Labs: Prompt-Engineering
+
+### Semantic Search
+
+* Organize your private documents for the implementation and break them into meaningful fragments for storing in the semantic search engine
+* Semantic search
+* Retrieval Augmented Generation (RAG)
+* Recommender systems
+* Hybrid search
+* Facial similarity search
+* Anomaly detection
+* Lab: LLM with Semantic Search
+
+### LangChain, glue to put it together
+* Models, prompts, and parsers
+* Memory
+* Chains
+* Q&A
+* Evaluation
+* Conversational bot
+  * Lab: Langchain
+  * Lab: Functions-Tool-Agents-Langchain
+
+
+### Architecture, testing, and continuous improvements
+* Overview of Amazon, Azure, and Google clouds
+* Evaluating and debugging Generative AI
+* Practical examples and demos
+
+### Practical use cases
+* How to make sure your data stays private and under your control
+* Preparing reports for executives
+  * Lab: Build-database-agents
+* Customer service implementation with AI
+  * Lab: Serverless-LLM-Bedrock
+  * Lab: Agentic-on-Bedrock
+
+
 
 
