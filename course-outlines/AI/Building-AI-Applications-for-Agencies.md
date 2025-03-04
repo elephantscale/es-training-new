@@ -92,12 +92,12 @@ December 3, 2024
 * Q&A
 * Evaluation
 * Conversational bot
-  * Lab: langchain
+  * Lab: Langchain
   * Lab: Functions-Tool-Agents-Langchain
 
 
 ### Architecture, testing, and continuous improvements
-* Overview of Amazon, Azure, and Google clouds of RAG
+* Overview of Amazon, Azure, and Google clouds 
 * Evaluating and debugging Generative AI
 * Practical examples and demos
 
@@ -105,9 +105,7 @@ December 3, 2024
 * How to make sure your data stays private and under your control
 * Preparing reports for executives
   * Lab: Build-database-agents
-* Employee turnover and how to capture their experience and know-how
+* Customer service implementation with AI
   * Lab: Serverless-LLM-Bedrock
   * Lab: Agentic-on-Bedrock
-* Automating daily tasks: pull stats, post them to Slack
-* Integrating Kanban into your workflow with AI
-* Integrating with APIs, using Google email and chat as examples
+

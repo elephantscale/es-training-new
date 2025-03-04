@@ -28,7 +28,7 @@ Machine Learning (ML) is changing the world. To use ML effectively, one needs to
 Data analysts,  Software Engineers, Data scientists
 
 ## Duration:
-Three to five Days
+Three days
 
 ## Skill Level:
 Beginner to Intermediate
@@ -67,107 +67,26 @@ Cloud based lab environment will be provided to students, no need to install any
 * Hardware and software ecosystem
 * Understanding types of Machine Learning (Supervised / Unsupervised / Reinforcement)
 
-### Python Scikit-Learn Library
-* Scikit-Learn library overview
-* Lab:
-  - Scikit-Learn utilities
-
-### Feature Engineering and Exploratory Data Analysis (EDA)
-* Preparing data for ML
-* Statistics Primer
-* Data cleanup
-* Extracting features, enhancing data
-* Visualizing Data
-* Labs:
-  - Data cleanup
-  - Exploring data
-  - Visualizing data
-
-### Machine Learning Concepts
-* Training and Testing
-* Gradient Descent
-* Overfitting / Under-fitting
-* Cross validation, bootstrapping
-* Confusion Matrix
-* ROC curve, Area Under Curve (AUC)
-
-
-### Linear regression
+### Linear, Logistic regression
 * Linear Regression
-* Errors, Residuals
-* Multiple Linear Regression
-* Evaluating model performance
 * Labs:
   - Use case: House price estimates
+  - Use case: logistic regression
 
-### Logistic Regression
-* Understanding Logistic Regression
-* Calculating Logistic Regression
-* Evaluating model performance
-* Labs:
-  - Credit card application
-  - college admissions
-
-### Classification: SVM (Supervised Vector Machines)
-* SVM concepts and theory
-* SVM with kernel
-* Labs:
-   -Customer churn data
-
-### Classification: Decision Trees & Random Forests
-* Classification and Regression Trees (CART) introduction
-* Decision Tree concepts
-* Pruning trees
-* Gini index
-* Bias Variance Tradeoff
-* Random Forest concepts
-* Random Forests features and examples
-* Labs:
-  - Predicting loan defaults
-  - Estimating election contributions
-
-### Classification: Naive Bayes
-* Naive Bayes theory
-* Running Naive Bayes algorithm
-* Evaluating model performance
-* Lab
-  - Spam filtering
-
-### Unsupervised Algorithms
-* Overview of unsupervised algorithms
-* Supervised vs. unsupervised
-* Understanding unsupervised algorithms
-
-### Unsupervised: Clustering:  K-Means
-* Theory behind K-Means
-* Running K-Means algorithm
-* Estimating the performance
-* Labs:
-  - Predicting Uber demand
-  - Clustering shopping trips
+### Prompt Engineering
+* Introduction to AI
+* Iterative development
+  * How to iteratively analyze and refine your prompts to generate marketing copy from a product fact sheet.
+* Summarizing
+  * How to make an AI summarize a document with different requirements and in different formats
+* Inferring
+  * How to make an AI infer sentiment and topics from product reviews and news articles.
+* Transforming
+  * How to use Large Language Models for text transformation tasks such as language translation, spelling and grammar checking, tone adjustment, and format conversion.
+* Expanding
+  * How to generate customer service emails that are tailored to each customer's review.
+* Chatbot
+  * How to use an AI to have extended conversations with chatbots personalized or specialized for specific tasks or behaviors.
+* Labs: Prompt-Engineering
 
 
-### Unsupervised: Principal Component Analysis (PCA)
-* Understanding dimensions
-* 'Curse of dimensionality'
-* Reducing dimensions
-* Overview of Principal Component Analysis (PCA)
-* Eigen vectors and values
-* Implementing PCA algorithm
-* Labs:
-  - Predicting wine quality
-  - Predicting income from census data
-
-### Recommendations
-* Recommendation use cases
-* Recommender systems
-* Collaborative Filtering (CF)
-* Implementing CF algorithm
-* Lab:
-   - Movie ratings recommendation
-   - Songs rating recommendation
-
-### Final workshop (time permitting)
-* This is a group workshop
-* Each group will analyze a couple of real world datasets and run ML algorithms
-* Each group will present their findings to the class
