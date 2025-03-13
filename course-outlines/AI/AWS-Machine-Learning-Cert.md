@@ -18,7 +18,7 @@ and professionals, focusing on architecting and maintaining AWS-based Machine Le
 
 * Elephant Scale's AWS Machine Learning and AI Cert helps participants achieve the level of knowledge needed for the certification.
 * Beyond that, the course gives good understanding of Machine Learning and AI. Official courses usually teach only the AWS technology for ML and AI but leave the students to their own devices as far as core knowledge is concerned. By contract, this courses supplies the missing foundation.
-* Amplifies by official AWS labs and by leading-edge AI technologies, this course not only help achieve the certification, but carries beyond, by making the participants into experts in completing ML and AI projects,
+* Amplified by official AWS labs and by leading-edge AI technologies, this course not only help achieve the certification, but carries beyond, by making the participants into experts in completing ML and AI projects,
 
 ## Duration: 5 days
 
