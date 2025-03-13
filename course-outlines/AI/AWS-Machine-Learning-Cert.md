@@ -11,8 +11,8 @@ applications can typically deliver around 50% cost savings compared to self-host
 
 * AWS Machine Learning (ML) and AI (formerly SageMaker, and now Bedrock is the leading AI application platform for building industrial AI application.
 
-* To fully leverage these benefits, it is essential to have a thorough understanding of AWS services and best practices. This course is designed for software developers, administrators, and DevOps
-professionals, focusing on architecting and maintaining AWS-based solutions. It includes a balanced mix of 50% lectures and 50% hands-on implementation labs within the AWS environment.
+* To fully leverage these benefits, it is essential to have a thorough understanding of AWS services and best practices. This course is designed for software developers, architect, project leaders, machine learning and AI specialists  
+and professionals, focusing on architecting and maintaining AWS-based Machine Learning and AI solutions. It includes a balanced mix of 50% lectures and 50% hands-on implementation labs within the AWS environment.
 
 ## The goal of the course and advanced praise
 
@@ -22,7 +22,11 @@ professionals, focusing on architecting and maintaining AWS-based solutions. It 
 
 ## Duration: 5 days
 
-## Audience: Software developers
+## Audience: 
+* Software developers
+* Architects
+* Project leaders
+* Machine learning and AI specialists
 
 ## Prerequisites:
 
