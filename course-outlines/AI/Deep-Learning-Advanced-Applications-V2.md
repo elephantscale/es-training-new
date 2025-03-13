@@ -1,8 +1,8 @@
-# Deep Learning & Advanced Applications V2
+# Deep Learning & Advanced Applications V3
 
 (C)Copyright Elephant Scale
 
-November 12, 2024
+March 3, 2025
 
 ## Course Description
 
