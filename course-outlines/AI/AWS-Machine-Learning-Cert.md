@@ -2,15 +2,13 @@
 
 © Elephant Scale
 
-March 12, 2025
+March 18, 2025
 
-## About Amazon Web Services
+## About AWS and Machine Learning (SageMaker and Bedrock)
 
 * Amazon Web Services (AWS) stands as the premier cloud platform, providing a powerful environment for developers to build top-tier, scalable applications. When utilized correctly, cloud-based
 applications can typically deliver around 50% cost savings compared to self-hosting solutions.
-
-* AWS Machine Learning (ML) and AI (formerly SageMaker, and now Bedrock is the leading AI application platform for building industrial AI application.
-
+* AWS Machine Learning and AI, implemented as SageMaker and Bedrock, is the leading AI application platform for building industrial AI application.
 * To fully leverage these benefits, it is essential to have a thorough understanding of AWS services and best practices. This course is designed for software developers, architect, project leaders, machine learning and AI specialists  
 and professionals, focusing on architecting and maintaining AWS-based Machine Learning and AI solutions. It includes a balanced mix of 50% lectures and 50% hands-on implementation labs within the AWS environment.
 
@@ -30,9 +28,10 @@ and professionals, focusing on architecting and maintaining AWS-based Machine Le
 
 ## Prerequisites:
 
-* familiarity with programming in at least one language
-* be able to navigate Linux command line
-* basic knowledge of command line Linux editors (VI / nano)
+* Familiarity with programming in at least one language
+* Be able to navigate Linux command line
+* Basic knowledge of command line Linux editors (VI / nano)
+* Helpful: Basic understanding of AWS Cloud infrastructure (Amazon S3 and Amazon CloudWatch)
 
 ## Lab environment:
 
@@ -41,6 +40,8 @@ and professionals, focusing on architecting and maintaining AWS-based Machine Le
 **Zero Install:** There is no need to install software on students' machines.
 
 ## Course Outline
+
+### Day 1
 
 * Introduction
    - Overview of Cloud Computing
@@ -52,11 +53,47 @@ and professionals, focusing on architecting and maintaining AWS-based Machine Le
    - Regions and AZs
    - Foundational Services
    - AWS Command Line Tools (AWS CLI), install and use
+* Introduction to Amazon SageMaker
+  * Amazon SageMaker and Jupyter notebooks
+  * Lab: Introduction to Amazon SageMaker
+* Converting a business problem into an ML problem
+* Demo: Amazon SageMaker Ground Truth - Human in the Looop
+* Lab: Amazon SageMaker Ground Truth
+
+### Day 2
 * ML and AI implementation
-   - Bedrock (formerly SageMaker) capabilities and algorithms for model building and deployment.
-   - AWS data storage and processing services for preparing data for modeling.
-   - Deploying applications and infrastructure on AWS
-   - Monitoring tools for logging and troubleshooting ML and AI systems
-   - AWS services for the automation and orchestration of CI/CD pipelines
-   - AWS security best practices for identity and access management, encryption, and data protection 
-* Labs, uses cases, capstone project.
+  * Bedrock and SageMaker capabilities and algorithms for model building and deployment.
+  * AWS data storage and processing services for preparing data for modeling.
+
+* Preprocessing
+* Data collection and integration
+  * Lab: Data Preprocessing (including project work)
+* Model preparation
+  * Overview of algorithms and choosing the right algorithm
+  * Loss functions and gradient descent
+  * Formatting and splitting your data for training
+  * Demo: Create a training job in Amazon SageMaker
+* Model Training
+  * Classification models
+  * Regression models
+  * Lab: Model training
+* Feature Engineering and Model Tuning
+  * Feature extraction, selection, creation, and transformation
+  * Hyperparameter tuning
+    * Demo: SageMaker hyperparameter optimization
+
+### Day 3
+
+* Practice model training and evaluation
+  * Lab 3: Model Training and Evaluation (including project work) 
+* Deploying applications and infrastructure on AWS
+  * Monitoring tools for logging and troubleshooting ML and AI systems
+  * AWS services for the automation and orchestration of CI/CD pipelines
+  * AWS security best practices for identity and access management, encryption, and data protection
+  * Lab
+
+### Day 4
+* 
+
+### Exam guide
+* [AWS-Certified-AI-Practitioner_Exam-Guide.pdf](AWS-Certified-AI-Practitioner_Exam-Guide.pdf)
