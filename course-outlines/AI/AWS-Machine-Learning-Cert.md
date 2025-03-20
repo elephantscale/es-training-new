@@ -96,26 +96,32 @@ and professionals, focusing on architecting and maintaining AWS-based Machine Le
 * Exam-specific areas
 * Fundamentals of AI and ML
 * Fundamentals of Generative AI 
+  * Lab
 * Applications of Foundation Models
 * Guidelines for Responsible AI
-* Security, Compliance, and Governance for AI Solutions 
+* Security, Compliance, and Governance for AI Solutions
+  * Demo
 
 ### Day 5
 * Machine Learning and AI in more detail
   * Amazon Augmented AI (Amazon A2I), Amazon Bedrock, Amazon Comprehend, Amazon Fraud Detector
   * Amazon Kendra, Amazon Lex, Amazon Personalize, Amazon Polly, Amazon Q, Amazon Rekognition
   * Amazon SageMaker, Amazon Textract, Amazon Transcribe, Amazon Translate
+    * Lab, demo
 * Security, Identity, and Compliance
   * AWS Artifact, AWS Audit Manager, AWS Identity and Access Management (IAM)
   * Amazon Inspector, AWS Key Management Service (AWS KMS), Amazon Macie, AWS Secrets Manager
+    * Demo
 * Analytics
   * AWS Data Exchange, Amazon EMR, AWS Glue
   * AWS Glue DataBrew, AWS Lake Formation, Amazon OpenSearch Service, Amazon QuickSight, Amazon Redshift
+    * Lab
 * Security, Compliance, and Governance for AI Solutions
   * AWS services and features to secure AI systems
   * Source citation and documenting data origins
   * Best practices for secure data engineering
   * Security and privacy considerations for AI systems
+    * Demo
 
 ### Exam guide
 * [AWS-ML-speciality.pdf](AWS-ML-speciality.pdf)
