@@ -59,6 +59,7 @@ and professionals, focusing on architecting and maintaining AWS-based Machine Le
 * Converting a business problem into an ML problem
 * Demo: Amazon SageMaker Ground Truth - Human in the Looop
 * Lab: Amazon SageMaker Ground Truth
+* Relevant exam questions
 
 ### Day 2
 * ML and AI implementation
@@ -81,6 +82,7 @@ and professionals, focusing on architecting and maintaining AWS-based Machine Le
   * Feature extraction, selection, creation, and transformation
   * Hyperparameter tuning
     * Demo: SageMaker hyperparameter optimization
+* Relevant exam questions
 
 ### Day 3
 
@@ -91,6 +93,7 @@ and professionals, focusing on architecting and maintaining AWS-based Machine Le
   * AWS services for the automation and orchestration of CI/CD pipelines
   * AWS security best practices for identity and access management, encryption, and data protection
   * Lab
+* Relevant exam questions
 
 ### Day 4 - Certification exam specifics
 * Exam-specific areas
@@ -101,6 +104,7 @@ and professionals, focusing on architecting and maintaining AWS-based Machine Le
 * Guidelines for Responsible AI
 * Security, Compliance, and Governance for AI Solutions
   * Demo
+* Relevant exam questions
 
 ### Day 5
 * Machine Learning and AI in more detail
@@ -122,6 +126,7 @@ and professionals, focusing on architecting and maintaining AWS-based Machine Le
   * Best practices for secure data engineering
   * Security and privacy considerations for AI systems
     * Demo
+* Relevant exam questions
 
 ### Exam guide
 * [AWS-ML-speciality.pdf](AWS-ML-speciality.pdf)
