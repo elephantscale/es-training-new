@@ -118,4 +118,4 @@ and professionals, focusing on architecting and maintaining AWS-based Machine Le
   * Security and privacy considerations for AI systems
 
 ### Exam guide
-* [AWS-Certified-AI-Practitioner_Exam-Guide.pdf](AWS-Certified-AI-Practitioner_Exam-Guide.pdf)
+* [AWS-ML-speciality.pdf](AWS-ML-speciality.pdf)
