@@ -109,3 +109,5 @@ December 3, 2024
   * Lab: Serverless-LLM-Bedrock
   * Lab: Agentic-on-Bedrock
 
+### Course content
+* [https://github.com/elephantscale/building-ai-applications-labs](https://github.com/elephantscale/building-ai-applications-labs)

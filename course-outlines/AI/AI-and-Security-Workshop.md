@@ -108,3 +108,5 @@ Learning Outcomes	Upon completing this course, participants will:
   * Teams will design and secure an AI system, including data security, pipeline protection, and monitoring.
   * Participants work in groups to design and implement security protocols for an AI model and present findings.
 
+### Course content
+* [https://github.com/elephantscale/ai-and-cybersecurity](https://github.com/elephantscale/ai-and-cybersecurity)
