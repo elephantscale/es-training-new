@@ -1,6 +1,6 @@
 # Python Language Complete
 © Elephant Scale
-Febrary 6, 2025
+February 6, 2025
 
 
 ## Overview

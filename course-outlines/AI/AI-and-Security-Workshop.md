@@ -2,7 +2,7 @@
 
 (C) Copyright Elephant Scale
 
-March 23, 2025
+April 1, 2025
 
 ### Workshop Overview (5-days)
 
@@ -10,12 +10,14 @@ March 23, 2025
 * The "Cybersecurity for AI Professionals" workshop aims to equip AI professionals with a comprehensive understanding of cybersecurity threats specific to AI systems. 
 * Participants will learn best practices for securing AI models, data, and pipelines, integrating these skills into the AI development lifecycle. 
 * By providing hands-on experience with real-world vulnerabilities and mitigation techniques, the program prepares professionals to implement robust cybersecurity frameworks, incident response protocols, and defence strategies against adversarial attacks. Additionally, the workshop emphasizes the importance of ethical and compliance considerations, ensuring participants are well-prepared to address privacy, transparency, and regulatory standards within AI cybersecurity.
-Learning Outcomes	Upon completing this course, participants will:
-* Understand and identify cybersecurity vulnerabilities in AI systems.
-* Implement data protection and secure pipeline practices for AI development.
-* Integrate cybersecurity frameworks and incident response protocols into AI workflows. 
-* Analyze and defend against adversarial attacks on AI systems.
-* Address ethical considerations and compliance standards for cybersecurity in AI.
+
+### Learning Outcomes
+* Upon completing this course, participants will:
+  * Understand and identify cybersecurity vulnerabilities in AI systems.
+  * Implement data protection and secure pipeline practices for AI development.
+  * Integrate cybersecurity frameworks and incident response protocols into AI workflows. 
+  * Analyze and defend against adversarial attacks on AI systems.
+  * Address ethical considerations and compliance standards for cybersecurity in AI.
 
 ### Target Audience	    
 * AI engineers and developers
