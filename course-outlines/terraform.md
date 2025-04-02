@@ -1,7 +1,7 @@
 # Terraform 
 © Elephant Scale
 
-November 25, 2022
+April 1, 2025
 
 ## Overview
 
@@ -52,8 +52,10 @@ Lectures and hands-on labs. (50%, 50%)
 * Terraform can be used for most clouds
 * Currently available flavors of the labs include
   * Amazon AWS
+  * Azure
   * Google cloud GCP
   * Oracle cloud OIC
+
 
 
 ## Detailed Outline
