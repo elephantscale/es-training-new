@@ -63,11 +63,31 @@ April 2, 2025
 - Chrome browser
 - VPN/firewall test checklist will be provided
 
----
-
 ## Detailed Outline
 
-### Day 1: Prompt Engineering
+### Introduction to Machine Learning and Deep Learning
+- Understanding Deep Learning use cases
+- Understanding AI / Machine Learning / Deep Learning
+- Data and AI
+- AI vocabulary
+- Hardware and software ecosystem
+- Understanding types of Machine Learning (Supervised / Unsupervised / Reinforcement)
+
+### Computer Vision
+- Introducing Convolutional Neural Networks (CNN)
+- CNN architecture
+- CNN concepts
+- Lab: Image recognition using CNNs
+
+### Recurrent Neural Networks
+- Introducing RNNs
+- RNN architecture
+- RNN concepts
+- LSTM (Long Short Term Memory) networks
+- LSTM architecture
+- Lab: RNNs for text and sequence prediction
+
+### Prompt Engineering
 
 - Introduction to AI
 - Iterative development  
@@ -83,9 +103,7 @@ April 2, 2025
 - Chatbot development  
 - **Lab: Prompt Engineering**
 
----
-
-### Day 2: Semantic Search
+### Semantic Search
 
 - Organize documents and create fragments
 - Semantic search
@@ -96,9 +114,7 @@ April 2, 2025
 - Anomaly detection
 - **Lab: LLM with Semantic Search**
 
----
-
-### Day 3: LangChain, Glue to Put It Together
+### LangChain, Glue to Put It Together
 
 - Models, prompts, and parsers
 - Memory
@@ -109,11 +125,10 @@ April 2, 2025
 - **Lab: Langchain**
 - **Lab: Functions-Tool-Agents-Langchain**
 
----
 
-### Day 4: AI in Pharma QC — Practical Applications & Pipelines
+### AI in Pharma QC — Practical Applications & Pipelines
 
-**Morning: Pharma Use Cases Deep Dive**
+#### Pharma Use Cases Deep Dive**
 - AI in industrial operations:
   - Batch/sample tracking
   - QC test data management
@@ -121,7 +136,7 @@ April 2, 2025
   - LIMS enhancements
 - Case study: Anomaly detection in lab test results
 
-**Afternoon: Building Intelligent Pipelines**
+#### Afternoon: Building Intelligent Pipelines**
 - Parsing lab reports using AI
 - Integrating AI into MES/LIMS systems
 - Visual QA: Image-based inspection using vision models
@@ -131,17 +146,16 @@ April 2, 2025
 - Extract and classify lab report data using AI
 - Embed lab reports for semantic search and anomaly detection
 
----
 
-### Day 5: Compliance, Validation, and AI Governance in Pharma
+### Compliance, Validation, and AI Governance in Pharma
 
-**Morning: Regulatory Considerations**
+#### Regulatory Considerations**
 - GxP, 21 CFR Part 11, and AI
 - ALCOA+ principles for AI outputs
 - Audit trails and traceability
 - Validating AI models for production
 
-**Afternoon: Secure Deployment and Governance**
+#### Secure Deployment and Governance**
 - Secure AI: local vs cloud models
 - Version control of prompts and AI logic
 - SOPs for AI in regulated environments
@@ -151,8 +165,6 @@ April 2, 2025
 - Build a compliant AI workflow for QC reports
 - Track prompt versions and outputs
 - AI-assisted deviation analysis with logging
-
----
 
 ## Additional Materials
 

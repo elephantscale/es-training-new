@@ -1,10 +1,9 @@
-# Core Technology Bootcamp – Detailed Proposal
+# Core Technology Bootcamp
+(C) Elephant Scale  
+February 9, 2025
 
 ## Program Name
 **Core Technology Bootcamp**
-
-## Client
-[Confidential Client Name]
 
 ## Purpose
 To equip new analysts with essential technical skills necessary for productive performance in their business units.
