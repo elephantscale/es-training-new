@@ -4,8 +4,9 @@
 
 ### Audience Profile
 * Participants: Second-year generalist consultants with a business background and beginner-level knowledge on ‘core technology’ topics (e.g., cloud, SW engineering excellence and principles, tech strategy, architecture, enterprise platforms, cyber security etc.)
-* Objective: Enable consultants to understand and communicate core technology concepts effectively (but not perform technical tasks themselves).
-* Key Goal: Prepare participants to engage in meaningful discussions with technology experts and business stakeholders. Would merge this with objectives
+* Objectives: 
+    * Enable consultants to understand and communicate core technology concepts effectively (but not perform technical tasks themselves).
+    * Prepare participants to engage in meaningful discussions with technology experts and business stakeholders. Would merge this with objectives
 
 
 ### Program Rationale (Day-wise)
