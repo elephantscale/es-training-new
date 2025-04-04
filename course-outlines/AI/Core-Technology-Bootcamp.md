@@ -41,6 +41,7 @@
 **Activities:**  
 - Case study: Business benefits of cloud adoption  
 - Discussion: Challenges in cloud migration  
+- Demo and discussion: start and use a VM in every cloud
 
 #### Session 2: Cloud Service Models & Security
 
@@ -53,6 +54,7 @@
 **Activities:**  
 - Hands-on: Identifying cloud security risks  
 - Discussion: Developing a cloud migration roadmap  
+- Demo and discussion: modern-day security, security of AI applications, Amazon Guardrails
 
 ---
 
@@ -69,18 +71,23 @@
 **Activities:**  
 - Case study: API-driven business transformation  
 - Discussion: How APIs enable digital ecosystems  
+- Team exercise: group role play
+  - Divide participants into three groups: front-end, back-end, and middleware.
+  - Role-play a design meeting
 
 #### Session 2: DevSecOps & CI/CD
 
 **Theme:** DevSecOps & CI/CD  
 **Topics:**  
 - Importance of DevSecOps in modern development  
-- Continuous integration and deployment pipelines  
-- Security automation and compliance  
+- What is continuous integration and deployment pipelines  
+- What are security automation and compliance  
 
 **Activities:**  
-- Interactive simulation: CI/CD workflow in action  
-- Discussion: Security in Agile environments  
+- Demo and discussion: CI/CD workflow in action  
+- Team exercise: Security in Agile environments
+  - Build on the Session 1 group role play
+  - Imitate the activities of red team and blue team
 
 ---
 
@@ -95,8 +102,10 @@
 - How enterprises are modernizing with containers  
 
 **Activities:**  
-- Case study: How businesses scale applications with Kubernetes  
-- Hands-on discussion: Advantages of containerization  
+- Case study: How businesses scale applications with Kubernetes
+- Demo and Hands-on for willing participants
+  - Deploy OWASP Goat security lab and attempt to hack the vulnerabilities
+- Demo and discussion: containerize and scale your application 
 
 #### Session 2: IT Architecture & Business Capability Mapping
 
@@ -109,6 +118,9 @@
 **Activities:**  
 - Workshop: Mapping IT transformation for a business  
 - Discussion: How business capability maps guide IT modernization  
+- Team exercise
+  - Continue prior three-teams exercise
+  - Come up with a budget for three parts of the system
 
 ---
 
