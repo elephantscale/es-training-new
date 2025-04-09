@@ -32,26 +32,26 @@
 
 #### Session 1: Introduction to Cloud Computing
 
-**Theme:** Introduction to Cloud Computing  
-**Topics:**  
+* **Theme:** Introduction to Cloud Computing  
+* **Topics:**  
 - Cloud models: Public, Private, Hybrid  
 - Cloud economics and business impact  
 - Leading cloud platforms (AWS, Azure, GCP)  
 
-**Activities:**  
+* **Activities:**  
 - Case study: Business benefits of cloud adoption  
 - Discussion: Challenges in cloud migration  
 - Demo and discussion: start and use a VM in every cloud
 
 #### Session 2: Cloud Service Models & Security
 
-**Theme:** Cloud Service Models & Security  
-**Topics:**  
+* **Theme:** Cloud Service Models & Security  
+* **Topics:**  
 - Overview of IaaS, PaaS, SaaS  
 - Shared responsibility model in cloud security  
 - Cloud migration strategies and risks  
 
-**Activities:**  
+* **Activities:**  
 - Hands-on: Identifying cloud security risks  
 - Discussion: Developing a cloud migration roadmap  
 - Demo and discussion: modern-day security, security of AI applications, Amazon Guardrails
@@ -62,13 +62,13 @@
 
 #### Session 1: Full Stack & API Communication
 
-**Theme:** Full Stack & API Communication  
-**Topics:**  
+* **Theme:** Full Stack & API Communication  
+* **Topics:**  
 - What is Full Stack Engineering?  
 - Front-end vs Back-end vs Middleware  
 - API-based architecture and its business impact  
 
-**Activities:**  
+* **Activities:**  
 - Case study: API-driven business transformation  
 - Discussion: How APIs enable digital ecosystems  
 - Team exercise: group role play
@@ -95,32 +95,32 @@
 
 #### Session 1: Containerization & Kubernetes
 
-**Theme:** Containerization & Kubernetes  
-**Topics:**  
-- Difference between containerization and virtualization  
-- Benefits of using Kubernetes for orchestration  
-- How enterprises are modernizing with containers  
+* **Theme:** Containerization & Kubernetes  
+* **Topics:**  
+  * Difference between containerization and virtualization
+  * Benefits of using Kubernetes for orchestration
+  * How enterprises are modernizing with containers  
 
-**Activities:**  
-- Case study: How businesses scale applications with Kubernetes
-- Demo and Hands-on for willing participants
-  - Deploy OWASP Goat security lab and attempt to hack the vulnerabilities
-- Demo and discussion: containerize and scale your application 
+* **Activities:**  
+  * Case study: How businesses scale applications with Kubernetes 
+  * Demo and Hands-on for willing participants 
+  * Deploy OWASP Goat security lab and attempt to hack the vulnerabilities 
+  * Demo and discussion: containerize and scale your application 
 
 #### Session 2: IT Architecture & Business Capability Mapping
 
-**Theme:** IT Architecture & Business Capability Mapping  
-**Topics:**  
-- Enterprise systems and IT architecture  
-- Legacy vs modern structures  
-- Understanding transformation costs & technical debt  
+* **Theme:** IT Architecture & Business Capability Mapping  
+* **Topics:**
+  * Enterprise systems and IT architecture
+  * Legacy vs modern structures
+  * Understanding transformation costs & technical debt  
 
-**Activities:**  
-- Workshop: Mapping IT transformation for a business  
-- Discussion: How business capability maps guide IT modernization  
-- Team exercise
-  - Continue prior three-teams exercise
-  - Come up with a budget for three parts of the system
+* **Activities:**  
+  * Workshop: Mapping IT transformation for a business
+  * Discussion: How business capability maps guide IT modernization
+  * Team exercise 
+    * Continue prior three-teams exercise 
+    * Come up with a budget for three parts of the system
 
 ---
 
@@ -128,27 +128,32 @@
 
 #### Session 1: Data Management & Governance
 
-**Theme:** Data Management & Governance  
-**Topics:**  
-- Data lifecycle and data-driven decision-making  
-- Data Warehouses vs Data Lakes  
-- Data privacy and compliance (GDPR, CCPA)  
+* **Theme:** Data Management & Governance  
+* **Topics:**  
+  * Data lifecycle and data-driven decision-making
+  * Data Warehouses vs Data Lakes
+  * Data privacy and compliance (GDPR, CCPA)  
 
-**Activities:**  
-- Case study: Implementing data governance in a multinational company  
-- Discussion: How organizations ensure data quality  
+* **Activities:**  
+  * Case study: Implementing data governance in a multinational company
+  * Discussion: How organizations ensure data quality 
+  * Demo: a data warehouse and a datalake in action 
+  * Demo: data discovery and data governance tool
 
 #### Session 2: Cybersecurity & Tech Resilience
 
-**Theme:** Cybersecurity & Tech Resilience  
-**Topics:**  
+* **Theme:** Cybersecurity & Tech Resilience  
+* **Topics:**  
 - Common cybersecurity threats & attack vectors  
 - Cyber resilience in digital transformation  
 - Enterprise risk management frameworks  
 
-**Activities:**  
+* **Activities:**  
 - Case study: Responding to a cybersecurity breach  
 - Group discussion: Best practices for cybersecurity governance  
+- Team activity: Tabletop exercise
+  - Role-playing activity in which players respond to scenarios presented by one or more facilitators.
+- Team activity: A threat modeling exercise
 
 ---
 
@@ -156,25 +161,32 @@
 
 #### Session 1: Future of IT & Emerging Technologies
 
-**Theme:** Future of IT & Emerging Technologies  
-**Topics:**  
+* **Theme:** Future of IT & Emerging Technologies  
+* **Topics:**  
 - Trends in cloud security and automation  
 - The role of DevSecOps in enterprise transformation  
 - Managing risks in digital-first enterprises  
 
-**Activities:**  
+* **Activities:**  
 - Panel discussion: Experts on enterprise IT trends  
-- Debate: Which technologies will shape the next decade?  
+- Debate: Which technologies will shape the next decade? 
+- Demo and discussion: 
+  - Talking to your SQL database in English
+  - Asking it questions as you would ask a bright intern
+- Demo and discussion
+  - Agentic AI for customer support
+  - Search the FAQ by meaning and answering customer question
 
 #### Session 2: Capstone Project & Final Presentation
 
-**Theme:** Capstone Project & Final Presentation  
-**Topics:**  
-- Applying bootcamp learnings to a real-world scenario  
-- Developing a strategic technology roadmap  
+* **Theme:** Capstone Project & Final Presentation  
+* **Topics:**  
+* Applying bootcamp learnings to a real-world scenario  
+* Developing a strategic technology roadmap  
 
-**Activities:**  
-- Team-based consulting project  
-- Executive-style presentations with structured feedback  
+* **Activities:**  
+* Team-based consulting project  
+* Using AI as a team member
+* Executive-style presentations with structured feedback  
 
 ---
