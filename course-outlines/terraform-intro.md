@@ -1,7 +1,7 @@
-# Terraform 
+# Terraform Intro 1-day
 © Elephant Scale
 
-April 1, 2025
+April 11, 2025
 
 ## Overview
 
@@ -30,7 +30,7 @@ and many competitors have also implemented Terraform ideas, making Terraform a d
 * Anyone working toward their [Terraform Certification](https://www.hashicorp.com/certification/terraform-associate)
 
 ## Duration
-3 days
+1 day
 
 ## Format
 Lectures and hands-on labs. (50%, 50%)
