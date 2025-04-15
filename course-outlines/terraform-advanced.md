@@ -1,7 +1,7 @@
-# Terraform 
+# Terraform Advanced 1-day
 © Elephant Scale
 
-April 1, 2025
+April 15, 2025
 
 ## Overview
 
@@ -21,6 +21,8 @@ Oracle Cloud Infrastructure, VMware vSphere, OpenStack, and many others.
 and many competitors have also implemented Terraform ideas, making Terraform a de facto standard.
 
 ## What you will learn
+ * This one-day advanced course is for engineers who are already familiar with Terraform; it helps them perfect their IaC (Infrastructure as Code) chops.
+ * The outline is already condensed, but we can still skip sections that are not needed in class
  * DevOps and IaC
  * How to use Terraform
  * HashiCorp ecosystem
@@ -52,7 +54,7 @@ Lectures and hands-on labs. (50%, 50%)
 * Terraform can be used for most clouds
 * Currently available flavors of the labs include
   * Amazon AWS
-  * Azure
+  * **Azure**
   * Google cloud GCP
   * Oracle cloud OIC
 
@@ -60,38 +62,19 @@ Lectures and hands-on labs. (50%, 50%)
 
 ## Detailed Outline
 
-* Why Terraform
+* Why Terraform - brief
 
     - The Rise of DevOps
     - What Is Infrastructure as Code?
-    - Ad Hoc Scripts
-    - Configuration Management Tools
-    - Server Templating Tools
-    - Orchestration Tools
-    - Provisioning Tools
-    - The Benefits of Infrastructure as Code
     - How Terraform Works
     - How Terraform Compares to Other IaC Tools
-    - Configuration Management Versus Provisioning
-    - Mutable Infrastructure Versus Immutable Infrastructure
-    - Procedural Language Versus Declarative Language
-    - Master Versus Masterless
-    - Agent Versus Agentless
-    - Large Community Versus Small Community
-    - Mature Versus Cutting Edge
-    - Using Multiple Tools Together
-    - Conclusion
 
-* Getting Started with Terraform
-    - Setting Up Your AWS Account
+* "Hello, World" with Terraform
+    - Setting Up Your Azure Account
     - Install Terraform
     - Deploy a Single Server
     - Deploy a Single Web Server
     - Deploy a Configurable Web Server
-    - Deploying a Cluster of Web Servers
-    - Deploying a Load Balancer
-    - Cleanup
-    - Conclusion
     
 * How to Manage Terraform State
     - What Is Terraform State?
@@ -150,10 +133,7 @@ Lectures and hands-on labs. (50%, 50%)
     - Cleaning Up After Tests
     - Automated Tests
     - Unit Tests
-    - Integration Tests
-    - End-to-End Tests
-    - Other Testing Approaches
-    - Conclusion
+
 * How to Use Terraform as a Team
     - Adopting IaC in Your Team
     - Convince Your Boss
