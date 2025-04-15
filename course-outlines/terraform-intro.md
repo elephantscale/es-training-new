@@ -1,7 +1,7 @@
 # Terraform Intro 1-day
 © Elephant Scale
 
-April 11, 2025
+April 15, 2025
 
 ## Overview
 
@@ -52,7 +52,7 @@ Lectures and hands-on labs. (50%, 50%)
 * Terraform can be used for most clouds
 * Currently available flavors of the labs include
   * Amazon AWS
-  * Azure
+  * **Azure**
   * Google cloud GCP
   * Oracle cloud OIC
 
@@ -114,46 +114,6 @@ Lectures and hands-on labs. (50%, 50%)
     - Module Versioning
     - Conclusion    
     
-* Terraform Tips and Tricks: Loops, If-Statements, Deployment, and Gotchas
-    - Loops
-    - Loops with the count Parameter
-    - Loops with for_each Expressions
-    - Loops with for Expressions
-    - Loops with the for String Directive
-    - Conditionals
-    - Conditionals with the count Parameter
-    - Conditionals with for_each and for Expressions
-    - Conditionals with the if String Directive
-    - Zero-Downtime Deployment
-    - Terraform Gotchas
-    - count and for_each Have Limitations
-    - Zero-Downtime Deployment Has Limitations
-    - Valid Plans Can Fail
-    - Refactoring Can Be Tricky
-    - Eventual Consistency Is Consistent...Eventually
-    - Conclusion
-    
-* Production-Grade Terraform Code
-    - Why It Takes So Long to Build Production-Grade Infrastructure
-    - The Production-Grade Infrastructure Checklist
-    - Production-Grade Infrastructure Modules
-    - Small Modules
-    - Composable Modules
-    - Testable Modules
-    - Releasable modules
-    - Beyond Terraform Modules
-    - Conclusion
-    
-* How to Test Terraform Code
-    - Manual Tests
-    - Manual Testing Basics
-    - Cleaning Up After Tests
-    - Automated Tests
-    - Unit Tests
-    - Integration Tests
-    - End-to-End Tests
-    - Other Testing Approaches
-    - Conclusion
 * How to Use Terraform as a Team
     - Adopting IaC in Your Team
     - Convince Your Boss
@@ -165,16 +125,6 @@ Lectures and hands-on labs. (50%, 50%)
     - Make Code Changes
     - Submit Changes for Review
     - Run Automated Tests
-    - Merge and Release
-    - Deploy
-    - A Workflow for Deploying Infrastructure Code
-    - Use Version Control
-    - Run the Code Locally
-    - Make Code Changes
-    - Submit Changes for Review
-    - Run Automated Tests
-    - Merge and Release
-    - Deploy
     - Putting It All Together
     - Conclusion 
     
