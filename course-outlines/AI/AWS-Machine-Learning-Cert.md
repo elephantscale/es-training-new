@@ -2,7 +2,7 @@
 
 © Elephant Scale
 
-March 18, 2025
+April 16, 2025
 
 ## About AWS and Machine Learning (SageMaker and Bedrock)
 
