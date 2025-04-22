@@ -3,7 +3,7 @@
 
 (C) Copyright Elephant Scale
 
-April 2, 2025
+April 22, 2025
 
 ### Course Description
 
