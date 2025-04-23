@@ -171,3 +171,17 @@ April 22, 2025
 - Regulatory quick reference: AI & GxP cheat sheet
 - SOP template for AI governance
 - Prompt library tailored to pharma QC use cases
+
+## Customer comments
+
+* Comment 1
+  * I think the Computer Vision component might be useful, as CNNs are more explainable than transformers (but, CNNs are largely being replaced by transformers, but still have some use cases especially in controlled environments), but I would definitely replace the RNN section with a transformer section. 
+  * Currently, there are some hybrid architectures that researchers are trying to get off the ground (e.g., the Mamba state space model) that include recurrent and transformer-like parallelizable model components, but these are so far not commonly used and/or have shown to be a sufficient replacement for transformers. 
+  * The transformer architecture is the architecture that is used for all frontier LLM models.
+
+* Comment 2
+  * Instead of the CNN section, it might be useful for them to focus on transformers. 
+  * After talking about the architecture, they could talk about transformers and how modern LLMs are made and how they can be deployed (e.g., quantization, hardware requirements, and efficient inference). 
+  * This training could include sections on pre-training and post-training (generally- fine-tuning and reinforcement learning). 
+  * How models are trained/used for multi-modality, how they are trained/used for function calling, and how they are being trained/used for agentic tasks. 
+  * The last topic could be on how scaling test (inference) time compute has helped improved model performance.
