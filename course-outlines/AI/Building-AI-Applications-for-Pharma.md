@@ -87,6 +87,23 @@ April 22, 2025
 - LSTM architecture
 - Lab: RNNs for text and sequence prediction
 
+### HuggingFace 
+
+* Transformers - next step after NN, CNN, RNN.
+* Uses cases: 
+  * All NLP tasks
+  * Image processing
+  * Predictions
+* Models
+* Fine-tuning a model 
+* The Hugging Face Hub
+* Sharing pretrained models
+* Vision with Transformers
+
+### Mamba and Jamba architecture
+* Theory behind Mamba and Jamba
+* Lab: Build Long-Context AI Apps with Jamba
+
 ### Prompt Engineering
 
 - Introduction to AI
