@@ -202,3 +202,14 @@ April 22, 2025
   * This training could include sections on pre-training and post-training (generally- fine-tuning and reinforcement learning). 
   * How models are trained/used for multi-modality, how they are trained/used for function calling, and how they are being trained/used for agentic tasks. 
   * The last topic could be on how scaling test (inference) time compute has helped improved model performance.
+
+* Comment 3
+  * Traditional machine learning: 
+    * linear regression, 
+    * logistic regression, 
+    * decision trees
+    * KMeans clustering
+    * 
+  * Understanding of CNN
+  * How Transformers work, image recognition with Transforms
+  * 
