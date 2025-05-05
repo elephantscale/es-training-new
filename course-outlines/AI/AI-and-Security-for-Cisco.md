@@ -1,13 +1,11 @@
 ﻿# AI and Security for Cisco
-
 (C) Copyright Elephant Scale
-
-March 12, 2025
+May 4, 2025
 
 ### Course Description
 * Course goals
   * This course helps Cisco fulfill its strategy of enabling its clients to deliver secure AI systems
-  * This is evidenced by Cisco's acquisition of [Robust Intelligence](https://blogs.cisco.com/security/evaluating-security-risk-in-deepseek-and-other-frontier-reasoning-models), a leading security first.
+  * This is evidenced by Cisco's acquisition of [Robust Intelligence](https://blogs.cisco.com/security/evaluating-security-risk-in-deepseek-and-other-frontier-reasoning-models), a leading security firm.
   
 * The "Cybersecurity for AI Professionals" workshop aims to equip AI professionals with a comprehensive understanding of cybersecurity threats specific to AI systems. 
 * Participants will learn best practices for securing AI models, data, and pipelines, integrating these skills into the AI development lifecycle. 
