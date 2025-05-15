@@ -2,7 +2,7 @@
 
 (C) Copyright Elephant Scale
 
-March 3, 2025
+May 15, 2025
 
 ## Course Description
 
@@ -98,12 +98,6 @@ March 3, 2025
   * Lab: Langchain
   * Lab: Functions-Tool-Agents-Langchain
 
-
-### Architecture, testing, and continuous improvements
-* Overview of Amazon, Azure, and Google clouds 
-* Evaluating and debugging Generative AI
-* Practical examples and demos
-
 ### Practical use cases
 * How to make sure your data stays private and under your control
 * Preparing reports for executives
@@ -111,6 +105,23 @@ March 3, 2025
 * Customer service implementation with AI
   * Lab: Serverless-LLM-Bedrock
   * Lab: Agentic-on-Bedrock
+
+### Security
+
+* Prompt hacking intro
+  * Introduction to prompt hacking
+  * Possible approach to protection
+* Prompt hacking and defenses
+  * In-depth study of AI hacking
+  * Protection hackathon by IBM
+* Threat Modeling
+  * How to find your vulnerabilities
+  * Lay out of the attack landscape
+* Top 10 vulnerabilities of AI
+  * OWASP top 10 list
+  * Attacks and defenses
+* Defense cookbook
+  * Guardrails labs demo
 
 ### **AI in Education: Use Cases & Challenges**
 
