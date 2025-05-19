@@ -1,9 +1,9 @@
 # AI for Developers in the Pharmaceutical Industry  
-## Focus: Industrial Operations & Quality Control
+### Focus: Industrial Operations & Quality Control
 
 (C) Copyright Elephant Scale
 
-April 22, 2025
+May 19, 2025
 
 ### Course Description
 
@@ -72,6 +72,11 @@ April 22, 2025
 - AI vocabulary
 - Hardware and software ecosystem
 - Understanding types of Machine Learning (Supervised / Unsupervised / Reinforcement)
+* Traditional machine learning: 
+  * linear regression, 
+  * logistic regression, 
+  * decision trees
+  * KMeans clustering
 
 ### Computer Vision
 - Introducing Convolutional Neural Networks (CNN)
@@ -98,11 +103,9 @@ April 22, 2025
 * Fine-tuning a model 
 * The Hugging Face Hub
 * Sharing pretrained models
-* Vision with Transformers
-
-### Mamba and Jamba architecture
-* Theory behind Mamba and Jamba
-* Lab: Build Long-Context AI Apps with Jamba
+* Vision with Transformers 
+  * Compare CNN to Transformer implementation
+  * Pre-training and post-training, fine-tuning and reinforcement learning.
 
 ### Prompt Engineering
 
@@ -119,6 +122,10 @@ April 22, 2025
   - Tailored customer service responses
 - Chatbot development  
 - **Lab: Prompt Engineering**
+
+### Mamba and Jamba architecture
+* Theory behind Mamba and Jamba
+* Lab: Build Long-Context AI Apps with Jamba
 
 ### Semantic Search
 
@@ -142,6 +149,22 @@ April 22, 2025
 - **Lab: Langchain**
 - **Lab: Functions-Tool-Agents-Langchain**
 
+### Security
+
+* Prompt hacking intro
+  * Introduction to prompt hacking
+  * Possible approach to protection
+* Prompt hacking and defenses
+  * In-depth study of AI hacking
+  * Protection hackathon by IBM
+* Threat Modeling
+  * How to find your vulnerabilities
+  * Lay out of the attack landscape
+* Top 10 vulnerabilities of AI
+  * OWASP top 10 list
+  * Attacks and defenses
+* Defense cookbook
+  * Guardrails labs demo
 
 ### AI in Pharma QC — Practical Applications & Pipelines
 
@@ -153,7 +176,6 @@ April 22, 2025
   - LIMS enhancements
 - Case study: Anomaly detection in lab test results
 
-#### Afternoon: Building Intelligent Pipelines**
 - Parsing lab reports using AI
 - Integrating AI into MES/LIMS systems
 - Visual QA: Image-based inspection using vision models
@@ -189,59 +211,4 @@ April 22, 2025
 - SOP template for AI governance
 - Prompt library tailored to pharma QC use cases
 
-## Customer comments
-
-* Comment 1
-  * I think the Computer Vision component might be useful, as CNNs are more explainable than transformers (but, CNNs are largely being replaced by transformers, but still have some use cases especially in controlled environments), but I would definitely replace the RNN section with a transformer section. 
-  * Currently, there are some hybrid architectures that researchers are trying to get off the ground (e.g., the Mamba state space model) that include recurrent and transformer-like parallelizable model components, but these are so far not commonly used and/or have shown to be a sufficient replacement for transformers. 
-  * The transformer architecture is the architecture that is used for all frontier LLM models.
-
-* Comment 2
-  * Instead of the CNN section, it might be useful for them to focus on transformers. 
-  * After talking about the architecture, they could talk about transformers and how modern LLMs are made and how they can be deployed (e.g., quantization, hardware requirements, and efficient inference). 
-  * This training could include sections on pre-training and post-training (generally- fine-tuning and reinforcement learning). 
-  * How models are trained/used for multi-modality, how they are trained/used for function calling, and how they are being trained/used for agentic tasks. 
-  * The last topic could be on how scaling test (inference) time compute has helped improved model performance.
-
-* Comment 3
-  * Traditional machine learning: 
-    * linear regression, 
-    * logistic regression, 
-    * decision trees
-    * KMeans clustering
-    * 
-  * Understanding of CNN
-  * How Transformers work, image recognition with Transforms
-
-## Additional references
-
-AI Insights from Big Pharma
- 
-
-The world’s biggest pharmaceutical company by revenue shed light on its AI strategy.
-
- 
-
-What’s new: Johnson & Johnson, after experimenting broadly with generative AI, settled on a short list of projects that aid in sales, drug development, supply-chain management, and internal communications. A company executive described the process and results to the venture-capital firm Greylock and The Wall Street Journal.
-
- 
-
-How it works: The 140-year-old medical company spent roughly a year experimenting with various AI applications throughout the company, according to Chief Information Officer Jim Swanson. A centralized governing board oversaw as many as 900 experiments. After finding that 10 percent to 15 percent of use cases drove about 80 percent of the value, the company shifted responsibility for AI projects to specific departments to focus on high-value applications. In the end, the criteria for choosing a project was threefold: (i) how readily it could be implemented, (ii) how useful it would be throughout the company, and (iii) how much it would benefit the business.
-
-A division that develops cancer treatments integrated a sales copilot into its customer relationship management system. The system supplies medically validated, legally reviewed information about products and information about particular customers. The application is being adapted for salespeople who sell hardware such as robotics and artificial hip joints.
-AI systems are accelerating drug development. One system helps design chemical processes, such as determining the optimal moment to add a compound that will turn a liquid into a solid. An image-analytics model helps identify compounds that are safe and effective.
-The company developed a system that monitors and predicts risks to supply chains, such as a fire that may affect supplier locations, materials, or products. The system provides early warnings that helps managers anticipate and mitigate disruptions.
-AI tools are helping to organize and execute clinical trials more efficiently. Models that identify patients who qualify for trials help ensure that trial populations are sufficiently diverse. A model that helps enroll patients in trials more than doubled enrollment in some cases.
-The Global Services department implemented a chatbot to answer employees’ questions about benefits, policies, and procedures and sends links to relevant documents.
-Separate organizations that oversee AI development and data management help keep projects moving forward, meet ethical standards, and scale appropriately. Meanwhile, employees undergo “digital boot camp” training (including a course in generative AI).
-Behind the news: Generative AI is expected to bring in up to $110 billion in annual revenue across the pharmaceutical industry, according to McKinsey. The consultancy breaks down this number into the following categories, in order of their contribution to the total: commercial (AI for sales and marketing), research (AI for designing, screening, and manufacturing molecules), clinical (AI to facilitate trials), enterprise, operations, and medical (processing medical literature).
-
- 
-
-Why it matters: Johnson & Johnson’s experience offers a peek into AI development at a major legacy company in a key sector. The company has identified high-value opportunities in enterprise-wide operations, departmental priorities, and core products. It’s pursuing all three.
-
- 
-
-We’re thinking: Notably, this medical stalwart is building AI applications for human resources, sales, and supply-chain management. Similar opportunities exist at companies old and new, big and small, far and wide.
-
-[Source](https://info.deeplearning.ai/chatgpt-grovels-qwen3-takes-on-deepseek-r1-johnson-jonson-reveals-ai-strategy-easy-reasoning-hack)
+[AI Insights from Big Pharma](https://info.deeplearning.ai/chatgpt-grovels-qwen3-takes-on-deepseek-r1-johnson-jonson-reveals-ai-strategy-easy-reasoning-hack)
