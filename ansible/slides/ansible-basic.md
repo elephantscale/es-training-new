@@ -89,7 +89,7 @@ execute on the remote host only when needed, leaving no persistent agents behind
 <img src="../images/img.png" style="width:35%;"/>
 
 <span style="font-size:15px; color:red">
-_Important: Windows hosts require a small Python executable to be installed, but no separate agent or service is needed._
+_Important: Windows hosts require PowerShell and WinRM to be configured, but no separate agent or service is needed._
 </span>
 
 ---
@@ -266,14 +266,15 @@ ansible_user=<Username>  # (ubuntu in our environment)
 
 - **Language**: Ansible is primarily written in Python, allowing it to run on many OSes including Debian, Red Hat-based distributions, and FreeBSD.
 - **macOS**: Can be installed via `pip`, Homebrew, or other package managers.
-- **Windows**: Native installation is not officially supported, but WSL (Windows Subsystem for Linux) or Python distributions can be used.
+- **Windows**: Native installation is supported via WSL2 (Windows Subsystem for Linux) or Python distributions. Windows Server 2025 requires Ansible Core 2.19+.
 
 ---
 
 ## Release Cycle
 
-- **Frequency**: A new Ansible release occurs approximately every four months.
-- **Changes**: Each release may include bug fixes, new features, or even significant architecture updates.
+- **Frequency**: Ansible releases occur approximately every four weeks for minor versions, with major releases twice a year.
+- **Current Versions**: As of 2025, Ansible 11.x is the latest stable release (based on ansible-core 2.18.x).
+- **Changes**: Each release includes bug fixes, new collections, and feature updates while maintaining backward compatibility.
 - **Best Practice**: Use official Ansible packages or repositories to stay up to date with the latest stable releases.
 
 <img src="../images/rel_c.gif">

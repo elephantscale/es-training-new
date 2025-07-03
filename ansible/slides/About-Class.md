@@ -9,31 +9,31 @@
 |---|-------|--------------------------|
 | 1 | 1     | Ansible Overview         |
 | 2 | 2     | Deploying Ansible        |
-| 3 | 3     | Playbooks                |
-| 4 | 2     | Variables and Inclusions |
+| 3 | 2     | Playbooks                |
+| 4 | 1     | Variables and Inclusions |
 
 
 ---
 
 ## Day 2
 
-| # | Hours | Subject            |
-|---|-------|--------------------|
-| 1 | 02    | Task Control       |
-| 2 | 03    | Jinja2 Templates   |
-| 3 | 01    | Roles              |
-| 4 | 02    | Optimizing Ansible |
-
+| # | Hours | Subject          |
+|---|-------|------------------|
+| 1 | 01    | Task Control     |
+| 2 | 01    | Block Control    |
+| 3 | 01    | Variables        |
+| 4 | 01    | Conditions       |
+| 5 | 01    | Jinja2 Templates |
+| 6 | 01    | Ansible Vault    |
 
 ---
 ## Day 3
 
-| # | Hours | Subject                  |
-|---|-------|--------------------------|
-| 1 | 02    | Ansible Vault            |
-| 2 | 01    | Troubleshooting Ansible  |
-| 3 | 03    | Ansible Tower            |
-| 4 | 02    | Ansible in a DevOps      |
+| # | Hours | Subject              |
+|---|-------|----------------------|
+| 1 | 03    | Roles                |
+| 2 | 01    | Optimizing Ansible |
+| 3 | 01    | Ansible Galaxy       |
 
 
 ---

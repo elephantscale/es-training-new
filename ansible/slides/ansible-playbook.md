@@ -159,15 +159,15 @@ become: true
 ## Modules: Index
 
 - **Local Documentation**: `/usr/share/doc/ansible/html/modules_by_category.html`
-- **Online Index** (for Ansible 2.9 example):  
-  [Ansible Modules by Category](https://docs.ansible.com/ansible/2.9/modules/modules_by_category.html)
+- **Online Index** (for current Ansible version):  
+  [Ansible Modules by Category](https://docs.ansible.com/ansible/latest/collections/index.html)
 
 ---
 
 ## Modules: Documentation
 
 - **Local Docs**: `/usr/share/doc/ansible/html/modules/<module_name>.html`
-- **Online Docs**: `https://docs.ansible.com/ansible/2.9/modules/<module_name>.html`
+- **Online Docs**: `https://docs.ansible.com/ansible/latest/collections/<collection_name>/<module_name>_module.html`
 - **Contents**:
     - Description of the module
     - Required arguments (e.g., `name`, `state`)
@@ -373,7 +373,7 @@ Facts are automatically collected information about each managed host (e.g., OS,
   tasks:
     - name: Display CPU count
       debug:
-        msg: "The target host has {{ ansible_facts['processor']['count'] }} CPUs."
+        msg: "The target host has {{ ansible_facts['processor_count'] }} CPUs."
 ```
 
 ---
@@ -542,7 +542,8 @@ An alternative to `with_items` is the `loop` directive:
   loop: "{{ my_list }}"
 ```
 
-- **`loop`**: Often preferred for readability and flexibility.
+- **`loop`**: Modern syntax that offers additional functionality and flexibility.
+- **Both approaches work**: Choose based on your team's preference and existing codebase.
 
 ---
 
@@ -552,7 +553,7 @@ An alternative to `with_items` is the `loop` directive:
 - name: Display list items except 'item2'
   debug:
     msg: "{{ item }}"
-  loop: "{{ my_list }}"
+  with_items: "{{ my_list }}"
   when: item != 'item2'
 ```
 
@@ -566,7 +567,7 @@ An alternative to `with_items` is the `loop` directive:
 - name: Display list items with index
   debug:
     msg: "Index: {{ my_index }} - Value: {{ my_loop }}"
-  loop: "{{ my_list }}"
+  with_items: "{{ my_list }}"
   loop_control:
     index_var: my_index
     loop_var: my_loop
@@ -1188,13 +1189,13 @@ You can combine strategies like `free` or `linear` with the `serial` keyword for
 
 ---
 
-## Ansible Tower / AWX
+## Red Hat Automation Platform / AWX
 
-- **What It Is**: A web-based UI and enterprise solution for Ansible.
+- **What It Is**: A web-based UI and enterprise solution for Ansible automation.
 - **Use Cases**: Role-based access control (RBAC), job scheduling, centralized logging, and reporting.
 - **Distinction**:
     - **AWX** is the open source community edition.
-    - **Ansible Tower** is the Red Hat-supported version with additional features and commercial support.
+    - **Red Hat Automation Platform** is the Red Hat-supported commercial version with additional features and enterprise support.
 - **Why Mention It**: As teams and infrastructures grow, a web interface and enterprise features can greatly simplify user management, auditing, and visibility.
 
 ---
@@ -1245,6 +1246,6 @@ You can combine strategies like `free` or `linear` with the `serial` keyword for
 - **Compliance as Code**
     - Use Ansible to enforce security baselines (e.g., CIS Benchmarks, DISA STIGs).
 - **Auditing**
-    - Combine with Ansible Tower/AWX for centralized logging of who ran what and when.
+    - Combine with Red Hat Automation Platform/AWX for centralized logging of who ran what and when.
 - **Why It Matters**: Security is a major concern; Ansible’s agentless model and Vault encryption can simplify compliance tasks and auditing.
 

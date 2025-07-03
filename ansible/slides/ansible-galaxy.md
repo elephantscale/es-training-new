@@ -107,7 +107,7 @@ ansible-galaxy install username.role_name
 # In a role's meta/main.yml
 dependencies:
   - src: geerlingguy.apache
-    version: 3.0.0
+    version: ">=3.0.0"
 ```
 
 ```bash
