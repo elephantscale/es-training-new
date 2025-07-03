@@ -97,6 +97,8 @@ action_response = bedrock_agent.create_agent_action_group(
 - Agents dynamically call functions to retrieve or log data.
 - Example: Resolve a refund request by combining multiple steps.
 
+Notes:
+Farshid puts his notes
 ---
 
 ## Key Takeaways
