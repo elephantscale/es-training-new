@@ -265,3 +265,58 @@ print(response.choices[0].text.strip())
   - Chatbots.
   - Automated customer support.
   - Knowledge assistants.
+
+---
+
+## RAG course
+
+* Coursera course
+* https://www.coursera.org/learn/retrieval-augmented-generation-rag/home/module/1
+
+---
+
+## RAG intro
+![](images/rag01.png)
+
+---
+
+## Need for RAG
+![](images/rag02.png)
+
+---
+
+## RAG idea
+![](images/rag03.png)
+
+---
+
+## RAG applications
+![](images/rag04.png)
+
+---
+
+## More RAG applications
+![](images/rag05.png)
+
+---
+
+## Specialized knowledge
+![](images/rag06.png)
+
+---
+
+## Applications of RAG
+![](images/rag07.png)
+
+---
+
+
+## Personalized of RAG
+![](images/rag08.png)
+
+---
+
+## Summary of RAG
+![](images/rag09.png)
+
+---
