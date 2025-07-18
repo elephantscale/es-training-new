@@ -320,3 +320,43 @@ print(response.choices[0].text.strip())
 ![](images/rag09.png)
 
 ---
+
+## RAG architecture
+![](images/rag10.png)
+
+---
+
+## RAG architecture cont'd
+![](images/rag11.png)
+
+---
+
+## Advantages of RAG
+![](images/rag12.png)
+
+---
+
+## Basic code snippet of RAG
+![](images/rag13.png)
+
+---
+
+## Module 2
+![](images/rag14.png)
+
+---
+
+## Module 3
+![](images/rag15.png)
+
+---
+
+## Module 4
+![](images/rag16.png)
+
+---
+
+## Module 5
+![](images/rag17.png)
+
+---
