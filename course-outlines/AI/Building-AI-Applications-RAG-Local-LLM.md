@@ -2,7 +2,7 @@
 
 (C) Copyright Elephant Scale
 
-June 10, 2025
+July 27, 2025
 
 ## Course Description
 
@@ -34,7 +34,7 @@ June 10, 2025
 * Intermediate to advanced.
 
 ## Duration
-* Three days
+* Three days (or five half-day sessions)
 
 ## Prerequisites
 * General familiarity with machine learning
@@ -44,7 +44,6 @@ June 10, 2025
 
 ## Format
 * Lectures and hands on labs. (50% - 50%)
-
 
 ## Lab environment
 * Zero Install: There is no need to install software on students' machines!
@@ -61,40 +60,47 @@ June 10, 2025
 * Good rules of prompt engineering
 * Lab
 
-### Semantic Search 
-
-* Organize your private documents for the implementation and break them into meaningful fragments for storing in the semantic search engine
-* Semantic search
-* Retrieval Augmented Generation (RAG)
-* Lab: LLM with Semantic Search
-
-### LangChain, glue to put it together
-* Models, prompts, and parsers
-* Memory
-* Chains
-* Q&A
-* Evaluation
-* Conversational bot
-  * Lab: Langchain
-  * Lab: Functions-Tool-Agents-Langchain
-
-### Vector DBs
-* CromaDB
-* Pinecone
+### Day 1: Foundations of RAG and Prompting
+* Introduction to Retrieval-Augmented Generation (RAG)
+  * Why local LLMs? Privacy, control, and compliance
+  * Prompt Engineering: Techniques & Guidelines
+  * Designing structured vs. unstructured prompts
 * Lab
+  * Try effective prompts and templates
+  * Compare prompt results on different tasks
+  * Hands-on with a basic LLM interface
 
+### Day 2: Semantic Search and Vector Databases
+*  Organizing private documents for AI
+  * Chunking and embedding content
+  * Introduction to semantic search and vector databases (ChromaDB, Pinecone, Weaviate)
+* Lab
+  * Prepare and embed sample document corpus
+  * Load into vector DB (ChromaDB or Pinecone)
+  * Perform similarity-based retrieval
 
-### Weaviate
-* Vectors deep dive
+### Day 3: Building RAG Pipelines with LangChain
+* LangChain overview: models, chains, memory, agents
+* Tool use, function calling, and prompt orchestration
 * Lab
-* Building Multimodal Search and RAG
-* Lab
+  * Create a Q&A agent using LangChain
+  * Integrate memory and basic tool usage
+  * Chain prompts to build a more dynamic experience
 
-### Llama, ollama
-* Improving accuracy of LLM applications
+### Day 4: Advanced LangChain & Local Model Integration
+* Vector DB deep dive: performance and tradeoffs
+* Deploying LLaMA/Ollama and local LLM options
+* Conversational agent architecture
 * Lab
-* Multimodal Llama
-* Lab
+  * Connect LangChain with vector DB + local LLM (LLaMA)
+  * Test chatbot with memory and tool usage
+  * Evaluate accuracy and hallucination reduction
 
-### RESTful API
+### Day 5: Multimodal Search, Evaluation & APIs
+* Multimodal RAG: Image, audio, and structured data
+* Evaluation techniques for LLM pipelines
+* Building RESTful APIs for deployment
 * Lab
+  * Build a simple multimodal RAG pipeline
+  * Wrap your app in a REST API
+  * Final showcase: test, evaluate, and share what you built
