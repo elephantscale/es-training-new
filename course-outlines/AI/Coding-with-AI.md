@@ -1,15 +1,14 @@
-# Coding with AI
+# Coding with AI GitHub Copilot and IntelliJ
 
 (C) Copyright Elephant Scale
 
-November 24, 2024
+August 12, 2025
 
 ## Course Description
 
 * AI opens ways to building smart applications as never before.
   * As Andrew Ng says, AI will not replace programmers; rather, programmers that use AI will replace those programmers that do not use AI.
-  * In this course, the students learn how build systems using AI.
-  * Rules of sending questions to AI
+  * In this course, the students learn how to build systems using AI.
 
 * In addition, many use cases require implementing AI in a secure, responsible manner, including but not limited to:
   * Not sending your data to third-party online AI services
@@ -35,9 +34,9 @@ November 24, 2024
 * Intermediate to advanced.
 
 ## Duration
-* Five days
+* Two days
 
-## Prerequisites
+## Prerequisites (helpful but not required)
 * General familiarity with machine learning
 * Exposure to coding in any language
 * Familiarity with Python helpful
@@ -58,6 +57,12 @@ November 24, 2024
 
 ## Detailed outline
 
+### Introduction to coding with AI
+* Overview of popular AI IDE (advantages, drawbacks, use cases)
+  * Windsurf
+  * Git Copilot
+  * Claude Code
+  
 ### Prompt Engineering
 * Introduction to AI
 * Iterative development
@@ -65,94 +70,61 @@ November 24, 2024
 * Chatbot
   * How to use an AI to have extended conversations with chatbots personalized or specialized for specific tasks or behaviors.
 
+### Windsurf
+* Getting started with Windsurf
+* AI code assistants
+* Fixing tests automatically
+* How a collaborative AI code agent works
+* Search and discovery for AI agents
+* Understanding large codebases
+* Data analysis app on Wikipedia
 
-### Architecture, testing, and continuous improvements
-* Overview of Amazon, Azure, and Google clouds for RAG implementation
-* Evaluating and debugging Generative AI
-* Practical examples and demos
+### GitHub Copilot/JetBrains AI
+* Introduction to Copilot and IntelliJ
+* Setup/Configure Copilot in IntelliJ
+* Creating a new project
+* Hello World using Copilot
+* Java datatypes in Copilot
+* Java exception handling with Copilot
+* Multithreading with Copilot
+* Functional programming and lambda with Copilot
 
-### Labs (optional)
+### Advanced Copilot (optional)
 
-* GitHub Copilot for code development
-* Claude 3.5 Sonnet for better coding
-* ChatGPT complete plan of architecture, approach, implementation, and test creation
-* How not to send your code to competition by using Llama use for extra privacy
+* Working interactively with Copilot
+  * Copilot Chat in IntelliJ-based IDEs – asking questions, explaining diffs, and running “code brushes” like Explain or Refactor. 
+* Prompt & context techniques – adding files/lines to the chat, custom instructions, and prompt-library shortcuts. 
+* GitHub Docs
+* JetBrains
 
-### ChatGPT Desktop Course Outline (Day 3)
+* Autonomous assistance
+  * Agent Mode (GA July 2025) – letting Copilot carry out multi-file tasks, suggest terminal commands, and self-heal build errors. 
+* Edit Mode vs. Agent Mode – when you want granular, file-scoped edits versus end-to-end task execution. 
+* Quality & test generation
+* Unit-, integration-, and property-based test scaffolding directly from chat or code selection.
+* AI-driven debugging – stack-trace explanations, log-analysis prompts, and quick-fix suggestions.
+  * Refactoring & documentation
+  * Copilot Edits and Code Review – AI-suggested refactors, readability improvements, and PR summaries. 
+* Automatic Javadoc / README / commit-message generation with JetBrains AI Assistant. 
 
-#### **Session 1: Introduction to ChatGPT Desktop**
-* What is ChatGPT and its capabilities?
-* Difference between desktop, browser, and mobile versions.
-* Installing and setting up ChatGPT Desktop.
-* Overview of the ChatGPT Desktop interface.
-  * Navigation and settings.
-  * Customization options (themes, notifications, shortcuts).
-
-#### **Session 2: Leveraging ChatGPT Desktop for Personal Use**
-* Exploring key features:
-  * Using different GPT models (GPT-3.5 vs. GPT-4).
-  * Offline capabilities (if applicable).
-  * Integration with desktop workflows (copy-paste, drag-drop).
-* Productivity hacks:
-  * Writing emails, creating schedules, and managing tasks.
-  * Summarizing articles, documents, or meeting notes.
-  * Brainstorming ideas for personal projects or hobbies.
-* **Hands-On Activity:**
-  * Plan a day’s agenda or draft an email using ChatGPT.
-
-#### **Session 3: ChatGPT Desktop for Work and Innovation**
-* Professional use cases:
-  * Content creation: blogs, presentations, and reports.
-  * Analyzing data or generating code snippets.
-  * Enhancing communication with automated responses.
-* Collaboration features:
-  * Sharing outputs and collaborative workflows.
-  * Exploring plugin or API integrations (if supported).
-* Advanced tips:
-  * Crafting effective prompts for better outputs.
-  * Using multi-step prompts to handle complex workflows.
-* **Hands-On Activity:**
-  * Create a professional report using ChatGPT Desktop.
-
-#### **Session 4: Exploring Creative and Advanced Features**
-* Creative applications:
-  * Writing stories, poems, or scripts.
-  * Generating ideas for marketing campaigns or social media.
-* Technical applications:
-  * Writing and debugging code.
-  * Using ChatGPT Desktop for data exploration.
-* Plugins and tools (if applicable):
-  * DALL-E for image generation.
-  * Code interpreter and other tools.
-
-#### **Session 5: Best Practices and Limitations**
-* Ethics and responsible use:
-  * Data privacy and security considerations.
-  * Understanding AI limitations and avoiding misuse.
-* Troubleshooting common issues:
-  * Tips for resolving app crashes or slow responses.
-  * How to contact support or find solutions in the community.
-
-#### **Session 6: Final Project and Q&A**
-* **Final Project:**
-  * Solve a real-world scenario using ChatGPT Desktop.
-* **Q&A Session:**
-  * Address participant questions and challenges.
-* Wrap-up:
-  * Recap of key learnings.
-  * Resources for continued learning and exploration.
+* Secure & responsible usage
+  * Security-oriented prompts – dependency-update suggestions, secret-scanning, and license-compliance checks.
+* Enterprise policy & content-exclusion settings for proprietary codebases.
+* Git & CI/CD hooks – generating PR descriptions, GitHub Actions steps, and chat-triggered pipelines.
+* Performance & adoption metrics 
+  * Measuring suggestion-accept-rate, editing time saved, and guidelines for tuning privacy/telemetry settings.
 
 
-### Day 4
-* GitHub Copilot/JetBrains AI
+### Claude Code
+* Codebase understanding
+* Adding features
+* Testing, Error debugging, and Code refactoring
+* Adding multiple features simultaneously
+* GitHub integration and hooks
+* Refactoring a Jupyter Notebook
+  * Creating dashboard
+* Creating web apps based on Figma mockups
 
-### Day 5
-
-* Comparative review of exploratory AI tools in the market, including Claude 3.5, Sonnet, Aider, and any other relevant tools worth exploring
-* Tech Stack:
-  * PHP, GoLang, JavaScript
-* IDEs
-  * VS Code and Cursor
 
 ## Notes (remove before sending)
 
