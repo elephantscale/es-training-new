@@ -2,11 +2,11 @@
 
 (C) Copyright Elephant Scale
 
-August 12, 2025
+August 13, 2025
 
 ## Course Description
 
-* AI opens ways to building smart applications as never before.
+* AI opens ways to building software as never before.
   * As Andrew Ng says, AI will not replace programmers; rather, programmers that use AI will replace those programmers that do not use AI.
   * In this course, the students learn how to build systems using AI.
 
@@ -125,6 +125,9 @@ August 12, 2025
   * Creating dashboard
 * Creating web apps based on Figma mockups
 
+### A word on security
+* Intro: they can hack like never before
+* Basic hacking dangers and solutions
 
 ## Notes (remove before sending)
 
