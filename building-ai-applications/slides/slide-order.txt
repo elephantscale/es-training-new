@@ -6,6 +6,7 @@
 # About
 About_Class.md
 PromptEngineering.md
+AI-Will-Not-Take-My-Job.md
 DatabaseAgent.md
 Langchain.md
 ServerlessLLMBedrock.md
