@@ -21,4 +21,11 @@
   * or showing them what’s newly possible in their disciplines.
 
 ---
+## Future
+* Just as every company is becoming an AI company, every university must become an AI university
+* Not just teaching AI, but using it to advance every field of study. 
+* This doesn’t mean abandoning disciplinary expertise. 
+* It means maintaining technical excellence while ensuring AI enhances every field.
+
+---
 
