@@ -1,4 +1,4 @@
-# Coding with AI GitHub Copilot and IntelliJ
+# Coding with AI 
 
 (C) Copyright Elephant Scale
 
@@ -62,6 +62,7 @@ August 13, 2025
   * Windsurf
   * Git Copilot
   * Claude Code
+  * Codex
   
 ### Prompt Engineering
 * Introduction to AI
