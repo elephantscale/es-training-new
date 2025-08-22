@@ -17,13 +17,13 @@ property managers, and accountants who already use ChatGPT for basic tasks. The 
 * Beginner 
 
 
-Course Outline
-Week 1: Beyond Basics – Advanced Prompting & Real-World Use Cases
-Week 2: Financial Analysis with ChatGPT (NOI, DSCR, Occupancy, Variance Reports)
-Week 3: Portfolio Insights & Investor-Ready Summaries
-Week 4: Automating Tasks, Reminders & Alerts (DSCR <1.25, NOI drops, delinquency alerts)
-Week 5: Canva & PDF Portfolio Presentations with AI
-Week 6: Executive Strategy & AI Use Cases for Scaling Operations
+## Course Outline
+* Week 1: Beyond Basics – Advanced Prompting & Real-World Use Cases
+* Week 2: Financial Analysis with ChatGPT (NOI, DSCR, Occupancy, Variance Reports)
+* Week 3: Portfolio Insights & Investor-Ready Summaries
+* Week 4: Automating Tasks, Reminders & Alerts (DSCR <1.25, NOI drops, delinquency alerts)
+* Week 5: Canva & PDF Portfolio Presentations with AI
+* Week 6: Executive Strategy & AI Use Cases for Scaling Operations
 
 🎯 Problem Solved
     • Manual reporting & time-intensive variance analysis
