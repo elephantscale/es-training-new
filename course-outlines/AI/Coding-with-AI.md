@@ -63,6 +63,10 @@ August 13, 2025
   * Git Copilot
   * Claude Code
   * Codex
+  * GPT-5
+  * Replit
+  * Cursor
+  * Trae
   
 ### Prompt Engineering
 * Introduction to AI
