@@ -46,6 +46,6 @@ property managers, and accountants who already use ChatGPT for basic tasks. The 
 * Executives gained strategic AI workflows to scale from operational data → decisions → presentations, without additional overhead.
 * The company positioned itself as an AI-forward leader, improving investor confidence and internal efficiency.
 
-💡 Why This Matters for You
-With AI adoption moving rapidly, this program ensured that your team is not just using ChatGPT for Q&A, but for core financial decision-making, reporting, and executive strategy.
-👉 Future clients can adopt this course to save time, reduce errors, impress investors, and scale faster.
+## Why This Matters for You
+* With AI adoption moving rapidly, this program ensured that your team is not just using ChatGPT for Q&A, but for core financial decision-making, reporting, and executive strategy.
+* Future clients can adopt this course to save time, reduce errors, impress investors, and scale faster.
